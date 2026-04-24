@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+/* === Base Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #0a0a0f !important;
+  color: #ffffff !important;
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.app {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.main-content {
+  padding-top: 80px;
+}
+
+/* === Premium Section Spacing === */
+section {
+  padding-top: 3.5rem !important;
+  padding-bottom: 3.5rem !important;
+}
+
+/* === Smooth Fade-In on Scroll === */
+section > .container {
+  animation: fadeInUp 0.6s ease-out both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === Premium Text Selection === */
+::selection {
+  background: rgba(139, 92, 246, 0.3);
+  color: #fff;
+}
+
+/* === Scrollbar Styling === */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(139, 92, 246, 0.3);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(139, 92, 246, 0.5);
+}
+
+/* === Gradient CTA Button === */
+.btn-cta {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6, #d946ef) !important;
+  border: none !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(139, 92, 246, 0.4);
+}
+
+/* === Gradient Heading Text === */
+.hero-gradient-text {
+  background: linear-gradient(135deg, #8b5cf6, #c084fc, #e879f9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  padding: 0 0.25em;
+}
+
+/* === Marquee Animation === */
+.marquee-wrapper {
+  mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+}
+
+.marquee-track {
+  width: max-content;
+  animation: marqueeScroll 35s linear infinite;
+}
+
+.marquee-track-reverse {
+  width: max-content;
+  animation: marqueeScrollReverse 35s linear infinite;
+}
+
+.marquee-track:hover,
+.marquee-track-reverse:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marqueeScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marqueeScrollReverse {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+/* === Challenge Card === */
+.challenge-card {
+  border: 2px solid transparent !important;
+  transition: all 0.3s ease;
+}
+
+.challenge-card-active {
+  border-image-source: linear-gradient(135deg, #3b82f6, #8b5cf6, #ec4899) !important;
+  border-image-slice: 1 !important;
+  box-shadow: 0 0 25px rgba(139, 92, 246, 0.15);
+}
+
+/* === Premium Glow Dividers === */
+.premium-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(139, 92, 246, 0.3), transparent);
+  border: none;
+  margin: 1rem 0;
+}
+
+/* === Button Hover Glow === */
+.btn {
+  transition: all 0.3s ease !important;
+}
+
+.btn:focus {
+  box-shadow: none !important;
+}
+
+/* === Form Input Polish === */
+input:focus,
+textarea:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* === Card Subtle Glow on Hover === */
+.glow-card {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.glow-card:hover {
+  border-color: rgba(139, 92, 246, 0.2) !important;
+  box-shadow: 0 0 30px rgba(139, 92, 246, 0.08);
+  transform: translateY(-2px);
+}
+
+/* === Link Hover Underline Animation === */
+a {
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+/* === Responsive Adjustments === */
+@media (max-width: 991.98px) {
+  section {
+    padding-top: 2.5rem !important;
+    padding-bottom: 2.5rem !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  section {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  .display-4, .display-5 {
+    font-size: 2rem !important;
+  }
+
+  .display-6 {
+    font-size: 1.5rem !important;
+  }
+}
