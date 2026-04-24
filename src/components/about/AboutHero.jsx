@@ -1,9 +1,6 @@
 const AboutHero = () => {
   return (
     <section style={{ padding: '5rem 0 4rem', position: 'relative', overflow: 'hidden' }}>
-      {/* Background Image */}
-      <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/images/heroes/hero-business.png)', backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.35, pointerEvents: 'none', zIndex: 0 }} />
-      <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(10,10,15,0.6) 0%, rgba(10,10,15,0.95) 100%)', pointerEvents: 'none', zIndex: 0 }} />
       {/* Ambient glow */}
       <div style={{
         position: 'absolute', top: '-100px', right: '-100px', width: '500px', height: '500px',

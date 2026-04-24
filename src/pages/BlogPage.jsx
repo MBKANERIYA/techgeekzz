@@ -54,8 +54,6 @@ const BlogPage = () => {
     <div>
       {/* ═══════ HERO ═══════ */}
       <section className="d-flex align-items-center position-relative overflow-hidden" style={{ minHeight: '60vh', paddingTop: '2rem', paddingBottom: '4rem' }}>
-        <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/images/heroes/hero-blog.png)', backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.35, pointerEvents: 'none', zIndex: 0 }} />
-        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(10,10,15,0.5) 0%, rgba(10,10,15,0.95) 100%)', pointerEvents: 'none', zIndex: 0 }} />
         <div style={{ position: 'absolute', width: 500, height: 500, borderRadius: '50%', background: 'radial-gradient(circle, rgba(139,92,246,0.15) 0%, transparent 70%)', top: '-10%', right: '-5%', filter: 'blur(80px)', pointerEvents: 'none', zIndex: 1 }} />
         <div className="container position-relative text-center" style={{ zIndex: 2 }}>
           <div className="d-inline-flex align-items-center gap-2 rounded-pill px-3 py-2 mb-4" style={{ background: 'rgba(139,92,246,0.1)', border: '1px solid rgba(139,92,246,0.2)' }}>

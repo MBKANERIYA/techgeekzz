@@ -19,13 +19,6 @@ const ServicePageTemplate = ({ config }) => {
     <div>
       {/* ════════════ HERO ════════════ */}
       <section className="d-flex align-items-center position-relative overflow-hidden" style={{ minHeight: '85vh', paddingTop: '2rem', paddingBottom: '4rem' }}>
-        {/* Background Image */}
-        {config.heroImage && (
-          <>
-            <div style={{ position: 'absolute', inset: 0, backgroundImage: `url(${config.heroImage})`, backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.35, pointerEvents: 'none', zIndex: 0 }} />
-            <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(10,10,15,0.6) 0%, rgba(10,10,15,0.95) 100%)', pointerEvents: 'none', zIndex: 0 }} />
-          </>
-        )}
         <div style={{ position: 'absolute', width: 500, height: 500, borderRadius: '50%', background: `radial-gradient(circle, ${config.glowColor}20 0%, transparent 70%)`, top: '-10%', right: '-5%', filter: 'blur(80px)', pointerEvents: 'none', zIndex: 1 }} />
         <div style={{ position: 'absolute', width: 400, height: 400, borderRadius: '50%', background: 'radial-gradient(circle, rgba(99,102,241,0.1) 0%, transparent 70%)', bottom: '0%', left: '-5%', filter: 'blur(60px)', pointerEvents: 'none', zIndex: 1 }} />
 

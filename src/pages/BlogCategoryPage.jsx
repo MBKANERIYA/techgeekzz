@@ -51,8 +51,6 @@ const BlogCategoryPage = () => {
     <div>
       {/* ═══════ HERO ═══════ */}
       <section className="position-relative overflow-hidden" style={{ paddingTop: '8rem', paddingBottom: '3rem' }}>
-        <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/images/heroes/hero-blog.png)', backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.2, pointerEvents: 'none', zIndex: 0 }} />
-        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(10,10,15,0.4) 0%, rgba(10,10,15,0.98) 100%)', pointerEvents: 'none', zIndex: 0 }} />
         <div style={{ position: 'absolute', width: 500, height: 500, borderRadius: '50%', background: 'radial-gradient(circle, rgba(139,92,246,0.12) 0%, transparent 70%)', top: '-15%', left: '50%', transform: 'translateX(-50%)', filter: 'blur(80px)', pointerEvents: 'none', zIndex: 1 }} />
 
         <div className="container position-relative text-center" style={{ zIndex: 2 }}>

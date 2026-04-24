@@ -4,9 +4,6 @@ import teamEvent2 from '../assets/team-event-2.png';
 const Hero = () => {
   return (
     <section className="py-4 d-flex align-items-center position-relative overflow-hidden" style={{ minHeight: '77vh' }}>
-      {/* Background Image */}
-      <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/images/heroes/hero-business.png)', backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.35, pointerEvents: 'none', zIndex: 0 }} />
-      <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(10,10,15,0.5) 0%, rgba(10,10,15,0.95) 100%)', pointerEvents: 'none', zIndex: 0 }} />
       <div className="container">
         <div className="row align-items-start overflow-visible">
           {/* Left Content */}
