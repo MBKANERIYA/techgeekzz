@@ -70,7 +70,7 @@ const ChallengesSection = () => {
                   background: '#111118',
                   border: '1px solid rgba(255,255,255,0.06)',
                   cursor: 'pointer',
-                  transition: 'all 0.3s ease',
+                  transition: 'all 1s ease',
                   minHeight: '220px',
                 }}
               >
@@ -93,7 +93,7 @@ const ChallengesSection = () => {
                   style={{
                     maxHeight: hoveredIndex === index ? '200px' : '0',
                     overflow: 'hidden',
-                    transition: 'max-height 0.4s ease, opacity 0.3s ease',
+                    transition: 'max-height 1.2s ease, opacity 1s ease',
                     opacity: hoveredIndex === index ? 1 : 0,
                   }}
                 >

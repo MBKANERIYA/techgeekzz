@@ -72,7 +72,7 @@ const Navbar = () => {
   const closeDropdown = () => setOpenDropdown(null);
 
   const navLinkStyle = {
-    color: scrolled ? 'rgba(255,255,255,0.8)' : '#1a1a2e',
+    color: 'rgba(255,255,255,0.8)',
     fontSize: '0.88rem',
     transition: 'color 0.3s ease',
   };
@@ -95,27 +95,28 @@ const Navbar = () => {
         className="navbar navbar-expand-lg rounded-pill px-4 py-2 mx-auto"
         style={{
           maxWidth: '1320px',
-          background: scrolled ? 'rgba(10, 10, 15, 0.85)' : 'rgba(255, 255, 255, 0.95)',
+          background: scrolled ? 'rgba(10, 10, 15, 0.85)' : 'rgba(10, 10, 15, 0.4)',
           backdropFilter: 'blur(20px)',
           WebkitBackdropFilter: 'blur(20px)',
-          border: scrolled ? '1px solid rgba(255,255,255,0.08)' : '1px solid rgba(0,0,0,0.05)',
-          boxShadow: scrolled ? '0 8px 32px rgba(0,0,0,0.3)' : '0 4px 20px rgba(0,0,0,0.08)',
+          border: '1px solid rgba(255,255,255,0.08)',
+          boxShadow: scrolled ? '0 8px 32px rgba(0,0,0,0.3)' : '0 4px 20px rgba(0,0,0,0.15)',
           transition: 'all 0.4s ease',
         }}
       >
         <div className="container-fluid px-0">
           {/* Logo */}
           <a className="navbar-brand d-flex align-items-center gap-2 fw-bold" href="/">
-            <svg width="36" height="24" viewBox="0 0 36 24" fill="none">
-              <path d="M0 24L9 8L18 24H0Z" fill={scrolled ? '#8b5cf6' : '#1a1a2e'} />
-              <path d="M10 24L19 8L28 24H10Z" fill={scrolled ? '#c084fc' : '#1a1a2e'} opacity="0.7" />
-            </svg>
-            <span className="fw-bold fs-6" style={{ letterSpacing: '0.5px', color: scrolled ? '#fff' : '#1a1a2e' }}>NINJA PROMO</span>
+            <img 
+              src="https://techgeekzservices.com/wp-content/uploads/2024/01/Untitled-500-x-300-px-500-x-200-px-1.png" 
+              alt="TechGeekz Logo" 
+              height="44" 
+              style={{ objectFit: 'contain', transition: 'opacity 0.3s' }}
+            />
           </a>
 
           {/* Mobile Toggle */}
           <button className="navbar-toggler border-0" type="button" onClick={() => setMobileOpen(!mobileOpen)} aria-label="Toggle navigation">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke={scrolled ? '#fff' : '#1a1a2e'} strokeWidth="2">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2">
               <path d="M3 12h18M3 6h18M3 18h18" strokeLinecap="round" />
             </svg>
           </button>
@@ -211,10 +212,7 @@ const Navbar = () => {
               <li className="nav-item">
                 <a className="nav-link fw-medium px-3" href="#" style={navLinkStyle}>Our people</a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link fw-semibold px-3 text-decoration-underline" href="#"
-                  style={{ ...navLinkStyle, color: scrolled ? '#c084fc' : '#1a1a2e' }}>Pricing</a>
-              </li>
+
 
               {/* ===== BLOG LINK + DROPDOWN ===== */}
               <li

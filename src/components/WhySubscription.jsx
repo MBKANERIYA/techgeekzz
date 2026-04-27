@@ -66,7 +66,7 @@ const WhySubscription = () => {
                     overflow: 'hidden',
                     justifyContent: isHovered ? 'center' : 'flex-start',
                     paddingTop: isHovered ? '0px' : `${staggerOffsets[index]}px`,
-                    transition: 'padding-top 0.4s ease, justify-content 0.4s ease',
+                    transition: 'padding-top 1.1s ease, justify-content 1.1s ease',
                   }}
                 >
                   {/* Title */}
@@ -92,7 +92,7 @@ const WhySubscription = () => {
                     style={{
                       maxHeight: isHovered ? '250px' : '0',
                       overflow: 'hidden',
-                      transition: 'max-height 0.4s ease, opacity 0.3s ease 0.1s',
+                      transition: 'max-height 1.2s ease, opacity 1s ease 0.2s',
                       opacity: isHovered ? 1 : 0,
                     }}
                   >

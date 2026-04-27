@@ -38,8 +38,12 @@ const Footer = () => {
           {/* Contact Info */}
           <div className="col-lg-4 col-md-6">
             <div className="d-flex align-items-center gap-2 mb-4">
-              <span className="text-white fs-5">◆◆</span>
-              <span className="text-white fw-bold" style={{ letterSpacing: '2px', fontSize: '0.9rem' }}>NINJA PROMO</span>
+              <img 
+                src="https://techgeekzservices.com/wp-content/uploads/2024/01/Untitled-500-x-300-px-500-x-200-px-1.png" 
+                alt="TechGeekz Logo" 
+                height="50" 
+                style={{ objectFit: 'contain' }}
+              />
             </div>
 
             <a href="mailto:hello@ninjapromo.io" className="d-block text-white text-decoration-none small fw-semibold mb-3" style={{ color: '#4dabf7' }}>
@@ -140,7 +144,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="d-flex flex-wrap justify-content-between align-items-center pt-4" style={{ borderTop: '1px solid rgba(255,255,255,0.06)' }}>
           <p className="text-secondary mb-0" style={{ fontSize: '0.7rem' }}>
-            © 2017-2026 Ninja Promo. All rights reserved
+            © 2024-2026 TechGeekz. All rights reserved
           </p>
           <div className="d-flex gap-4">
             {['Privacy Policy', 'Terms & Conditions', 'Sitemap'].map((link, i) => (
