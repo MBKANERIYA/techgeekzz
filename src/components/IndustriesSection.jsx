@@ -31,7 +31,7 @@ const industries = [
 
 const IndustriesSection = () => {
   return (
-    <section className="py-5">
+    <section className="py-3">
       <div className="container">
         {/* Heading */}
         <h2 className="text-white text-center display-5 fw-bold mb-3" style={{ letterSpacing: '-1px' }}>

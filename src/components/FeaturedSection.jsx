@@ -17,7 +17,7 @@ const FeaturedSection = () => {
     : [...mediaCards.slice(startIndex), ...mediaCards.slice(0, 4 - (mediaCards.length - startIndex))];
 
   return (
-    <section className="py-5">
+    <section className="py-3">
       <div className="container">
         {/* Top - Forbes Feature */}
         <div className="row align-items-center mb-5 pb-5" style={{ borderBottom: '1px solid rgba(255,255,255,0.06)' }}>

@@ -9,7 +9,7 @@ const brands = ['Logitech', 'Bitcoin.com', 'Stripe', 'Samsung', 'HubSpot', 'Burg
 
 const CTASection = () => {
   return (
-    <section className="py-5">
+    <section className="py-3">
       <div className="container">
         <div className="row g-5 align-items-start">
           {/* Left - Content */}

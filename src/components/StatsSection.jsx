@@ -39,7 +39,7 @@ const stats = [
 
 const StatsSection = () => {
   return (
-    <section className="py-5">
+    <section className="py-3">
       <div className="container">
         {/* Heading */}
         <h2 className="text-white text-center display-5 fw-semibold fst-italic mb-5 pb-3" style={{ letterSpacing: '-1px' }}>

@@ -18,7 +18,7 @@ const ServicePageTemplate = ({ config }) => {
   return (
     <div>
       {/* ════════════ HERO ════════════ */}
-      <section className="d-flex align-items-center position-relative overflow-hidden" style={{ minHeight: '85vh', paddingTop: '2rem', paddingBottom: '4rem' }}>
+      <section className="d-flex align-items-center position-relative overflow-hidden" style={{ paddingTop: '8rem', paddingBottom: '2rem' }}>
         <div style={{ position: 'absolute', width: 500, height: 500, borderRadius: '50%', background: `radial-gradient(circle, ${config.glowColor}20 0%, transparent 70%)`, top: '-10%', right: '-5%', filter: 'blur(80px)', pointerEvents: 'none', zIndex: 1 }} />
         <div style={{ position: 'absolute', width: 400, height: 400, borderRadius: '50%', background: 'radial-gradient(circle, rgba(99,102,241,0.1) 0%, transparent 70%)', bottom: '0%', left: '-5%', filter: 'blur(60px)', pointerEvents: 'none', zIndex: 1 }} />
 
@@ -37,7 +37,7 @@ const ServicePageTemplate = ({ config }) => {
 
               <p className="text-secondary fs-5 mb-4" style={{ maxWidth: 540, lineHeight: 1.7 }} dangerouslySetInnerHTML={{ __html: config.heroDescription }} />
 
-              <div className="d-flex flex-wrap gap-3 mb-5">
+              <div className="d-flex flex-wrap gap-3">
                 <a href="#cta" className="btn btn-cta rounded-pill px-5 py-3 fw-semibold text-white text-decoration-none">Get Started</a>
                 <a href="#services" className="btn rounded-pill px-5 py-3 fw-medium text-white text-decoration-none" style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.1)', transition: 'all 0.3s ease' }}
                   onMouseEnter={(e) => { e.currentTarget.style.background = 'rgba(255,255,255,0.1)'; e.currentTarget.style.borderColor = 'rgba(139,92,246,0.3)'; }}
