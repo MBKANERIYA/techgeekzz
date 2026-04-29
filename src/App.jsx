@@ -9,6 +9,7 @@ import PartnersPage from './pages/PartnersPage';
 import ContactPage from './pages/ContactPage';
 import BlogPage from './pages/BlogPage';
 import BlogCategoryPage from './pages/BlogCategoryPage';
+import BlogPostPage from './pages/BlogPostPage';
 // Right-column services
 import SocialMediaPage from './pages/SocialMediaPage';
 import EmailMarketingPage from './pages/EmailMarketingPage';
@@ -53,6 +54,7 @@ function App() {
             <Route path="/partners" element={<PartnersPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/blog" element={<BlogPage />} />
+            <Route path="/blog/post/:postSlug" element={<BlogPostPage />} />
             <Route path="/blog/:slug" element={<BlogCategoryPage />} />
             {/* Right-column services */}
             <Route path="/services/social-media" element={<SocialMediaPage />} />

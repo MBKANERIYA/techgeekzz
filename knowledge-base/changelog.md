@@ -115,3 +115,51 @@
 - `src/components/Footer.jsx` — removed Industries/Blog sections; added Blog under Company; all links use `<Link>` routing
 - All page wrappers — removed `paddingTop: '100px'` to match home hero positioning
 - All hero images — opacity increased from 0.18 to 0.35
+
+## 2026-04-29 — Blog Page Dummy Data Enhancement
+**What**: Rewrote BlogPage with comprehensive dummy blog data, 8 new custom thumbnails, and UI polish
+**Why**: Blog page needed rich, realistic content with varied categories, excerpts, authors, and read times
+**Files Changed**:
+- `src/pages/BlogPage.jsx` — complete rewrite with 16 dummy articles across 10 categories
+- `public/images/blog/thumb-seo.png` (NEW) — SEO-themed thumbnail
+- `public/images/blog/thumb-social.png` (NEW) — Social media-themed thumbnail
+- `public/images/blog/thumb-ai.png` (NEW) — AI marketing-themed thumbnail
+- `public/images/blog/thumb-ppc.png` (NEW) — PPC advertising-themed thumbnail
+- `public/images/blog/thumb-email.png` (NEW) — Email marketing-themed thumbnail
+- `public/images/blog/thumb-design.png` (NEW) — Web design-themed thumbnail
+- `public/images/blog/thumb-ecommerce.png` (NEW) — Ecommerce-themed thumbnail
+- `public/images/blog/thumb-content.png` (NEW) — Content marketing-themed thumbnail
+- Added per-category tag colors, article excerpts, author avatars, read times
+- Featured sidebar now shows thumbnail images alongside text
+- Load More now works with actual pagination (shows 8 at a time)
+- Renamed "Ninja Academy" to "TechGeekz Academy" for branding consistency
+
+## 2026-04-29 — Blog Post Pages + Clickable Cards
+**What**: Created individual blog post page and made all blog cards clickable/navigable
+**Why**: Blog cards were not linked — clicking did nothing. Needed a full article view page.
+**Files Changed**:
+- `src/data/blogPosts.js` (NEW) — Centralised blog post data with full article body content, shared across all blog pages
+- `src/pages/BlogPostPage.jsx` (NEW) — Full article page with hero, breadcrumbs, author info, body sections, social share, and related articles
+- `src/pages/BlogPage.jsx` — Refactored to import from shared data; wrapped all cards (featured, sidebar, grid) with `<Link>` to `/blog/post/:slug`
+- `src/pages/BlogCategoryPage.jsx` — Wrapped all post cards with `<Link>` to `/blog/post/:slug`; renamed "Ninja Academy" → "TechGeekz Academy"
+- `src/App.jsx` — Added route `/blog/post/:postSlug` → `BlogPostPage`; imported `BlogPostPage`
+
+## 2026-04-29 — Blog Post Page Redesign (Light Theme Article Layout)
+**What**: Completely redesigned BlogPostPage to match a professional blog article layout
+**Why**: Previous version had dark-themed centered content with no sidebars; new design follows industry-standard article layout
+**Files Changed**:
+- `src/pages/BlogPostPage.jsx` — Full redesign with:
+  - Dark hero section with breadcrumbs, category badge, title, and author info
+  - Hero image with gradient transition from dark hero to white content area
+  - 3-column layout: sticky Table of Contents (left), article body (center), CTA sidebar (right)
+  - White/light-themed article body with proper typography (#374151 text on #fff background)
+  - Active section highlighting in TOC on scroll
+  - Author bio card at bottom of article
+  - Dark-themed related articles section
+  - Social share buttons in left sidebar
+  - Newsletter subscription in right sidebar
+  - CTA card with feature checklist in right sidebar
+  - Fixed invalid CSS hex color concatenation (replaced `${hex}12` with `hexToRgba()` helper)
+- `src/pages/BlogCategoryPage.jsx` — Now uses shared `blogPosts` data instead of local `allPosts`
+
+

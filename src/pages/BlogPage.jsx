@@ -1,43 +1,19 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import ReviewsSection from '../components/ReviewsSection';
 import AwardsSection from '../components/AwardsSection';
+import { blogPosts, slugify, tagColors } from '../data/blogPosts';
 
 const categories = [
-  'All', 'AI', 'B2B', 'B2C', 'Crypto', 'Design', 'Digital Marketing', 'Ecommerce',
-  'Email', 'Financial', 'Healthcare', 'iGaming', 'Influencer Marketing', 'PPC',
-  'PR', 'Real Estate', 'SaaS', 'SEO', 'Social Media', 'Video Production',
+  'All', 'SEO', 'PPC', 'Social Media', 'AI', 'Email', 'Design',
+  'Ecommerce', 'B2B', 'Content', 'Digital Marketing',
 ];
 
-const featuredMain = {
-  img: '/images/blog/thumb-1.png',
-  tags: ['Ratings', 'Digital Marketing'],
-  title: 'Top 15 Digital Marketing Agencies for Small Businesses in 2026',
-  date: 'April 23, 2026',
-};
-
-const featuredSidebar = [
-  { tag: 'PPC', title: '66 Key PPC Statistics Every Marketer Should Know in 2026', date: 'December 1, 2025' },
-  { tag: 'SEO', title: '89 Key SEO Statistics Every Marketer Should Know in 2026', date: 'August 8, 2025' },
-  { tag: 'Guides · SEO', title: 'SEO for Startups: From Strategy Creation to Proven Tactics', date: 'July 31, 2025' },
-];
-
-const posts = [
-  { id: 1, img: '/images/blog/thumb-1.png', tags: ['Ratings', 'PR', 'SaaS'], title: 'Top 6 SaaS PR Agencies for Scalable Public Relations Solutio...', date: 'April 23, 2026', author: 'Sophia Lanier' },
-  { id: 2, img: '/images/blog/thumb-2.png', tags: ['Guides', 'Strategies', 'PPC'], title: 'Google Ads for Dentists: Best Strategies to Grow Your Practi...', date: 'April 16, 2026', author: 'Rebeka Meszaros' },
-  { id: 3, img: '/images/blog/thumb-3.png', tags: ['Guides', 'Strategies', 'AI'], title: 'AI Content Optimization: Best Practices for High-Performing ...', date: 'April 15, 2026', author: 'Jelena Relic' },
-  { id: 4, img: '/images/blog/thumb-4.png', tags: ['Guides', 'Strategies', 'PPC'], title: '9 Top Google Ads Alternatives to Boost Your Reach', date: 'April 2, 2026', author: 'Rebeka Meszaros' },
-  { id: 5, img: '/images/blog/thumb-5.png', tags: ['Guides', 'Digital Marketing'], title: 'Multi-Location Business Marketing: How to Master Targeted Di...', date: 'March 30, 2026', author: 'Jelena Relic' },
-  { id: 6, img: '/images/blog/thumb-6.png', tags: ['Guides', 'Strategies', 'Social Media'], title: 'Social Media Marketing Pricing: How Much Do SMM Really Cost ...', date: 'March 26, 2026', author: 'Sophia Lanier' },
-  { id: 7, img: '/images/blog/thumb-2.png', tags: ['Guides', 'Strategies', 'SEO'], title: '11 Retail SEO Tactics That Turn Search Traffic into Customer...', date: 'March 24, 2026', author: 'Ankit Vora' },
-  { id: 8, img: '/images/blog/thumb-3.png', tags: ['Guides', 'B2B'], title: '11 Examples of B2B Marketing KPIs & Metrics Worth Track...', date: 'March 24, 2026', author: 'Margarita Loktionova' },
-  { id: 9, img: '/images/blog/thumb-4.png', tags: ['Guides', 'Strategies', 'Digital Marketing'], title: 'Smart Marketing Budget Planning: A Strategic Guide for 2026', date: 'March 20, 2026', author: 'Sophia Lanier' },
-  { id: 10, img: '/images/blog/thumb-5.png', tags: ['Guides', 'Strategies', 'PPC'], title: 'Google Ads for Ecommerce: Complete Guide to Profitable Campaigns', date: 'March 18, 2026', author: 'Rebeka Meszaros' },
-  { id: 11, img: '/images/blog/thumb-6.png', tags: ['Guides', 'Strategies', 'SEO'], title: "Why Is Your SEO Not Working? Key Reasons and How to Fix Them", date: 'March 15, 2026', author: 'Ankit Vora' },
-  { id: 12, img: '/images/blog/thumb-1.png', tags: ['Guides', 'Strategies', 'SEO'], title: 'How to Redesign Your Website Without Losing SEO', date: 'March 12, 2026', author: 'Jelena Relic' },
-];
+const featuredMain = blogPosts[0];
+const featuredSidebar = [blogPosts[2], blogPosts[4], blogPosts[7]];
 
 const featured = [
-  { outlet: 'Forbes', quote: 'NinjaPromo delivers cutting-edge marketing insights that rival the best in the industry.' },
+  { outlet: 'Forbes', quote: 'TechGeekz delivers cutting-edge marketing insights that rival the best in the industry.' },
   { outlet: 'TechCrunch', quote: 'A go-to resource for marketers looking to stay ahead of emerging digital trends.' },
   { outlet: 'Entrepreneur', quote: 'Their data-driven approach to content makes complex marketing strategies accessible.' },
 ];
@@ -48,20 +24,24 @@ const BlogPage = () => {
   const [active, setActive] = useState('All');
   const [email, setEmail] = useState('');
   const [subscribed, setSubscribed] = useState(false);
-  const filtered = active === 'All' ? posts : posts.filter(p => p.tags.includes(active));
+  const [visibleCount, setVisibleCount] = useState(8);
+
+  const filtered = active === 'All' ? blogPosts : blogPosts.filter(p => p.tags.includes(active));
+  const visible = filtered.slice(0, visibleCount);
 
   return (
     <div>
       {/* ═══════ HERO ═══════ */}
       <section className="d-flex align-items-center position-relative overflow-hidden" style={{ minHeight: '60vh', paddingTop: '2rem', paddingBottom: '4rem' }}>
         <div style={{ position: 'absolute', width: 500, height: 500, borderRadius: '50%', background: 'radial-gradient(circle, rgba(139,92,246,0.15) 0%, transparent 70%)', top: '-10%', right: '-5%', filter: 'blur(80px)', pointerEvents: 'none', zIndex: 1 }} />
+        <div style={{ position: 'absolute', width: 400, height: 400, borderRadius: '50%', background: 'radial-gradient(circle, rgba(99,102,241,0.1) 0%, transparent 70%)', bottom: '-15%', left: '-5%', filter: 'blur(80px)', pointerEvents: 'none', zIndex: 1 }} />
         <div className="container position-relative text-center" style={{ zIndex: 2 }}>
           <div className="d-inline-flex align-items-center gap-2 rounded-pill px-3 py-2 mb-4" style={{ background: 'rgba(139,92,246,0.1)', border: '1px solid rgba(139,92,246,0.2)' }}>
             <span style={{ fontSize: '0.85rem' }}>📝</span>
-            <span style={{ fontSize: '0.78rem', color: '#c084fc', fontWeight: 600 }}>Ninja Academy</span>
+            <span style={{ fontSize: '0.78rem', color: '#c084fc', fontWeight: 600 }}>TechGeekz Academy</span>
           </div>
           <h1 className="display-3 fw-bold text-white mb-4" style={{ lineHeight: 1.05, letterSpacing: '-2px' }}>
-            Welcome to the<br /><span className="hero-gradient-text fst-italic fw-normal">Ninja Promo Blog</span>
+            Welcome to the<br /><span className="hero-gradient-text fst-italic fw-normal">TechGeekz Blog</span>
           </h1>
           <p className="text-secondary fs-5 mx-auto mb-0" style={{ maxWidth: 600, lineHeight: 1.7 }}>
             In-depth guides, cutting-edge strategies, and insider insights to help you <strong style={{ color: '#c084fc' }}>stay ahead of the curve</strong>.
@@ -77,7 +57,7 @@ const BlogPage = () => {
           </h2>
           <div className="d-flex flex-wrap gap-2">
             {categories.map(c => (
-              <button key={c} onClick={() => setActive(c)}
+              <button key={c} onClick={() => { setActive(c); setVisibleCount(8); }}
                 className="btn rounded-pill px-3 py-1 fw-medium" style={{
                   fontSize: '0.78rem', border: '1px solid', transition: 'all 0.3s ease',
                   ...(active === c
@@ -93,39 +73,61 @@ const BlogPage = () => {
       <section style={{ paddingBottom: '3rem' }}>
         <div className="container">
           <div className="row g-4">
-            {/* Left — Big Featured Post */}
             <div className="col-lg-7">
-              <div className="rounded-4 overflow-hidden glow-card h-100" style={{ background: '#12121a', border: '1px solid rgba(255,255,255,0.06)', cursor: 'pointer' }}>
-                <div style={{ height: 320, overflow: 'hidden', position: 'relative' }}>
-                  <img src={featuredMain.img} alt={featuredMain.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 40%, rgba(0,0,0,0.85) 100%)' }} />
-                  <div style={{ position: 'absolute', bottom: 20, left: 24, right: 24 }}>
-                    <h3 className="text-white fw-bold mb-0" style={{ fontSize: '1.3rem', lineHeight: 1.3 }}>{featuredMain.title}</h3>
+              <Link to={`/blog/post/${slugify(featuredMain.title)}`} className="text-decoration-none">
+                <div className="rounded-4 overflow-hidden glow-card h-100" style={{ background: '#12121a', border: '1px solid rgba(255,255,255,0.06)' }}>
+                  <div style={{ height: 340, overflow: 'hidden', position: 'relative' }}>
+                    <img src={featuredMain.img} alt={featuredMain.title} style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.6s ease' }} onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.05)'} onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'} />
+                    <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 30%, rgba(0,0,0,0.85) 100%)' }} />
+                    <div style={{ position: 'absolute', bottom: 24, left: 28, right: 28 }}>
+                      <div className="d-flex gap-2 mb-2">
+                        {featuredMain.tags.map((t, i) => (
+                          <span key={i} className="rounded-pill px-2 py-1" style={{ ...tagStyle, color: '#fff', background: 'rgba(139,92,246,0.4)', fontSize: '0.65rem' }}>{t}</span>
+                        ))}
+                      </div>
+                      <h3 className="text-white fw-bold mb-2" style={{ fontSize: '1.35rem', lineHeight: 1.3 }}>{featuredMain.title}</h3>
+                      <p className="mb-0" style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.6)', lineHeight: 1.5 }}>{featuredMain.excerpt}</p>
+                    </div>
+                  </div>
+                  <div className="px-4 py-3 d-flex justify-content-between align-items-center">
+                    <div className="d-flex align-items-center gap-2">
+                      <div className="rounded-circle d-flex align-items-center justify-content-center" style={{ width: 28, height: 28, background: 'linear-gradient(135deg, #6366f1, #8b5cf6)', fontSize: '0.7rem', color: '#fff', fontWeight: 700 }}>{featuredMain.author.charAt(0)}</div>
+                      <span style={{ fontSize: '0.78rem', color: 'rgba(255,255,255,0.5)' }}>{featuredMain.author}</span>
+                    </div>
+                    <div className="d-flex align-items-center gap-3">
+                      <span style={{ fontSize: '0.72rem', color: 'rgba(255,255,255,0.35)' }}>{featuredMain.date}</span>
+                      <span style={{ fontSize: '0.72rem', color: 'rgba(255,255,255,0.35)' }}>· {featuredMain.readTime}</span>
+                    </div>
                   </div>
                 </div>
-                <div className="px-4 py-3">
-                  <div className="d-flex align-items-center gap-2 mb-2">
-                    {featuredMain.tags.map((t, i) => (
-                      <span key={i} style={{ ...tagStyle, color: '#6366f1' }}>{t}</span>
-                    ))}
-                  </div>
-                  <span style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.35)' }}>{featuredMain.date}</span>
-                </div>
-              </div>
+              </Link>
             </div>
 
-            {/* Right — Featured Articles Sidebar */}
             <div className="col-lg-5">
               <h5 className="fw-bold mb-3" style={{ color: '#c084fc', fontSize: '1rem' }}>Featured articles</h5>
               <div className="d-flex flex-column gap-3">
                 {featuredSidebar.map((a, i) => (
-                  <div key={i} className="rounded-3 p-3 glow-card" style={{ background: '#12121a', border: '1px solid rgba(255,255,255,0.06)', cursor: 'pointer', transition: 'border-color 0.3s ease' }}
-                    onMouseEnter={e => e.currentTarget.style.borderColor = 'rgba(139,92,246,0.3)'}
-                    onMouseLeave={e => e.currentTarget.style.borderColor = 'rgba(255,255,255,0.06)'}>
-                    <span style={{ ...tagStyle, color: '#6366f1' }}>{a.tag}</span>
-                    <h6 className="text-white fw-bold mt-2 mb-2" style={{ fontSize: '0.92rem', lineHeight: 1.4 }}>{a.title}</h6>
-                    <span style={{ fontSize: '0.72rem', color: 'rgba(255,255,255,0.3)' }}>{a.date}</span>
-                  </div>
+                  <Link key={i} to={`/blog/post/${slugify(a.title)}`} className="text-decoration-none">
+                    <div className="rounded-3 p-3 glow-card d-flex gap-3" style={{ background: '#12121a', border: '1px solid rgba(255,255,255,0.06)', transition: 'border-color 0.3s ease' }}
+                      onMouseEnter={e => e.currentTarget.style.borderColor = 'rgba(139,92,246,0.3)'}
+                      onMouseLeave={e => e.currentTarget.style.borderColor = 'rgba(255,255,255,0.06)'}>
+                      <div style={{ width: 80, height: 80, flexShrink: 0, borderRadius: 10, overflow: 'hidden' }}>
+                        <img src={a.img} alt={a.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                      </div>
+                      <div>
+                        <div className="d-flex gap-2 mb-1">
+                          {a.tags.slice(0, 2).map((t, j) => (
+                            <span key={j} style={{ ...tagStyle, color: tagColors[t] || '#6366f1' }}>{t}</span>
+                          ))}
+                        </div>
+                        <h6 className="text-white fw-bold mt-1 mb-2" style={{ fontSize: '0.88rem', lineHeight: 1.35 }}>{a.title}</h6>
+                        <div className="d-flex align-items-center gap-2">
+                          <span style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.3)' }}>{a.date}</span>
+                          <span style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.25)' }}>· {a.readTime}</span>
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -133,39 +135,47 @@ const BlogPage = () => {
         </div>
       </section>
 
-      {/* ═══════ BLOG GRID — 4 COLUMNS ═══════ */}
+      {/* ═══════ BLOG GRID ═══════ */}
       <section style={{ paddingBottom: '4rem' }}>
         <div className="container">
           <div className="row g-4">
-            {filtered.map(post => (
+            {visible.map(post => (
               <div key={post.id} className="col-xl-3 col-lg-4 col-md-6">
-                <div className="h-100 rounded-4 overflow-hidden glow-card" style={{ background: '#12121a', border: '1px solid rgba(255,255,255,0.06)', cursor: 'pointer', transition: 'transform 0.3s ease, box-shadow 0.3s ease' }}
-                  onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-5px)'; e.currentTarget.style.boxShadow = '0 12px 40px rgba(139,92,246,0.12)'; }}
-                  onMouseLeave={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; }}>
-                  <div style={{ height: 180, overflow: 'hidden' }}>
-                    <img src={post.img} alt={post.title} style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s ease' }}
-                      onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.06)'}
-                      onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'} />
-                  </div>
-                  <div className="p-3">
-                    <div className="d-flex flex-wrap gap-2 mb-2">
-                      {post.tags.map((t, j) => (
-                        <span key={j} style={{ ...tagStyle, color: '#6366f1' }}>{t}</span>
-                      ))}
+                <Link to={`/blog/post/${slugify(post.title)}`} className="text-decoration-none">
+                  <div className="h-100 rounded-4 overflow-hidden glow-card d-flex flex-column" style={{ background: '#12121a', border: '1px solid rgba(255,255,255,0.06)', transition: 'transform 0.3s ease, box-shadow 0.3s ease' }}
+                    onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-5px)'; e.currentTarget.style.boxShadow = '0 12px 40px rgba(139,92,246,0.12)'; }}
+                    onMouseLeave={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; }}>
+                    <div style={{ height: 180, overflow: 'hidden' }}>
+                      <img src={post.img} alt={post.title} style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s ease' }}
+                        onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.06)'}
+                        onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'} />
                     </div>
-                    <h6 className="text-white fw-bold mb-3" style={{ fontSize: '0.88rem', lineHeight: 1.4 }}>{post.title}</h6>
-                    <div className="d-flex justify-content-between align-items-center">
-                      <span style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.3)' }}>{post.date}</span>
-                      <span style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.4)' }}>{post.author}</span>
+                    <div className="p-3 d-flex flex-column flex-grow-1">
+                      <div className="d-flex flex-wrap gap-2 mb-2">
+                        {post.tags.map((t, j) => (
+                          <span key={j} style={{ ...tagStyle, color: tagColors[t] || '#6366f1' }}>{t}</span>
+                        ))}
+                      </div>
+                      <h6 className="text-white fw-bold mb-2" style={{ fontSize: '0.88rem', lineHeight: 1.4 }}>{post.title}</h6>
+                      <p className="mb-3" style={{ fontSize: '0.78rem', color: 'rgba(255,255,255,0.4)', lineHeight: 1.55, flexGrow: 1 }}>{post.excerpt.substring(0, 100)}...</p>
+                      <div className="d-flex justify-content-between align-items-center mt-auto pt-2" style={{ borderTop: '1px solid rgba(255,255,255,0.05)' }}>
+                        <div className="d-flex align-items-center gap-2">
+                          <div className="rounded-circle d-flex align-items-center justify-content-center" style={{ width: 22, height: 22, background: 'linear-gradient(135deg, #6366f1, #8b5cf6)', fontSize: '0.55rem', color: '#fff', fontWeight: 700 }}>{post.author.charAt(0)}</div>
+                          <span style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.4)' }}>{post.author}</span>
+                        </div>
+                        <span style={{ fontSize: '0.65rem', color: 'rgba(255,255,255,0.25)' }}>{post.readTime}</span>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </Link>
               </div>
             ))}
           </div>
-          <div className="text-center mt-5">
-            <button className="btn btn-cta rounded-pill px-5 py-3 fw-semibold text-white" style={{ fontSize: '0.88rem' }}>Load More Articles</button>
-          </div>
+          {visibleCount < filtered.length && (
+            <div className="text-center mt-5">
+              <button onClick={() => setVisibleCount(prev => prev + 8)} className="btn btn-cta rounded-pill px-5 py-3 fw-semibold text-white" style={{ fontSize: '0.88rem' }}>Load More Articles</button>
+            </div>
+          )}
         </div>
       </section>
 
@@ -222,7 +232,7 @@ const BlogPage = () => {
             <div className="position-relative" style={{ zIndex: 1 }}>
               <h3 className="display-5 fw-bold text-white mb-3">Ready to Take Your Marketing to the <span className="hero-gradient-text fst-italic">Next Level?</span></h3>
               <p className="text-secondary fs-5 mx-auto mb-4" style={{ maxWidth: 550 }}>Let our team of experts create a custom strategy tailored to your business goals.</p>
-              <a href="/contact" className="btn btn-cta rounded-pill px-5 py-3 fw-semibold text-white text-decoration-none" style={{ fontSize: '0.95rem' }}>Get a Free Proposal</a>
+              <Link to="/contact" className="btn btn-cta rounded-pill px-5 py-3 fw-semibold text-white text-decoration-none" style={{ fontSize: '0.95rem' }}>Get a Free Proposal</Link>
             </div>
           </div>
         </div>

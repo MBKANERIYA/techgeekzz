@@ -38,10 +38,10 @@ const Footer = () => {
           {/* Contact Info */}
           <div className="col-lg-4 col-md-6">
             <div className="d-flex align-items-center gap-2 mb-4">
-              <img 
-                src="https://techgeekzservices.com/wp-content/uploads/2024/01/Untitled-500-x-300-px-500-x-200-px-1.png" 
-                alt="TechGeekz Logo" 
-                height="50" 
+              <img
+                src="https://techgeekzservices.com/wp-content/uploads/2024/01/Untitled-500-x-300-px-500-x-200-px-1.png"
+                alt="TechGeekz Logo"
+                height="50"
                 style={{ objectFit: 'contain' }}
               />
             </div>
