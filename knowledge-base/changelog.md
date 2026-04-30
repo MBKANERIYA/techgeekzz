@@ -212,4 +212,22 @@
   - Fixed invalid CSS hex color concatenation (replaced `${hex}12` with `hexToRgba()` helper)
 - `src/pages/BlogCategoryPage.jsx` — Now uses shared `blogPosts` data instead of local `allPosts`
 
+## 2026-04-30 — Mobile Navbar Fix
+**What**: Fixed broken mobile navigation — menu was invisible, dropdowns non-functional, and overflowing on mobile
+**Why**: Mobile nav had no background (transparent text on transparent bg), mega menus used position-absolute with 900px widths causing overflow, and hover-only dropdowns don't work on touch devices
+**Files Changed**:
+- `src/components/Navbar.jsx` — Complete mobile nav rewrite:
+  - Added `isMobile` state with resize listener to conditionally render desktop vs mobile dropdowns
+  - Mobile dropdowns render inline (not position-absolute) with dark panel styling
+  - Added `toggleDropdown()` for tap-to-open on touch devices (hover still works on desktop)
+  - Hamburger icon toggles to X when menu is open
+  - `closeMobileMenu()` closes nav + dropdowns on link click
+  - Body scroll lock when mobile menu is open
+  - Scrollable nav container with `maxHeight: calc(100vh - 120px)`
+  - Nav shape changes from `rounded-pill` to `rounded-20px` when mobile menu is open
+- `src/App.css` — Added mobile navbar styles:
+  - `.mobile-dropdown` — dark panel with border, padding, slide-in animation
+  - `.navbar-collapse.show` — border-top separator, proper nav-link sizing
+  - `.mobile-cta-btn` — full-width CTA button on mobile
+  - `@keyframes mobileDropSlide` — subtle entrance animation
 

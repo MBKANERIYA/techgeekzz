@@ -55,8 +55,8 @@ const Hero = () => {
               <div className="rounded-4 p-4 d-flex align-items-center gap-3" style={{ background: '#1e1e2a', gridColumn: 2, gridRow: 1 }}>
                 <div className="bg-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style={{ width: '50px', height: '50px' }}>
                   <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
-                    <circle cx="12" cy="12" r="10" fill="white" stroke="#333" strokeWidth="2"/>
-                    <circle cx="12" cy="12" r="5" fill="#ff3d2e"/>
+                    <circle cx="12" cy="12" r="10" fill="white" stroke="#333" strokeWidth="2" />
+                    <circle cx="12" cy="12" r="5" fill="#ff3d2e" />
                   </svg>
                 </div>
                 <div>
