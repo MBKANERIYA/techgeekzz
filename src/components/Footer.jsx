@@ -46,8 +46,8 @@ const Footer = () => {
               />
             </div>
 
-            <a href="mailto:hello@ninjapromo.io" className="d-block text-white text-decoration-none small fw-semibold mb-3" style={{ color: '#4dabf7' }}>
-              hello@ninjapromo.io
+            <a href="mailto:hello@TechGeekz.io" className="d-block text-white text-decoration-none small fw-semibold mb-3" style={{ color: '#4dabf7' }}>
+              hello@TechGeekz.io
             </a>
 
             <div className="d-flex flex-column gap-1 mb-4">
@@ -57,10 +57,10 @@ const Footer = () => {
             </div>
 
             <p className="fw-bold small mb-1" style={{ color: '#4dabf7' }}>Want to Join The Team?</p>
-            <a href="mailto:careers@ninjapromo.io" className="d-block text-secondary small text-decoration-none mb-4">careers@ninjapromo.io</a>
+            <a href="mailto:careers@TechGeekz.io" className="d-block text-secondary small text-decoration-none mb-4">careers@TechGeekz.io</a>
 
             <p className="fw-bold small mb-1" style={{ color: '#4dabf7' }}>Press Inquiries</p>
-            <a href="mailto:media@ninjapromo.io" className="text-secondary small text-decoration-none">media@ninjapromo.io</a>
+            <a href="mailto:media@TechGeekz.io" className="text-secondary small text-decoration-none">media@TechGeekz.io</a>
           </div>
 
           {/* Services */}
@@ -130,12 +130,12 @@ const Footer = () => {
               <div className="d-flex align-items-center gap-2 rounded-pill px-3 py-2" style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.08)' }}>
                 <span className="fw-bold text-white" style={{ fontSize: '0.8rem' }}>S|</span>
                 <span className="text-white small" style={{ fontSize: '0.75rem' }}>Reviews on Sortlist</span>
-                <span className="fw-bold small" style={{ color: '#fbbf24', fontSize: '0.75rem' }}>4.9+ ★</span>
+                <span className="fw-bold small" style={{ color: '#fbbf24', fontSize: '0.75rem' }}>4.9+ </span>
               </div>
               <div className="d-flex align-items-center gap-2 rounded-pill px-3 py-2" style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.08)' }}>
                 <span className="fw-bold" style={{ color: '#ef4444', fontSize: '0.9rem' }}>C</span>
                 <span className="text-white small" style={{ fontSize: '0.75rem' }}>Reviews on Clutch</span>
-                <span className="fw-bold small" style={{ color: '#fbbf24', fontSize: '0.75rem' }}>4.9+ ★</span>
+                <span className="fw-bold small" style={{ color: '#fbbf24', fontSize: '0.75rem' }}>4.9+ </span>
               </div>
             </div>
           </div>

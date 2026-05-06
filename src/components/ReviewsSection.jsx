@@ -20,7 +20,7 @@ const reviews = [
     employees: '1,001-5,000 Employees',
     budget: '$50,000 to $199,999',
     period: 'Jan 2023 - Dec 2023',
-    quote: "\"NinjaPromo transformed our digital presence. The ROI exceeded our expectations by 300%.\"",
+    quote: "\"TechGeekz transformed our digital presence. The ROI exceeded our expectations by 300%.\"",
     company: 'Revolut',
     reviewer: 'Sarah Chen | Fintech Platform',
     role: 'VP of Growth',
@@ -124,23 +124,23 @@ const ReviewsSection = () => {
 
               <div className="d-flex flex-column gap-3">
                 <div className="d-flex align-items-center gap-2">
-                  <span style={{ fontSize: '1rem' }}>🏢</span>
+                  <span style={{ fontSize: '1rem' }}></span>
                   <span className="text-white small">{current.industry}</span>
                 </div>
                 <div className="d-flex align-items-center gap-2">
-                  <span style={{ fontSize: '1rem' }}>📍</span>
+                  <span style={{ fontSize: '1rem' }}></span>
                   <span className="text-white small">{current.location}</span>
                 </div>
                 <div className="d-flex align-items-center gap-2">
-                  <span style={{ fontSize: '1rem' }}>👥</span>
+                  <span style={{ fontSize: '1rem' }}></span>
                   <span className="text-white small">{current.employees}</span>
                 </div>
                 <div className="d-flex align-items-center gap-2">
-                  <span style={{ fontSize: '1rem' }}>💰</span>
+                  <span style={{ fontSize: '1rem' }}></span>
                   <span className="text-white small">{current.budget}</span>
                 </div>
                 <div className="d-flex align-items-center gap-2">
-                  <span style={{ fontSize: '1rem' }}>📅</span>
+                  <span style={{ fontSize: '1rem' }}></span>
                   <span className="text-white small">{current.period}</span>
                 </div>
               </div>
@@ -162,7 +162,7 @@ const ReviewsSection = () => {
                   ◆ {current.company}
                 </h4>
                 <p className="text-secondary small mb-1">{current.reviewer}</p>
-                <p className="small mb-0" style={{ color: '#8b5cf6' }}>{current.role}</p>
+                <p className="small mb-0" style={{ color: '#a500fd' }}>{current.role}</p>
               </div>
             </div>
           </div>

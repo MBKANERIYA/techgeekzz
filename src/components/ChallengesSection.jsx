@@ -2,11 +2,11 @@ import { useState } from 'react';
 
 const challenges = [
   {
-    question: "I don't really understand how a marketing subscription works — or why it's better.",
+    question: "I don't really understand how a creative services works — or why it's better.",
     answer: "We simplify everything. You pay a monthly fee and get a cross-functional team — from SEO to PPC to design — focused on results, not billable hours.",
   },
   {
-    question: "Why would I switch to a subscription model instead of using freelancers or agencies?",
+    question: "Why would I switch to a full-service model instead of using freelancers or agencies?",
     answer: "Because you get predictable costs, faster turnarounds, and a dedicated team that actually understands your brand — not a revolving door of freelancers.",
   },
   {
@@ -23,11 +23,11 @@ const challenges = [
   },
   {
     question: "I need flexibility. What if our priorities change mid-month?",
-    answer: "No problem. Our subscription model lets you pivot anytime — reallocate hours, shift focus, or add new services on the fly.",
+    answer: "No problem. Our full-service model lets you pivot anytime — reallocate hours, shift focus, or add new services on the fly.",
   },
   {
     question: "I don't want to get locked into another long-term contract.",
-    answer: "Neither do we. Our subscriptions are month-to-month. Stay because it works, not because you're stuck.",
+    answer: "Neither do we. Our engagements are flexible. Stay because it works, not because you're stuck.",
   },
   {
     question: "We don't have time to micromanage every task.",
@@ -54,8 +54,8 @@ const ChallengesSection = () => {
 
         <p className="text-secondary text-center mx-auto mb-5 small fst-italic" style={{ maxWidth: '700px', lineHeight: 1.7 }}>
           For over 8 years, we've rolled up our sleeves with hundreds of clients across a variety of industries to turn SEO
-          headaches into measurable wins. I don't really understand how a marketing subscription works — or why it's better.
-          Why would I switch to a subscription model
+          headaches into measurable wins. I don't really understand how a creative services works — or why it's better.
+          Why would I switch to a full-service model
         </p>
 
         {/* Cards Grid */}

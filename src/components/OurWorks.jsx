@@ -9,7 +9,7 @@ const caseStudies = [
   {
     brand: 'HTX',
     tagline: '$20M revenue in 180 days with HTX',
-    gradient: 'linear-gradient(135deg, #1e3a5f, #2563eb)',
+    gradient: '#a500fd',
     stats: [
       { value: '$20M', label: 'in deposits' },
       { value: '16.8%', label: 'conversion rate' },
@@ -20,7 +20,7 @@ const caseStudies = [
   {
     brand: 'Revolut',
     tagline: '500K new users in 90 days with Revolut',
-    gradient: 'linear-gradient(135deg, #1a1a2e, #4338ca)',
+    gradient: '#a500fd',
     stats: [
       { value: '500K', label: 'new users' },
       { value: '42%', label: 'lower CPA' },
@@ -31,7 +31,7 @@ const caseStudies = [
   {
     brand: 'Samsung',
     tagline: '3x engagement boost for Samsung campaign',
-    gradient: 'linear-gradient(135deg, #0c1445, #1d4ed8)',
+    gradient: '#a500fd',
     stats: [
       { value: '3x', label: 'engagement boost' },
       { value: '2.1M', label: 'impressions' },
@@ -71,7 +71,7 @@ const OurWorks = () => {
               className={`btn btn-sm rounded-pill px-3 py-1 fw-medium ${activeCategory === cat ? 'text-white' : 'text-secondary'}`}
               style={{
                 background: activeCategory === cat
-                  ? 'linear-gradient(135deg, #6366f1, #8b5cf6)'
+                  ? '#a500fd'
                   : 'transparent',
                 border: activeCategory === cat
                   ? 'none'

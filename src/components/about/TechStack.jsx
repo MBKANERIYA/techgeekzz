@@ -44,7 +44,7 @@ const TechStack = () => {
                 <div className="rounded-3 d-flex align-items-center justify-content-center flex-shrink-0"
                   style={{
                     width: '42px', height: '42px',
-                    background: `linear-gradient(135deg, ${tool.color}20, ${tool.color}08)`,
+                    background: 'rgba(165,0,253,0.1)',
                     border: `1px solid ${tool.color}18`,
                   }}>
                   <span className="fw-bold" style={{ color: tool.color, fontSize: '0.7rem' }}>{tool.abbr}</span>

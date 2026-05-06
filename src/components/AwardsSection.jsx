@@ -61,7 +61,7 @@ const AwardsSection = () => {
                 }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.borderColor = 'rgba(255,255,255,0.15)';
-                  e.currentTarget.style.boxShadow = '0 0 40px rgba(139,92,246,0.08)';
+                  e.currentTarget.style.boxShadow = '0 0 40px rgba(165,0,253,0.08)';
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.borderColor = 'rgba(255,255,255,0.06)';
@@ -80,7 +80,7 @@ const AwardsSection = () => {
                     transform: 'translateX(-50%)',
                     width: '200px',
                     height: '120px',
-                    background: 'radial-gradient(ellipse, rgba(139,92,246,0.08) 0%, transparent 70%)',
+                    background: 'transparent',
                     pointerEvents: 'none',
                   }}
                 />

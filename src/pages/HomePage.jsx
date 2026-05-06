@@ -2,7 +2,7 @@ import Hero from '../components/Hero';
 import LogoSlider from '../components/LogoSlider';
 import StatsSection from '../components/StatsSection';
 import ChallengesSection from '../components/ChallengesSection';
-import WhySubscription from '../components/WhySubscription';
+import WhyTechGeekz from '../components/WhySubscription';
 import TeamSection from '../components/TeamSection';
 import IndustriesSection from '../components/IndustriesSection';
 import OurWorks from '../components/OurWorks';
@@ -31,7 +31,7 @@ const HomePage = () => {
       <StatsSection />
       <ChallengesSection />
       <GlowDivider />
-      <WhySubscription />
+      <WhyTechGeekz />
       <TeamSection />
       <GlowDivider />
       <IndustriesSection />

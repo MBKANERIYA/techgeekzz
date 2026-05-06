@@ -5,7 +5,7 @@ const offices = [
     flag: "🇺🇸",
     address: "1411 Broadway, 16th Floor, New York, NY 10018",
     phone: "+1 929-492-4413",
-    email: "us@ninjapromo.io",
+    email: "us@TechGeekz.io",
     timezone: "EST (UTC-5)",
   },
   {
@@ -14,7 +14,7 @@ const offices = [
     flag: "🇬🇧",
     address: "71-75 Shelton Street, Covent Garden, London WC2H 9JQ",
     phone: "+44 20 3868 4672",
-    email: "uk@ninjapromo.io",
+    email: "uk@TechGeekz.io",
     timezone: "GMT (UTC+0)",
   },
   {
@@ -23,7 +23,7 @@ const offices = [
     flag: "🇸🇬",
     address: "68 Circular Road, #02-01, Singapore 049422",
     phone: "+65 3165 4789",
-    email: "sg@ninjapromo.io",
+    email: "sg@TechGeekz.io",
     timezone: "SGT (UTC+8)",
   },
   {
@@ -32,7 +32,7 @@ const offices = [
     flag: "🇦🇪",
     address: "Business Bay, Al Manara Tower, Office 2105, Dubai",
     phone: "+971 54 237 6132",
-    email: "uae@ninjapromo.io",
+    email: "uae@TechGeekz.io",
     timezone: "GST (UTC+4)",
   },
 ];
@@ -43,7 +43,7 @@ const ContactOffices = () => {
       <div className="container">
         <hr className="premium-divider" />
         <div className="text-center mb-5 pt-4">
-          <span className="d-inline-block rounded-pill px-3 py-1 mb-3" style={{ background: 'rgba(139,92,246,0.1)', border: '1px solid rgba(139,92,246,0.15)', color: '#c084fc', fontSize: '0.78rem', fontWeight: 600 }}>Global Presence</span>
+          <span className="d-inline-block rounded-pill px-3 py-1 mb-3" style={{ background: 'rgba(165,0,253,0.1)', border: '1px solid rgba(165,0,253,0.15)', color: '#a500fd', fontSize: '0.78rem', fontWeight: 600 }}>Global Presence</span>
           <h2 className="display-6 fw-bold text-white" style={{ letterSpacing: '-1px' }}>Our <span className="hero-gradient-text fst-italic">Offices</span></h2>
           <p className="text-secondary mx-auto" style={{ maxWidth: 480, fontSize: '0.9rem' }}>With teams across 4 continents, we are always within reach.</p>
         </div>
@@ -74,10 +74,10 @@ const ContactOffices = () => {
                   </div>
                   <div>
                     <div className="text-secondary mb-1" style={{ fontSize: '0.68rem', textTransform: 'uppercase', letterSpacing: '0.5px', fontWeight: 600 }}>Email</div>
-                    <a href={`mailto:${office.email}`} className="text-decoration-none" style={{ fontSize: '0.8rem', color: '#c084fc' }}>{office.email}</a>
+                    <a href={`mailto:${office.email}`} className="text-decoration-none" style={{ fontSize: '0.8rem', color: '#a500fd' }}>{office.email}</a>
                   </div>
-                  <div className="rounded-pill px-2 py-1 d-inline-block mt-1" style={{ background: 'rgba(139,92,246,0.08)', border: '1px solid rgba(139,92,246,0.12)', width: 'fit-content' }}>
-                    <span className="text-secondary" style={{ fontSize: '0.68rem' }}>🕐 {office.timezone}</span>
+                  <div className="rounded-pill px-2 py-1 d-inline-block mt-1" style={{ background: 'rgba(165,0,253,0.08)', border: '1px solid rgba(165,0,253,0.12)', width: 'fit-content' }}>
+                    <span className="text-secondary" style={{ fontSize: '0.68rem' }}> {office.timezone}</span>
                   </div>
                 </div>
               </div>

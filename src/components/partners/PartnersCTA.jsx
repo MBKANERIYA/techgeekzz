@@ -18,13 +18,13 @@ const PartnersCTA = () => {
         <hr className="premium-divider" />
         <div className="row g-5 align-items-start pt-4">
           <div className="col-lg-5">
-            <span className="d-inline-block rounded-pill px-3 py-1 mb-3" style={{ background: 'rgba(139,92,246,0.1)', border: '1px solid rgba(139,92,246,0.15)', color: '#c084fc', fontSize: '0.78rem', fontWeight: 600 }}>Join Us</span>
-            <h2 className="display-6 fw-bold text-white mb-4 fst-italic" style={{ letterSpacing: '-1px', lineHeight: 1.15 }}>Become a NinjaPromo Partner</h2>
+            <span className="d-inline-block rounded-pill px-3 py-1 mb-3" style={{ background: 'rgba(165,0,253,0.1)', border: '1px solid rgba(165,0,253,0.15)', color: '#a500fd', fontSize: '0.78rem', fontWeight: 600 }}>Join Us</span>
+            <h2 className="display-6 fw-bold text-white mb-4 fst-italic" style={{ letterSpacing: '-1px', lineHeight: 1.15 }}>Become a TechGeekz Partner</h2>
             <p className="text-secondary mb-4" style={{ fontSize: '0.9rem', lineHeight: 1.7 }}>Whether you are a technology platform, agency, or consultant — there is a partnership model built for you. Apply today.</p>
             <div className="d-flex flex-column gap-3">
               {["Dedicated partner manager", "Revenue sharing & co-selling", "Marketing assets & portal access", "Priority technical support", "Quarterly business reviews"].map((item, i) => (
                 <div key={i} className="d-flex align-items-center gap-2">
-                  <span style={{ color: '#8b5cf6', fontSize: '0.8rem' }}>✓</span>
+                  <span style={{ color: '#a500fd', fontSize: '0.8rem' }}>&#10003;</span>
                   <span className="text-secondary" style={{ fontSize: '0.85rem' }}>{item}</span>
                 </div>
               ))}
@@ -38,7 +38,7 @@ const PartnersCTA = () => {
 
               {submitted ? (
                 <div className="text-center py-5">
-                  <div style={{ fontSize: '3rem', marginBottom: 12 }}>🤝</div>
+                  <div style={{ fontSize: '2rem', marginBottom: 12, color: '#a500fd' }}>&#10003;</div>
                   <h4 className="fw-bold" style={{ color: '#1a1a1a' }}>Application Submitted!</h4>
                   <p style={{ color: '#666', fontSize: '0.85rem' }}>We will be in touch within 48 hours to discuss next steps.</p>
                 </div>
@@ -65,8 +65,8 @@ const PartnersCTA = () => {
                   <div className="mb-4">
                     <textarea className="form-control border-0 border-bottom rounded-0 px-0 py-2" rows="2" placeholder="Tell us about the partnership opportunity" value={formData.message} onChange={(e) => setFormData({ ...formData, message: e.target.value })} style={{ ...inputStyle, resize: 'vertical' }} />
                   </div>
-                  <button type="submit" className="btn w-100 rounded-pill py-3 fw-bold text-white mb-3" style={{ background: 'linear-gradient(135deg, #6366f1, #8b5cf6, #c084fc, #e879f9)', border: 'none', fontSize: '1rem', transition: 'transform 0.2s ease, box-shadow 0.2s ease' }}
-                    onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 6px 20px rgba(139,92,246,0.4)'; }}
+                  <button type="submit" className="btn w-100 rounded-pill py-3 fw-bold text-white mb-3" style={{ background: '#a500fd', border: 'none', fontSize: '1rem', transition: 'transform 0.2s ease, box-shadow 0.2s ease' }}
+                    onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 6px 20px rgba(165,0,253,0.4)'; }}
                     onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; }}
                   >Submit Application</button>
                   <p className="text-center mb-0" style={{ color: '#999', fontSize: '0.7rem' }}>By submitting, you agree to our <a href="#" style={{ color: '#555', textDecoration: 'underline' }}>Partner Terms</a> and <a href="#" style={{ color: '#555', textDecoration: 'underline' }}>Privacy Policy</a>.</p>

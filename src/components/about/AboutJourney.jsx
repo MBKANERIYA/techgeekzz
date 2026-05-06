@@ -1,9 +1,9 @@
 const milestones = [
-  { year: '2017', event: 'Founded with a vision to disrupt traditional agency models', dot: '#6366f1' },
-  { year: '2018', event: 'Reached 50+ active clients across 3 continents', dot: '#8b5cf6' },
-  { year: '2019', event: 'Launched subscription-based marketing model', dot: '#a855f7' },
-  { year: '2020', event: 'Grew to 100+ team members, fully remote', dot: '#c084fc' },
-  { year: '2021', event: 'Featured in Forbes as top marketing innovator', dot: '#d946ef' },
+  { year: '2017', event: 'Founded with a vision to disrupt traditional agency models', dot: '#a500fd' },
+  { year: '2018', event: 'Reached 50+ active clients across 3 continents', dot: '#a500fd' },
+  { year: '2019', event: 'Launched creative agency focused on measurable growth', dot: '#a855f7' },
+  { year: '2020', event: 'Grew to 100+ team members, fully remote', dot: '#a500fd' },
+  { year: '2021', event: 'Featured in Forbes as top marketing innovator', dot: '#a500fd' },
   { year: '2022', event: 'Expanded to 12 global offices', dot: '#ec4899' },
   { year: '2023', event: 'Surpassed $50M in managed ad spend for clients', dot: '#f43f5e' },
   { year: '2024', event: 'Named #1 Digital Marketing Agency for Startups on Clutch', dot: '#f97316' },
@@ -21,7 +21,7 @@ const AboutJourney = () => {
           {/* Vertical line */}
           <div style={{
             position: 'absolute', left: '28px', top: 0, bottom: 0, width: '2px',
-            background: 'linear-gradient(to bottom, #6366f1, #ec4899, #f97316)',
+            background: '#a500fd',
             opacity: 0.2, borderRadius: '1px',
           }} />
 

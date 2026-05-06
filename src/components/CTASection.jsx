@@ -1,8 +1,8 @@
 const bulletPoints = [
-  'How NinjaPromo works',
-  'How you can do marketing at scale better, faster and cheaper',
-  "How we're different from agencies, freelancers and in-house marketing teams (hint: we're 15x faster than hiring!)",
-  'The most suitable subscription plan for your needs',
+  'How TechGeekz can elevate your brand',
+  'A custom strategy tailored to your goals and budget',
+  'How our team handles branding, SEO, ads, and social media end-to-end',
+  'Clear timelines, deliverables, and results you can measure',
 ];
 
 const brands = ['Logitech', 'Bitcoin.com', 'Stripe', 'Samsung', 'HubSpot', 'BurgerKing'];
@@ -152,14 +152,14 @@ const CTASection = () => {
                   type="submit"
                   className="btn w-100 rounded-pill py-3 fw-bold text-white mb-3"
                   style={{
-                    background: 'linear-gradient(135deg, #6366f1, #8b5cf6, #c084fc, #e879f9)',
+                    background: '#a500fd',
                     border: 'none',
                     fontSize: '1rem',
                     transition: 'transform 0.2s ease, box-shadow 0.2s ease',
                   }}
                   onMouseEnter={(e) => {
                     e.currentTarget.style.transform = 'translateY(-2px)';
-                    e.currentTarget.style.boxShadow = '0 6px 20px rgba(139,92,246,0.4)';
+                    e.currentTarget.style.boxShadow = '0 6px 20px rgba(165,0,253,0.4)';
                   }}
                   onMouseLeave={(e) => {
                     e.currentTarget.style.transform = 'translateY(0)';
@@ -171,7 +171,7 @@ const CTASection = () => {
 
                 {/* Privacy */}
                 <p className="text-center mb-2" style={{ color: '#999', fontSize: '0.7rem', lineHeight: 1.5 }}>
-                  By clicking, you agree to receive communications from NinjaPromo
+                  By clicking, you agree to receive communications from TechGeekz
                   in accordance with our <a href="#" style={{ color: '#555', textDecoration: 'underline' }}>Privacy Policy</a>
                 </p>
 

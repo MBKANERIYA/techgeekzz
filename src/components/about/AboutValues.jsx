@@ -1,8 +1,8 @@
 const values = [
-  { icon: '🎯', title: 'Results-Driven', desc: 'We measure everything. Every campaign, every dollar, every outcome — tracked and optimized for maximum ROI.', accent: '#8b5cf6' },
-  { icon: '🤝', title: 'Client-First', desc: "Your goals are our goals. We don't just execute tasks — we become an extension of your team.", accent: '#3b82f6' },
-  { icon: '🚀', title: 'Innovation', desc: 'We stay ahead of trends, test new channels, and push creative boundaries to keep your brand relevant.', accent: '#ec4899' },
-  { icon: '🔬', title: 'Transparency', desc: 'No black boxes. You get full visibility into what we do, why we do it, and the results it drives.', accent: '#10b981' },
+  { icon: '', title: 'Results-Driven', desc: 'We measure everything. Every campaign, every dollar, every outcome — tracked and optimized for maximum ROI.', accent: '#a500fd' },
+  { icon: '', title: 'Client-First', desc: "Your goals are our goals. We don't just execute tasks — we become an extension of your team.", accent: '#3b82f6' },
+  { icon: '', title: 'Innovation', desc: 'We stay ahead of trends, test new channels, and push creative boundaries to keep your brand relevant.', accent: '#ec4899' },
+  { icon: '', title: 'Transparency', desc: 'No black boxes. You get full visibility into what we do, why we do it, and the results it drives.', accent: '#10b981' },
 ];
 
 const AboutValues = () => {
@@ -11,7 +11,7 @@ const AboutValues = () => {
       <div style={{
         position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
         width: '600px', height: '600px',
-        background: 'radial-gradient(circle, rgba(139,92,246,0.04) 0%, transparent 60%)',
+        background: 'transparent',
         pointerEvents: 'none',
       }} />
       <div className="container position-relative">
@@ -45,7 +45,7 @@ const AboutValues = () => {
                 <div style={{
                   position: 'absolute', top: '-30px', left: '50%', transform: 'translateX(-50%)',
                   width: '80px', height: '80px', borderRadius: '50%',
-                  background: `radial-gradient(circle, ${val.accent}15, transparent)`,
+                  background: 'transparent',
                   pointerEvents: 'none',
                 }} />
                 <div className="d-flex align-items-center justify-content-center mx-auto mb-3 rounded-circle"

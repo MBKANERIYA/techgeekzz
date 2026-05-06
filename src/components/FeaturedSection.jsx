@@ -1,12 +1,12 @@
 import { useState } from 'react';
 
 const mediaCards = [
-  { name: 'Analytics Insight', icon: '⊞', article: 'What Artificial Intelligence Can Bring to Digital Marketing in 2024' },
-  { name: 'CoinPedia.', icon: '', article: 'State of User Acquisition 2024 in Web3' },
-  { name: 'Cryptopolitan', icon: '◎', article: "What's Holding Up The Next Bull Run in 2024, and What Trends Will Fuel It" },
-  { name: 'Bitcoin.com', icon: '₿', article: 'Game-Changing Subscription Model for Marketing Services Unveiled by Ninjapromo.io' },
-  { name: 'TechCrunch', icon: '⚡', article: 'How Subscription Marketing Agencies Are Disrupting the Traditional Model' },
-  { name: 'Entrepreneur', icon: '🅔', article: '5 Reasons Performance Marketing Will Dominate 2025' },
+  { name: 'Search Engine Journal', icon: '', article: 'Why Local SEO Is the Biggest Growth Lever for Small Businesses in 2025' },
+  { name: 'Social Media Today', icon: '', article: 'The Shift From Organic to Paid: How Brands Are Adapting Their Social Strategy' },
+  { name: 'HubSpot Blog', icon: '', article: 'The Rise of Full-Service Creative Agencies in the Age of AI' },
+  { name: 'Adweek', icon: '', article: 'Performance Marketing Trends That Will Define the Next Decade' },
+  { name: 'Marketing Dive', icon: '', article: 'How Small Agencies Are Outperforming Big Firms on ROI' },
+  { name: 'Forbes', icon: '', article: 'Why Businesses Are Choosing Boutique Agencies Over Enterprise Firms' },
 ];
 
 const FeaturedSection = () => {
@@ -41,7 +41,7 @@ const FeaturedSection = () => {
           {/* Right - Description + CTA */}
           <div className="col-lg-6 d-flex flex-column align-items-lg-start">
             <p className="text-secondary mb-4" style={{ fontSize: '0.9rem', lineHeight: 1.7, maxWidth: '420px' }}>
-              NinjaPromo's founders shared insights with Forbes on the strategic advantages of partnering over contracting with service providers.
+              Industry thought leaders highlight the growing impact of boutique creative agencies in delivering better results than traditional enterprise firms.
             </p>
             <a
               href="#"

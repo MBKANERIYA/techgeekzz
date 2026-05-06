@@ -29,7 +29,7 @@ const plans = [
     highlighted: true,
   },
   {
-    tag: '👑 All inclusive',
+    tag: ' All inclusive',
     hours: 'Custom',
     priceMonth: '$20K-100K',
     priceHour: null,
@@ -82,7 +82,7 @@ const PricingSection = () => {
                 <span
                   className="fw-semibold"
                   style={{
-                    background: 'linear-gradient(135deg, #8b5cf6, #ec4899)',
+                    background: '#a500fd',
                     WebkitBackgroundClip: 'text',
                     WebkitTextFillColor: 'transparent',
                     backgroundClip: 'text',
@@ -104,7 +104,7 @@ const PricingSection = () => {
                 className="rounded-4 p-4 text-center h-100 d-flex flex-column justify-content-center"
                 style={{
                   background: plan.highlighted
-                    ? 'linear-gradient(135deg, #6366f1, #8b5cf6, #c084fc, #e879f9)'
+                    ? '#a500fd'
                     : '#111118',
                   border: plan.highlighted
                     ? 'none'
@@ -116,7 +116,7 @@ const PricingSection = () => {
                 onMouseEnter={(e) => {
                   e.currentTarget.style.transform = 'translateY(-4px)';
                   e.currentTarget.style.boxShadow = plan.highlighted
-                    ? '0 10px 40px rgba(139,92,246,0.3)'
+                    ? '0 10px 40px rgba(165,0,253,0.3)'
                     : '0 10px 30px rgba(0,0,0,0.3)';
                 }}
                 onMouseLeave={(e) => {
@@ -160,7 +160,7 @@ const PricingSection = () => {
                     style={{
                       background: plan.highlighted
                         ? 'none'
-                        : 'linear-gradient(135deg, #8b5cf6, #ec4899)',
+                        : '#a500fd',
                       WebkitBackgroundClip: plan.highlighted ? 'unset' : 'text',
                       WebkitTextFillColor: plan.highlighted ? '#fff' : 'transparent',
                       backgroundClip: plan.highlighted ? 'unset' : 'text',
@@ -175,7 +175,7 @@ const PricingSection = () => {
                     <>
                       <span className={`ms-2 fw-bold fst-italic ${plan.highlighted ? 'text-white' : ''}`}
                         style={!plan.highlighted ? {
-                          background: 'linear-gradient(135deg, #8b5cf6, #ec4899)',
+                          background: '#a500fd',
                           WebkitBackgroundClip: 'text',
                           WebkitTextFillColor: 'transparent',
                           backgroundClip: 'text',
@@ -224,7 +224,7 @@ const PricingSection = () => {
         <p
           className="fst-italic small mb-0"
           style={{
-            background: 'linear-gradient(135deg, #8b5cf6, #ec4899)',
+            background: '#a500fd',
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
             backgroundClip: 'text',

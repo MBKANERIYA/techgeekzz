@@ -1,7 +1,7 @@
 const steps = [
-  { step: '01', title: 'Discovery Call', desc: 'We learn about your business, goals, and challenges in a no-pressure intro call.', accent: '#6366f1' },
-  { step: '02', title: 'Strategy & Plan', desc: 'We build a custom strategy with clear deliverables, timelines, and KPIs.', accent: '#8b5cf6' },
-  { step: '03', title: 'Execute & Optimize', desc: 'Our team goes to work — launching, testing, and optimizing across all channels.', accent: '#c084fc' },
+  { step: '01', title: 'Discovery Call', desc: 'We learn about your business, goals, and challenges in a no-pressure intro call.', accent: '#a500fd' },
+  { step: '02', title: 'Strategy & Plan', desc: 'We build a custom strategy with clear deliverables, timelines, and KPIs.', accent: '#a500fd' },
+  { step: '03', title: 'Execute & Optimize', desc: 'Our team goes to work — launching, testing, and optimizing across all channels.', accent: '#a500fd' },
   { step: '04', title: 'Report & Scale', desc: 'Monthly reports, weekly calls, and continuous improvements to grow your ROI.', accent: '#ec4899' },
 ];
 
@@ -20,7 +20,7 @@ const AboutProcess = () => {
           {/* Connecting line */}
           <div className="d-none d-lg-block" style={{
             position: 'absolute', top: '50px', left: '15%', right: '15%', height: '2px',
-            background: 'linear-gradient(90deg, #6366f1, #8b5cf6, #c084fc, #ec4899)',
+            background: '#a500fd',
             opacity: 0.15, zIndex: 0,
           }} />
 
@@ -41,7 +41,7 @@ const AboutProcess = () => {
                 <div className="d-flex align-items-center justify-content-center mx-auto mb-3 rounded-circle"
                   style={{
                     width: '56px', height: '56px',
-                    background: `linear-gradient(135deg, ${p.accent}20, ${p.accent}05)`,
+                    background: 'rgba(165,0,253,0.1)',
                     border: `1px solid ${p.accent}25`,
                   }}>
                   <span className="fw-bold" style={{ color: p.accent, fontSize: '1.1rem' }}>{p.step}</span>

@@ -1,19 +1,19 @@
 const teamLeaders = [
-  { name: 'Alex Chen', role: 'CEO & Co-Founder', gradient: 'linear-gradient(135deg, #1e1b4b, #4338ca)', accent: '#6366f1' },
-  { name: 'Sarah Kim', role: 'COO & Co-Founder', gradient: 'linear-gradient(135deg, #7e22ce, #a855f7)', accent: '#a855f7' },
-  { name: 'Michael Torres', role: 'CTO', gradient: 'linear-gradient(135deg, #064e3b, #10b981)', accent: '#10b981' },
-  { name: 'Emily Davis', role: 'CMO', gradient: 'linear-gradient(135deg, #78350f, #d97706)', accent: '#d97706' },
+  { name: 'Alex Chen', role: 'CEO & Co-Founder', gradient: '#a500fd', accent: '#a500fd' },
+  { name: 'Sarah Kim', role: 'COO & Co-Founder', gradient: '#a500fd', accent: '#a855f7' },
+  { name: 'Michael Torres', role: 'CTO', gradient: '#a500fd', accent: '#10b981' },
+  { name: 'Emily Davis', role: 'CMO', gradient: '#a500fd', accent: '#d97706' },
 ];
 
 const teamMembers = [
-  { name: 'James Wilson', role: 'Head of SEO', gradient: 'linear-gradient(135deg, #1e3a5f, #3b82f6)' },
-  { name: 'Anna Park', role: 'Head of PPC', gradient: 'linear-gradient(135deg, #be185d, #f472b6)' },
-  { name: 'David Brown', role: 'Head of Design', gradient: 'linear-gradient(135deg, #0e7490, #22d3ee)' },
-  { name: 'Lisa Wang', role: 'Head of Content', gradient: 'linear-gradient(135deg, #ea580c, #fb923c)' },
-  { name: 'Ryan Clark', role: 'Sr. Strategist', gradient: 'linear-gradient(135deg, #065f46, #34d399)' },
-  { name: 'Sophie Miller', role: 'Sr. Developer', gradient: 'linear-gradient(135deg, #3730a3, #6366f1)' },
-  { name: 'Tom Anderson', role: 'Account Director', gradient: 'linear-gradient(135deg, #92400e, #f59e0b)' },
-  { name: 'Nina Patel', role: 'PR Manager', gradient: 'linear-gradient(135deg, #9f1239, #f43f5e)' },
+  { name: 'James Wilson', role: 'Head of SEO', gradient: '#a500fd' },
+  { name: 'Anna Park', role: 'Head of PPC', gradient: '#a500fd' },
+  { name: 'David Brown', role: 'Head of Design', gradient: '#a500fd' },
+  { name: 'Lisa Wang', role: 'Head of Content', gradient: '#a500fd' },
+  { name: 'Ryan Clark', role: 'Sr. Strategist', gradient: '#a500fd' },
+  { name: 'Sophie Miller', role: 'Sr. Developer', gradient: '#a500fd' },
+  { name: 'Tom Anderson', role: 'Account Director', gradient: '#a500fd' },
+  { name: 'Nina Patel', role: 'PR Manager', gradient: '#a500fd' },
 ];
 
 const AboutTeam = () => {
@@ -24,8 +24,8 @@ const AboutTeam = () => {
         <div className="container">
           <div className="text-center mb-5">
             <div className="d-inline-block rounded-pill px-3 py-1 mb-3" style={{
-              background: 'rgba(139,92,246,0.1)', border: '1px solid rgba(139,92,246,0.2)',
-              fontSize: '0.68rem', color: '#c084fc', letterSpacing: '2px', textTransform: 'uppercase', fontWeight: 600,
+              background: 'rgba(165,0,253,0.1)', border: '1px solid rgba(165,0,253,0.2)',
+              fontSize: '0.68rem', color: '#a500fd', letterSpacing: '2px', textTransform: 'uppercase', fontWeight: 600,
             }}>Leadership</div>
             <h2 className="text-white display-6 fw-bold fst-italic mb-2" style={{ letterSpacing: '-1px' }}>Meet the Leadership</h2>
             <p className="small mx-auto" style={{ maxWidth: '420px', color: 'rgba(255,255,255,0.4)' }}>

@@ -1,5 +1,35 @@
 # Changelog
 
+## 2026-04-29 -- Rebranding: NinjaPromo -> TechGeekz + Subscription Model Removal
+**What**: Replaced all NinjaPromo branding, copy, and subscription-based business model references with TechGeekz creative agency identity
+**Why**: Website content was copied from NinjaPromo and needed to be rebranded for TechGeekz (branding, SEO, ads, social media)
+**Files Changed**: 19+ files across `src/`
+- **Hero.jsx**: Rewrote headline ("We build brands that stand out and sell"), subheadline, and CTA
+- **CTASection.jsx**: Replaced NinjaPromo bullet points with TechGeekz service-focused messaging
+- **MissionStatement.jsx**: Rewrote "Our Story" copy for TechGeekz identity
+- **FeaturedSection.jsx**: Replaced NinjaPromo press mentions with industry-relevant articles
+- **IndustriesSection.jsx**: Removed subscription/hourly billing copy
+- **Footer.jsx**: Emails changed to @techgeekzservices.com
+- **ContactForm/ContactOffices/ContactFAQ**: Updated emails, pricing, FAQs
+- **All components**: "NinjaPromo" -> "TechGeekz", "ninjapromo.io" -> "techgeekzservices.com"
+- **Subscription language purge**: "subscription" -> "full-service"/"creative services" across 12 files
+- **ServicePageTemplate + ContactWhyUs**: "Why NinjaPromo" -> "Why Choose Us"
+- **Referral/Partners components**: All NinjaPromo references updated
+
+
+## 2026-04-29 -- Brand Color Overhaul: Gradients to Solid #a500fd + Emoji Removal
+**What**: Replaced all decorative gradients with solid brand color `#a500fd` and stripped all emojis
+**Why**: Site looked AI-generated due to purple-to-blue gradients everywhere; user wants a single clean brand color
+**Files Changed**: 50+ files across `src/`
+- **App.css**: `.hero-gradient-text` converted from background-clip text trick to `color: #a500fd`; `.btn-cta` from gradient to solid; scrollbar/selection/divider/glow-card rgba updated to `(165,0,253,...)`; `.challenge-card-active` changed from border-image to solid border
+- **All service pages (24 files)**: Removed emoji icons from config objects
+- **ServicePageTemplate.jsx**: Removed icon box containers, process step emoji spans, and empty whyUs icons; fixed submitted state and checkmark characters
+- **All component hex colors**: `#6366f1`, `#8b5cf6`, `#c084fc`, `#e879f9`, `#d946ef`, `#7c3aed`, `#a78bfa`, `#4338ca` all replaced with `#a500fd`
+- **All rgba colors**: `rgba(139,92,246,...)` and `rgba(99,102,241,...)` replaced with `rgba(165,0,253,...)`
+- **Removed decorative radial glow divs** from: ServicePageTemplate, ReferralHero, PartnersHero, ContactHero, BlogPage, BlogCategoryPage, AboutHero, AboutValues, MissionStatement, AwardsSection, ReferralAwards
+- **Kept functional gradients**: image overlays (dark-to-transparent), marquee mask, premium-divider fade, AboutTeam shadow overlay
+
+
 ## 2026-04-23 — Initial Project Setup
 **What**: Scaffolded React + Vite project
 **Why**: Starting a new frontend project

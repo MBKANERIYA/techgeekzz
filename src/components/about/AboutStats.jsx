@@ -1,6 +1,6 @@
 const AboutStats = () => {
   const stats = [
-    { num: '4,000+', label: 'Campaigns Launched', desc: 'Across SEO, PPC, social, email, and influencer marketing.', accent: '#8b5cf6' },
+    { num: '4,000+', label: 'Campaigns Launched', desc: 'Across SEO, PPC, social, email, and influencer marketing.', accent: '#a500fd' },
     { num: '96%', label: 'Client Retention Rate', desc: 'Our clients stay because we consistently deliver measurable growth.', accent: '#3b82f6' },
     { num: '3x', label: 'Average ROI', desc: 'The average return our clients see within the first 6 months.', accent: '#ec4899' },
   ];
@@ -34,7 +34,7 @@ const AboutStats = () => {
                     {stat.label}
                   </div>
                   <h3 className="fw-bold mb-3" style={{
-                    background: `linear-gradient(135deg, ${stat.accent}, ${stat.accent}99)`,
+                    background: '#a500fd',
                     WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
                     fontSize: '2.8rem', letterSpacing: '-1px',
                   }}>{stat.num}</h3>

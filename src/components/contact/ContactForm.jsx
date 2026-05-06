@@ -29,15 +29,15 @@ const ContactForm = () => {
 
             <div className="d-flex flex-column gap-4">
               {[
-                { icon: "📧", label: "Email Us", value: "hello@ninjapromo.io", href: "mailto:hello@ninjapromo.io" },
-                { icon: "📞", label: "Call Us", value: "+1 929-492-4413", href: "tel:+19294924413" },
-                { icon: "💬", label: "Live Chat", value: "Available Mon-Fri, 9am-6pm EST", href: "#" },
+                { icon: "", label: "Email Us", value: "hello@TechGeekz.io", href: "mailto:hello@TechGeekz.io" },
+                { icon: "", label: "Call Us", value: "+1 929-492-4413", href: "tel:+19294924413" },
+                { icon: "", label: "Live Chat", value: "Available Mon-Fri, 9am-6pm EST", href: "#" },
               ].map((item, i) => (
                 <a key={i} href={item.href} className="d-flex align-items-start gap-3 text-decoration-none rounded-4 p-3" style={{ background: '#12121a', border: '1px solid rgba(255,255,255,0.06)', transition: 'border-color 0.3s' }}
-                  onMouseEnter={(e) => e.currentTarget.style.borderColor = 'rgba(139,92,246,0.25)'}
+                  onMouseEnter={(e) => e.currentTarget.style.borderColor = 'rgba(165,0,253,0.25)'}
                   onMouseLeave={(e) => e.currentTarget.style.borderColor = 'rgba(255,255,255,0.06)'}
                 >
-                  <div className="d-flex align-items-center justify-content-center rounded-3 flex-shrink-0" style={{ width: 44, height: 44, background: 'rgba(139,92,246,0.1)', border: '1px solid rgba(139,92,246,0.2)' }}>
+                  <div className="d-flex align-items-center justify-content-center rounded-3 flex-shrink-0" style={{ width: 44, height: 44, background: 'rgba(165,0,253,0.1)', border: '1px solid rgba(165,0,253,0.2)' }}>
                     <span style={{ fontSize: '1.1rem' }}>{item.icon}</span>
                   </div>
                   <div>
@@ -54,7 +54,7 @@ const ContactForm = () => {
               <div className="d-flex gap-3">
                 {["Facebook", "X", "LinkedIn", "Instagram", "YouTube"].map((name, i) => (
                   <a key={i} href="#" className="d-flex align-items-center justify-content-center rounded-circle text-decoration-none" style={{ width: 40, height: 40, background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)', color: 'rgba(255,255,255,0.5)', fontSize: '0.75rem', fontWeight: 600, transition: 'all 0.3s' }}
-                    onMouseEnter={(e) => { e.currentTarget.style.borderColor = 'rgba(139,92,246,0.3)'; e.currentTarget.style.color = '#c084fc'; }}
+                    onMouseEnter={(e) => { e.currentTarget.style.borderColor = 'rgba(165,0,253,0.3)'; e.currentTarget.style.color = '#a500fd'; }}
                     onMouseLeave={(e) => { e.currentTarget.style.borderColor = 'rgba(255,255,255,0.08)'; e.currentTarget.style.color = 'rgba(255,255,255,0.5)'; }}
                   >{name.charAt(0)}</a>
                 ))}
@@ -70,7 +70,7 @@ const ContactForm = () => {
 
               {submitted ? (
                 <div className="text-center py-5">
-                  <div style={{ fontSize: '3rem', marginBottom: 12 }}>✅</div>
+                  <div style={{ fontSize: '2rem', marginBottom: 12, color: '#a500fd' }}>&#10003;</div>
                   <h4 className="fw-bold" style={{ color: '#1a1a1a' }}>Message Sent!</h4>
                   <p style={{ color: '#666', fontSize: '0.85rem' }}>Our team will review your inquiry and respond within 24 hours.</p>
                 </div>
@@ -108,8 +108,8 @@ const ContactForm = () => {
                   <div className="mt-3 mb-4">
                     <textarea className="form-control border-0 border-bottom rounded-0 px-0 py-2" rows="3" placeholder="Tell us about your project..." value={formData.message} onChange={(e) => setFormData({ ...formData, message: e.target.value })} style={{ ...inputStyle, resize: 'vertical' }} />
                   </div>
-                  <button type="submit" className="btn w-100 rounded-pill py-3 fw-bold text-white mb-3" style={{ background: 'linear-gradient(135deg, #6366f1, #8b5cf6, #c084fc, #e879f9)', border: 'none', fontSize: '1rem', transition: 'transform 0.2s ease, box-shadow 0.2s ease' }}
-                    onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 6px 20px rgba(139,92,246,0.4)'; }}
+                  <button type="submit" className="btn w-100 rounded-pill py-3 fw-bold text-white mb-3" style={{ background: '#a500fd', border: 'none', fontSize: '1rem', transition: 'transform 0.2s ease, box-shadow 0.2s ease' }}
+                    onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 6px 20px rgba(165,0,253,0.4)'; }}
                     onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; }}
                   >Send Message</button>
                   <p className="text-center mb-0" style={{ color: '#999', fontSize: '0.7rem' }}>By submitting, you agree to our <a href="#" style={{ color: '#555', textDecoration: 'underline' }}>Privacy Policy</a>.</p>

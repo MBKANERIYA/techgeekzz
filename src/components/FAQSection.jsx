@@ -2,12 +2,12 @@ import { useState } from 'react';
 
 const faqs = [
   {
-    question: 'Does the subscription have limits?',
-    answer: "No. Your subscription gives you access to a full marketing team across all channels. The only limit is the number of hours in your plan — and you can always scale up or shift focus between services as needed.",
+    question: 'Are there limits on what you can deliver?',
+    answer: "No. You get access to a full creative team across all channels. We scope each project based on your goals and you can always scale up or shift focus between services as needed.",
   },
   {
-    question: 'Can I cancel the subscription anytime?',
-    answer: "Yes. We believe in earning your business every month. You can cancel your subscription at the end of any billing cycle — no penalties, no lock-ins, no fine print.",
+    question: 'Are there long-term contracts?',
+    answer: "We believe in earning your business through results. Our engagements are flexible -- no long-term lock-ins, no penalties. Stay because it works.",
   },
   {
     question: 'Can I choose the team I work with?',

@@ -4,25 +4,25 @@ const reasons = [
   {
     title: 'Full Coverage',
     subtitle: 'Every channel, one team',
-    gradient: 'linear-gradient(135deg, #34d399, #10b981)',
+    gradient: '#a500fd',
     description: "Instead of managing separate agencies for SEO, PPC, content, and design, you get a unified team that collaborates internally. Everyone works toward your business results — not isolated KPIs — so strategy, execution, and outcomes stay fully connected.",
   },
   {
     title: 'Unified Strategy',
     subtitle: 'No more disconnected efforts.',
-    gradient: 'linear-gradient(135deg, #a78bfa, #7c3aed)',
+    gradient: '#a500fd',
     description: "We build a single, cohesive plan across channels — so your campaigns support each other, your messaging stays consistent, and every move drives toward one business outcome.",
   },
   {
     title: 'Clarity & Control',
     subtitle: "You always know what's happening — and why.",
-    gradient: 'linear-gradient(135deg, #fde68a, #f59e0b)',
+    gradient: '#a500fd',
     description: "With crystal-clear billing, weekly updates, and structured task tracking, you have full visibility into progress, priorities, and performance. No hidden hours, no scattered reports.",
   },
   {
     title: 'Time Efficiency',
     subtitle: 'You get a team — without managing one.',
-    gradient: 'linear-gradient(135deg, #fca5a5, #ef4444)',
+    gradient: '#a500fd',
     description: "No hiring. No micromanagement. Our team runs autonomously, aligned to your goals, and communicates proactively — so you focus on growth, not day-to-day oversight.",
   },
 ];
@@ -30,7 +30,7 @@ const reasons = [
 // Stagger offsets for bottom-left → top-right (padding-top values)
 const staggerOffsets = [300, 220, 130, 40];
 
-const WhySubscription = () => {
+const WhyTechGeekz = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
@@ -38,7 +38,7 @@ const WhySubscription = () => {
       <div className="container">
         {/* Heading */}
         <h2 className="text-white text-center display-5 fw-bold fst-italic mb-5 pb-3" style={{ letterSpacing: '-1px' }}>
-          Why Subscription-Based Digital
+          Why Full-Service Digital
           <br />
           Marketing Works Better
           <br />
@@ -117,7 +117,7 @@ const WhySubscription = () => {
           className="rounded-4 text-center py-4 px-4 mx-auto"
           style={{
             border: '1px solid transparent',
-            borderImage: 'linear-gradient(135deg, #3b82f6, #8b5cf6, #ec4899) 1',
+            borderImage: '#a500fd 1',
             maxWidth: '800px',
           }}
         >
@@ -127,13 +127,13 @@ const WhySubscription = () => {
           <p className="mb-0" style={{ fontSize: '0.95rem' }}>
             <span
               style={{
-                background: 'linear-gradient(135deg, #8b5cf6, #c084fc)',
+                background: '#a500fd',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
                 backgroundClip: 'text',
               }}
             >
-              With our subscription
+              With our full-service model
             </span>
             <span className="text-white">, you get a full team focused on delivering them</span>
           </p>
@@ -143,4 +143,4 @@ const WhySubscription = () => {
   );
 };
 
-export default WhySubscription;
+export default WhyTechGeekz;

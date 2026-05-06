@@ -107,7 +107,7 @@ export const blogPosts = [
       [
         { heading: 'Phase 1: $10K-$50K/month', content: 'Focus on product-market fit and unit economics. Your Customer Acquisition Cost (CAC) must be below 30% of your Average Order Value (AOV). Nail your core offer, build a high-converting product page, and master one acquisition channel before diversifying.' },
         { heading: 'Phase 2: $50K-$250K/month', content: 'Introduce a second acquisition channel and build your email marketing engine. At this stage, email should drive 25-35% of revenue. Implement abandoned cart recovery, post-purchase sequences, and a VIP loyalty program.' },
-        { heading: 'Phase 3: $250K-$1M/month', content: 'Scale requires operational excellence. Invest in inventory management, fulfilment optimisation, and customer service infrastructure. Expand to 3-4 acquisition channels, launch a subscription or replenishment model, and build a community around your brand.' },
+        { heading: 'Phase 3: $250K-$1M/month', content: 'Scale requires operational excellence. Invest in inventory management, fulfilment optimisation, and customer service infrastructure. Expand to 3-4 acquisition channels, launch a recurring revenue or replenishment model, and build a community around your brand.' },
       ]
     ),
   },
@@ -242,7 +242,7 @@ export const getRelatedPosts = (post, count = 3) =>
     .slice(0, count);
 
 export const tagColors = {
-  SEO: '#6366f1', PPC: '#f59e0b', 'Social Media': '#ec4899', AI: '#8b5cf6',
+  SEO: '#a500fd', PPC: '#f59e0b', 'Social Media': '#ec4899', AI: '#a500fd',
   Email: '#14b8a6', Design: '#f472b6', Ecommerce: '#22c55e', B2B: '#3b82f6',
-  Content: '#a78bfa', 'Digital Marketing': '#c084fc', Guides: '#6366f1', Strategies: '#f59e0b',
+  Content: '#a500fd', 'Digital Marketing': '#a500fd', Guides: '#a500fd', Strategies: '#f59e0b',
 };

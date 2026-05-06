@@ -33,16 +33,14 @@ const BlogCategoryPage = () => {
     <div>
       {/* ═══════ HERO ═══════ */}
       <section className="position-relative overflow-hidden" style={{ paddingTop: '8rem', paddingBottom: '3rem' }}>
-        <div style={{ position: 'absolute', width: 500, height: 500, borderRadius: '50%', background: 'radial-gradient(circle, rgba(139,92,246,0.12) 0%, transparent 70%)', top: '-15%', left: '50%', transform: 'translateX(-50%)', filter: 'blur(80px)', pointerEvents: 'none', zIndex: 1 }} />
-
         <div className="container position-relative text-center" style={{ zIndex: 2 }}>
           {/* Breadcrumb */}
           <div className="d-flex align-items-center justify-content-center gap-2 mb-3">
             <Link to="/blog" className="text-decoration-none" style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.82rem' }}
-              onMouseEnter={e => e.currentTarget.style.color = '#c084fc'}
+              onMouseEnter={e => e.currentTarget.style.color = '#a500fd'}
               onMouseLeave={e => e.currentTarget.style.color = 'rgba(255,255,255,0.5)'}>TechGeekz Academy</Link>
             <span style={{ color: 'rgba(255,255,255,0.25)', fontSize: '0.8rem' }}>›</span>
-            <span style={{ color: '#c084fc', fontSize: '0.82rem', fontWeight: 600 }}>{meta.title}</span>
+            <span style={{ color: '#a500fd', fontSize: '0.82rem', fontWeight: 600 }}>{meta.title}</span>
           </div>
 
           <h1 className="display-4 fw-bold text-white mb-3" style={{ letterSpacing: '-2px' }}>{meta.title}</h1>
@@ -55,7 +53,7 @@ const BlogCategoryPage = () => {
                 <button key={f} onClick={() => setActive(f)} className="btn rounded-pill px-4 py-2 fw-medium" style={{
                   fontSize: '0.8rem', border: '1px solid', transition: 'all 0.3s ease',
                   ...(active === f
-                    ? { background: 'linear-gradient(135deg, #6366f1, #8b5cf6)', color: '#fff', borderColor: 'transparent' }
+                    ? { background: '#a500fd', color: '#fff', borderColor: 'transparent' }
                     : { background: 'transparent', color: 'rgba(255,255,255,0.6)', borderColor: 'rgba(255,255,255,0.12)' }),
                 }}>{f}</button>
               ))}
@@ -70,7 +68,7 @@ const BlogCategoryPage = () => {
           <div className="d-flex align-items-center rounded-pill px-4" style={{ background: '#12121a', border: '1px solid rgba(255,255,255,0.08)', height: 52 }}>
             <input type="text" value={search} onChange={e => setSearch(e.target.value)} placeholder="SEARCH ..."
               className="flex-grow-1 border-0" style={{ background: 'transparent', color: '#fff', fontSize: '0.85rem', outline: 'none', letterSpacing: '1px' }} />
-            <div className="d-flex align-items-center justify-content-center rounded-circle" style={{ width: 34, height: 34, background: 'linear-gradient(135deg, #6366f1, #8b5cf6)', flexShrink: 0 }}>
+            <div className="d-flex align-items-center justify-content-center rounded-circle" style={{ width: 34, height: 34, background: '#a500fd', flexShrink: 0 }}>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2.5" strokeLinecap="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
             </div>
           </div>
@@ -90,7 +88,7 @@ const BlogCategoryPage = () => {
                 <div key={post.id} className="col-xl-3 col-lg-4 col-md-6">
                   <Link to={`/blog/post/${slugify(post.title)}`} className="text-decoration-none">
                     <div className="h-100 rounded-4 overflow-hidden glow-card" style={{ background: '#12121a', border: '1px solid rgba(255,255,255,0.06)', transition: 'transform 0.3s ease, box-shadow 0.3s ease' }}
-                      onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-5px)'; e.currentTarget.style.boxShadow = '0 12px 40px rgba(139,92,246,0.12)'; }}
+                      onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-5px)'; e.currentTarget.style.boxShadow = '0 12px 40px rgba(165,0,253,0.12)'; }}
                       onMouseLeave={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; }}>
                       <div style={{ height: 180, overflow: 'hidden' }}>
                         <img src={post.img} alt={post.title} style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s ease' }}
@@ -100,7 +98,7 @@ const BlogCategoryPage = () => {
                       <div className="p-3">
                         <div className="d-flex flex-wrap gap-2 mb-2">
                           {post.tags.map((t, j) => (
-                            <span key={j} style={{ ...tagStyle, color: '#6366f1' }}>{t}</span>
+                            <span key={j} style={{ ...tagStyle, color: '#a500fd' }}>{t}</span>
                           ))}
                         </div>
                         <h6 className="text-white fw-bold mb-3" style={{ fontSize: '0.88rem', lineHeight: 1.4 }}>{post.title}</h6>
@@ -126,8 +124,7 @@ const BlogCategoryPage = () => {
       {/* ═══════ CTA ═══════ */}
       <section style={{ padding: '5rem 0' }}>
         <div className="container">
-          <div className="rounded-4 p-5 text-center position-relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #1a1028 0%, #0f0f1a 50%, #1a1028 100%)', border: '1px solid rgba(139,92,246,0.2)' }}>
-            <div style={{ position: 'absolute', width: 400, height: 400, borderRadius: '50%', background: 'radial-gradient(circle, rgba(139,92,246,0.12) 0%, transparent 70%)', top: '-30%', left: '50%', transform: 'translateX(-50%)', filter: 'blur(80px)', pointerEvents: 'none' }} />
+          <div className="rounded-4 p-5 text-center position-relative overflow-hidden" style={{ background: '#1a1028', border: '1px solid rgba(165,0,253,0.2)' }}>
             <div className="position-relative" style={{ zIndex: 1 }}>
               <h3 className="display-5 fw-bold text-white mb-3">Ready to Take Your Marketing to the <span className="hero-gradient-text fst-italic">Next Level?</span></h3>
               <p className="text-secondary fs-5 mx-auto mb-4" style={{ maxWidth: 550 }}>Let our team of experts create a custom strategy tailored to your business goals.</p>

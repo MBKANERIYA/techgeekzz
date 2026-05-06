@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const servicesData = [
   {
-    icon: '🔵', title: 'SEO', titleHref: '/services/seo',
+    icon: '', title: 'SEO', titleHref: '/services/seo',
     links: [
       { label: 'Local', href: '/services/seo/local' },
       { label: 'Technical', href: '/services/seo/technical' },
@@ -13,7 +13,7 @@ const servicesData = [
     ],
   },
   {
-    icon: '🟠', title: 'Paid Advertising', titleHref: '/services/paid-advertising',
+    icon: '', title: 'Paid Advertising', titleHref: '/services/paid-advertising',
     links: [
       { label: 'Google Ads', href: '/services/paid-advertising/google-ads' },
       { label: 'Facebook Ads', href: '/services/paid-advertising/facebook-ads' },
@@ -24,7 +24,7 @@ const servicesData = [
     ],
   },
   {
-    icon: '🟣', title: 'Digital Design', titleHref: '/services/digital-design',
+    icon: '', title: 'Digital Design', titleHref: '/services/digital-design',
     links: [
       { label: 'Web Design', href: '/services/digital-design/web-design' },
       { label: 'UI/UX Design', href: '/services/digital-design/ui-ux-design' },
@@ -34,13 +34,13 @@ const servicesData = [
 ];
 
 const servicesRight = [
-  { icon: '🔵', title: 'Social Media', href: '/services/social-media' },
-  { icon: '🟠', title: 'Email Marketing', href: '/services/email-marketing' },
-  { icon: '🟢', title: 'CRO', href: '/services/cro' },
-  { icon: '🔴', title: 'Public Relations', href: '/services/public-relations' },
-  { icon: '🟣', title: 'Digital Marketing Strategy', href: '/services/digital-strategy' },
-  { icon: '📊', title: 'Web Analytics', href: '/services/web-analytics' },
-  { icon: '🔵', title: 'AI Marketing', href: '/services/ai-marketing' },
+  { icon: '', title: 'Social Media', href: '/services/social-media' },
+  { icon: '', title: 'Email Marketing', href: '/services/email-marketing' },
+  { icon: '', title: 'CRO', href: '/services/cro' },
+  { icon: '', title: 'Public Relations', href: '/services/public-relations' },
+  { icon: '', title: 'Digital Marketing Strategy', href: '/services/digital-strategy' },
+  { icon: '', title: 'Web Analytics', href: '/services/web-analytics' },
+  { icon: '', title: 'AI Marketing', href: '/services/ai-marketing' },
 ];
 
 const Navbar = () => {
@@ -82,7 +82,7 @@ const Navbar = () => {
       style={{ background: '#141420', border: '1px solid rgba(255,255,255,0.06)' }}>
       {items.map((item, i) => (
         <li key={i}><a className="dropdown-item rounded-3 py-2 text-white" href="#" style={{ fontSize: '0.85rem' }}
-          onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(139,92,246,0.15)'}
+          onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(165,0,253,0.15)'}
           onMouseLeave={(e) => e.currentTarget.style.background = 'transparent'}
         >{item}</a></li>
       ))}
@@ -170,7 +170,7 @@ const Navbar = () => {
                                 onClick={closeDropdown}
                                 className="text-decoration-none d-flex align-items-center gap-1"
                                 style={{ color: 'rgba(255,255,255,0.45)', fontSize: '0.78rem', transition: 'color 0.2s' }}
-                                onMouseEnter={(e) => e.currentTarget.style.color = '#c084fc'}
+                                onMouseEnter={(e) => e.currentTarget.style.color = '#a500fd'}
                                 onMouseLeave={(e) => e.currentTarget.style.color = 'rgba(255,255,255,0.45)'}
                               >
                                 <span style={{ fontSize: '0.5rem', color: 'rgba(255,255,255,0.2)' }}>•</span>
@@ -192,7 +192,7 @@ const Navbar = () => {
                             onClick={closeDropdown}
                             className="d-flex align-items-center gap-2 text-decoration-none py-1 px-2 rounded-3"
                             style={{ color: '#fff', fontSize: '0.82rem', transition: 'background 0.2s' }}
-                            onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(139,92,246,0.1)'}
+                            onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(165,0,253,0.1)'}
                             onMouseLeave={(e) => e.currentTarget.style.background = 'transparent'}
                           >
                             <span style={{ fontSize: '0.7rem' }}>{svc.icon}</span>
@@ -239,7 +239,7 @@ const Navbar = () => {
                 >
                   <div className="d-flex gap-4">
                     <div style={{ flex: 1, borderRight: '1px solid rgba(255,255,255,0.06)', paddingRight: '24px' }}>
-                      <h5 className="text-white fw-bold mb-3" style={{ fontSize: '1.1rem' }}>Ninja Academy</h5>
+                      <h5 className="text-white fw-bold mb-3" style={{ fontSize: '1.1rem' }}>TechGeekz Academy</h5>
                       <p style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.8rem', lineHeight: 1.6 }}>
                         Access in-depth guides, cutting-edge strategies, and insider insights to stay ahead of the curve.
                       </p>
@@ -255,7 +255,7 @@ const Navbar = () => {
                         ].map((link, j) => (
                           <Link key={j} to={`/blog/${link.slug}`} onClick={closeDropdown} className="text-decoration-none fw-medium py-1"
                             style={{ color: '#fff', fontSize: '0.85rem', transition: 'color 0.2s' }}
-                            onMouseEnter={(e) => e.currentTarget.style.color = '#c084fc'}
+                            onMouseEnter={(e) => e.currentTarget.style.color = '#a500fd'}
                             onMouseLeave={(e) => e.currentTarget.style.color = '#fff'}
                           >{link.label}</Link>
                         ))}
@@ -304,7 +304,7 @@ const Navbar = () => {
                         {[{ label: 'About Us', href: '/about' }, { label: 'Referral Program', href: '/referral' }, { label: 'Rewards And Recognition', href: '#' }, { label: 'Marketing And Technology Partners', href: '/partners' }, { label: 'Careers', href: '#' }, { label: 'Events', href: '#' }, { label: 'Contacts', href: '/contact' }].map((link, j) => (
                           <Link key={j} to={link.href} className="text-decoration-none fw-medium py-1"
                             style={{ color: '#fff', fontSize: '0.85rem', transition: 'color 0.2s' }}
-                            onMouseEnter={(e) => e.currentTarget.style.color = '#c084fc'}
+                            onMouseEnter={(e) => e.currentTarget.style.color = '#a500fd'}
                             onMouseLeave={(e) => e.currentTarget.style.color = '#fff'}
                             onClick={closeDropdown}
                           >{link.label}</Link>

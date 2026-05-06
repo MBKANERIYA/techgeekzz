@@ -13,7 +13,7 @@ const ReferralAwards = () => {
       <div className="container">
         <hr className="premium-divider" />
         <div className="text-center mb-5 pt-4">
-          <span className="d-inline-block rounded-pill px-3 py-1 mb-3" style={{ background: 'rgba(139,92,246,0.1)', border: '1px solid rgba(139,92,246,0.15)', color: '#c084fc', fontSize: '0.78rem', fontWeight: 600 }}>Recognition</span>
+          <span className="d-inline-block rounded-pill px-3 py-1 mb-3" style={{ background: 'rgba(165,0,253,0.1)', border: '1px solid rgba(165,0,253,0.15)', color: '#a500fd', fontSize: '0.78rem', fontWeight: 600 }}>Recognition</span>
           <h2 className="display-6 fw-bold text-white fst-italic" style={{ letterSpacing: '-1px' }}>Award-Winning <span className="hero-gradient-text">Agency</span></h2>
         </div>
 
@@ -39,7 +39,7 @@ const ReferralAwards = () => {
                 </svg>
 
                 {/* Top glow */}
-                <div className="position-absolute" style={{ top: '-60px', left: '50%', transform: 'translateX(-50%)', width: '200px', height: '120px', background: 'radial-gradient(ellipse, rgba(139,92,246,0.08) 0%, transparent 70%)', pointerEvents: 'none' }} />
+                <div className="position-absolute" style={{ top: '-60px', left: '50%', transform: 'translateX(-50%)', width: '200px', height: '120px', background: 'transparent', pointerEvents: 'none' }} />
 
                 {/* Logo */}
                 <h3 className="text-white fw-bold mb-3 position-relative" style={{

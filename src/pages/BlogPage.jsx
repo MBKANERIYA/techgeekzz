@@ -33,18 +33,16 @@ const BlogPage = () => {
     <div>
       {/* ═══════ HERO ═══════ */}
       <section className="d-flex align-items-center position-relative overflow-hidden" style={{ minHeight: '60vh', paddingTop: '2rem', paddingBottom: '4rem' }}>
-        <div style={{ position: 'absolute', width: 500, height: 500, borderRadius: '50%', background: 'radial-gradient(circle, rgba(139,92,246,0.15) 0%, transparent 70%)', top: '-10%', right: '-5%', filter: 'blur(80px)', pointerEvents: 'none', zIndex: 1 }} />
-        <div style={{ position: 'absolute', width: 400, height: 400, borderRadius: '50%', background: 'radial-gradient(circle, rgba(99,102,241,0.1) 0%, transparent 70%)', bottom: '-15%', left: '-5%', filter: 'blur(80px)', pointerEvents: 'none', zIndex: 1 }} />
         <div className="container position-relative text-center" style={{ zIndex: 2 }}>
-          <div className="d-inline-flex align-items-center gap-2 rounded-pill px-3 py-2 mb-4" style={{ background: 'rgba(139,92,246,0.1)', border: '1px solid rgba(139,92,246,0.2)' }}>
-            <span style={{ fontSize: '0.85rem' }}>📝</span>
-            <span style={{ fontSize: '0.78rem', color: '#c084fc', fontWeight: 600 }}>TechGeekz Academy</span>
+          <div className="d-inline-flex align-items-center gap-2 rounded-pill px-3 py-2 mb-4" style={{ background: 'rgba(165,0,253,0.1)', border: '1px solid rgba(165,0,253,0.2)' }}>
+            <span style={{ fontSize: '0.85rem' }}></span>
+            <span style={{ fontSize: '0.78rem', color: '#a500fd', fontWeight: 600 }}>TechGeekz Academy</span>
           </div>
           <h1 className="display-3 fw-bold text-white mb-4" style={{ lineHeight: 1.05, letterSpacing: '-2px' }}>
             Welcome to the<br /><span className="hero-gradient-text fst-italic fw-normal">TechGeekz Blog</span>
           </h1>
           <p className="text-secondary fs-5 mx-auto mb-0" style={{ maxWidth: 600, lineHeight: 1.7 }}>
-            In-depth guides, cutting-edge strategies, and insider insights to help you <strong style={{ color: '#c084fc' }}>stay ahead of the curve</strong>.
+            In-depth guides, cutting-edge strategies, and insider insights to help you <strong style={{ color: '#a500fd' }}>stay ahead of the curve</strong>.
           </p>
         </div>
       </section>
@@ -61,7 +59,7 @@ const BlogPage = () => {
                 className="btn rounded-pill px-3 py-1 fw-medium" style={{
                   fontSize: '0.78rem', border: '1px solid', transition: 'all 0.3s ease',
                   ...(active === c
-                    ? { background: 'linear-gradient(135deg, #6366f1, #8b5cf6)', color: '#fff', borderColor: 'transparent' }
+                    ? { background: '#a500fd', color: '#fff', borderColor: 'transparent' }
                     : { background: 'transparent', color: 'rgba(255,255,255,0.6)', borderColor: 'rgba(255,255,255,0.12)' }),
                 }}>{c}</button>
             ))}
@@ -82,7 +80,7 @@ const BlogPage = () => {
                     <div style={{ position: 'absolute', bottom: 24, left: 28, right: 28 }}>
                       <div className="d-flex gap-2 mb-2">
                         {featuredMain.tags.map((t, i) => (
-                          <span key={i} className="rounded-pill px-2 py-1" style={{ ...tagStyle, color: '#fff', background: 'rgba(139,92,246,0.4)', fontSize: '0.65rem' }}>{t}</span>
+                          <span key={i} className="rounded-pill px-2 py-1" style={{ ...tagStyle, color: '#fff', background: 'rgba(165,0,253,0.4)', fontSize: '0.65rem' }}>{t}</span>
                         ))}
                       </div>
                       <h3 className="text-white fw-bold mb-2" style={{ fontSize: '1.35rem', lineHeight: 1.3 }}>{featuredMain.title}</h3>
@@ -91,7 +89,7 @@ const BlogPage = () => {
                   </div>
                   <div className="px-4 py-3 d-flex justify-content-between align-items-center">
                     <div className="d-flex align-items-center gap-2">
-                      <div className="rounded-circle d-flex align-items-center justify-content-center" style={{ width: 28, height: 28, background: 'linear-gradient(135deg, #6366f1, #8b5cf6)', fontSize: '0.7rem', color: '#fff', fontWeight: 700 }}>{featuredMain.author.charAt(0)}</div>
+                      <div className="rounded-circle d-flex align-items-center justify-content-center" style={{ width: 28, height: 28, background: '#a500fd', fontSize: '0.7rem', color: '#fff', fontWeight: 700 }}>{featuredMain.author.charAt(0)}</div>
                       <span style={{ fontSize: '0.78rem', color: 'rgba(255,255,255,0.5)' }}>{featuredMain.author}</span>
                     </div>
                     <div className="d-flex align-items-center gap-3">
@@ -104,12 +102,12 @@ const BlogPage = () => {
             </div>
 
             <div className="col-lg-5">
-              <h5 className="fw-bold mb-3" style={{ color: '#c084fc', fontSize: '1rem' }}>Featured articles</h5>
+              <h5 className="fw-bold mb-3" style={{ color: '#a500fd', fontSize: '1rem' }}>Featured articles</h5>
               <div className="d-flex flex-column gap-3">
                 {featuredSidebar.map((a, i) => (
                   <Link key={i} to={`/blog/post/${slugify(a.title)}`} className="text-decoration-none">
                     <div className="rounded-3 p-3 glow-card d-flex gap-3" style={{ background: '#12121a', border: '1px solid rgba(255,255,255,0.06)', transition: 'border-color 0.3s ease' }}
-                      onMouseEnter={e => e.currentTarget.style.borderColor = 'rgba(139,92,246,0.3)'}
+                      onMouseEnter={e => e.currentTarget.style.borderColor = 'rgba(165,0,253,0.3)'}
                       onMouseLeave={e => e.currentTarget.style.borderColor = 'rgba(255,255,255,0.06)'}>
                       <div style={{ width: 80, height: 80, flexShrink: 0, borderRadius: 10, overflow: 'hidden' }}>
                         <img src={a.img} alt={a.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
@@ -117,7 +115,7 @@ const BlogPage = () => {
                       <div>
                         <div className="d-flex gap-2 mb-1">
                           {a.tags.slice(0, 2).map((t, j) => (
-                            <span key={j} style={{ ...tagStyle, color: tagColors[t] || '#6366f1' }}>{t}</span>
+                            <span key={j} style={{ ...tagStyle, color: tagColors[t] || '#a500fd' }}>{t}</span>
                           ))}
                         </div>
                         <h6 className="text-white fw-bold mt-1 mb-2" style={{ fontSize: '0.88rem', lineHeight: 1.35 }}>{a.title}</h6>
@@ -143,7 +141,7 @@ const BlogPage = () => {
               <div key={post.id} className="col-xl-3 col-lg-4 col-md-6">
                 <Link to={`/blog/post/${slugify(post.title)}`} className="text-decoration-none">
                   <div className="h-100 rounded-4 overflow-hidden glow-card d-flex flex-column" style={{ background: '#12121a', border: '1px solid rgba(255,255,255,0.06)', transition: 'transform 0.3s ease, box-shadow 0.3s ease' }}
-                    onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-5px)'; e.currentTarget.style.boxShadow = '0 12px 40px rgba(139,92,246,0.12)'; }}
+                    onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-5px)'; e.currentTarget.style.boxShadow = '0 12px 40px rgba(165,0,253,0.12)'; }}
                     onMouseLeave={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; }}>
                     <div style={{ height: 180, overflow: 'hidden' }}>
                       <img src={post.img} alt={post.title} style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s ease' }}
@@ -153,14 +151,14 @@ const BlogPage = () => {
                     <div className="p-3 d-flex flex-column flex-grow-1">
                       <div className="d-flex flex-wrap gap-2 mb-2">
                         {post.tags.map((t, j) => (
-                          <span key={j} style={{ ...tagStyle, color: tagColors[t] || '#6366f1' }}>{t}</span>
+                          <span key={j} style={{ ...tagStyle, color: tagColors[t] || '#a500fd' }}>{t}</span>
                         ))}
                       </div>
                       <h6 className="text-white fw-bold mb-2" style={{ fontSize: '0.88rem', lineHeight: 1.4 }}>{post.title}</h6>
                       <p className="mb-3" style={{ fontSize: '0.78rem', color: 'rgba(255,255,255,0.4)', lineHeight: 1.55, flexGrow: 1 }}>{post.excerpt.substring(0, 100)}...</p>
                       <div className="d-flex justify-content-between align-items-center mt-auto pt-2" style={{ borderTop: '1px solid rgba(255,255,255,0.05)' }}>
                         <div className="d-flex align-items-center gap-2">
-                          <div className="rounded-circle d-flex align-items-center justify-content-center" style={{ width: 22, height: 22, background: 'linear-gradient(135deg, #6366f1, #8b5cf6)', fontSize: '0.55rem', color: '#fff', fontWeight: 700 }}>{post.author.charAt(0)}</div>
+                          <div className="rounded-circle d-flex align-items-center justify-content-center" style={{ width: 22, height: 22, background: '#a500fd', fontSize: '0.55rem', color: '#fff', fontWeight: 700 }}>{post.author.charAt(0)}</div>
                           <span style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.4)' }}>{post.author}</span>
                         </div>
                         <span style={{ fontSize: '0.65rem', color: 'rgba(255,255,255,0.25)' }}>{post.readTime}</span>
@@ -182,13 +180,12 @@ const BlogPage = () => {
       {/* ═══════ NEWSLETTER ═══════ */}
       <section style={{ padding: '4rem 0' }}>
         <div className="container">
-          <div className="rounded-4 p-5 text-center position-relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #1a1a2e 0%, #16162a 100%)', border: '1px solid rgba(139,92,246,0.15)' }}>
-            <div style={{ position: 'absolute', width: 300, height: 300, borderRadius: '50%', background: 'radial-gradient(circle, rgba(139,92,246,0.1) 0%, transparent 70%)', top: '-20%', right: '-5%', filter: 'blur(60px)', pointerEvents: 'none' }} />
+          <div className="rounded-4 p-5 text-center position-relative overflow-hidden" style={{ background: '#1a1a2e', border: '1px solid rgba(165,0,253,0.15)' }}>
             <h3 className="text-white fw-bold mb-3" style={{ fontSize: '1.8rem' }}>Subscribe to our <span className="hero-gradient-text">Newsletter</span></h3>
             <p className="text-secondary mb-4 mx-auto" style={{ maxWidth: 500, fontSize: '0.9rem' }}>Get the latest marketing insights, strategies, and industry news delivered to your inbox every week.</p>
             {subscribed ? (
               <div className="d-inline-flex align-items-center gap-2 rounded-pill px-4 py-3" style={{ background: 'rgba(34,197,94,0.15)', border: '1px solid rgba(34,197,94,0.3)' }}>
-                <span>✅</span><span className="text-white fw-medium">You&apos;re subscribed! Check your inbox.</span>
+                <span></span><span className="text-white fw-medium">You&apos;re subscribed! Check your inbox.</span>
               </div>
             ) : (
               <div className="d-flex justify-content-center gap-3 flex-wrap">
@@ -210,7 +207,7 @@ const BlogPage = () => {
             {featured.map((f, i) => (
               <div key={i} className="col-lg-4">
                 <div className="rounded-4 p-4 h-100 glow-card" style={{ background: '#12121a', border: '1px solid rgba(255,255,255,0.06)' }}>
-                  <h4 className="fw-bold mb-3" style={{ fontSize: '1.6rem', background: 'linear-gradient(135deg, #8b5cf6, #c084fc)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>{f.outlet}</h4>
+                  <h4 className="fw-bold mb-3" style={{ fontSize: '1.6rem', background: '#a500fd', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>{f.outlet}</h4>
                   <p className="mb-0 fst-italic" style={{ fontSize: '0.88rem', color: 'rgba(255,255,255,0.5)', lineHeight: 1.7 }}>&ldquo;{f.quote}&rdquo;</p>
                 </div>
               </div>
@@ -227,8 +224,7 @@ const BlogPage = () => {
       {/* ═══════ CTA ═══════ */}
       <section style={{ padding: '5rem 0' }}>
         <div className="container">
-          <div className="rounded-4 p-5 text-center position-relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #1a1028 0%, #0f0f1a 50%, #1a1028 100%)', border: '1px solid rgba(139,92,246,0.2)' }}>
-            <div style={{ position: 'absolute', width: 400, height: 400, borderRadius: '50%', background: 'radial-gradient(circle, rgba(139,92,246,0.12) 0%, transparent 70%)', top: '-30%', left: '50%', transform: 'translateX(-50%)', filter: 'blur(80px)', pointerEvents: 'none' }} />
+          <div className="rounded-4 p-5 text-center position-relative overflow-hidden" style={{ background: '#1a1028', border: '1px solid rgba(165,0,253,0.2)' }}>
             <div className="position-relative" style={{ zIndex: 1 }}>
               <h3 className="display-5 fw-bold text-white mb-3">Ready to Take Your Marketing to the <span className="hero-gradient-text fst-italic">Next Level?</span></h3>
               <p className="text-secondary fs-5 mx-auto mb-4" style={{ maxWidth: 550 }}>Let our team of experts create a custom strategy tailored to your business goals.</p>

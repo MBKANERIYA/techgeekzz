@@ -68,14 +68,14 @@ const WorkflowSection = () => {
           className="text-white text-center fw-bold fst-italic mb-4"
           style={{ fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', letterSpacing: '-1px', maxWidth: '700px', margin: '0 auto', lineHeight: 1.2 }}
         >
-          Our Subscription-Based Digital Workflow — Strategy That Scales, Built to Maximize ROI at Every Stage
+          Our Full-Service Digital Workflow — Strategy That Scales, Built to Maximize ROI at Every Stage
         </h2>
 
         <p
           className="text-secondary text-center small fst-italic mb-5 pb-3 mx-auto"
           style={{ maxWidth: '700px', lineHeight: 1.7 }}
         >
-          One Process. Every Channel. Fully Managed. We don't just manage tasks — we run your entire digital engine. Our subscription brings together strategy, execution, and analytics under one system — built to eliminate chaos and drive real results. Here's how it works.
+          One Process. Every Channel. Fully Managed. We don't just manage tasks — we run your entire digital engine. Our process brings together strategy, execution, and analytics under one system — built to eliminate chaos and drive real results. Here's how it works.
         </p>
 
         {/* Steps */}

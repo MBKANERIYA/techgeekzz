@@ -2,37 +2,37 @@ const stats = [
   {
     number: '24',
     label: 'Hours Turnaround',
-    gradient: 'linear-gradient(135deg, #5eead4, #2dd4bf)',
+    gradient: '#a500fd',
     description: 'Launch projects in less than a day. Perfect for those tight deadlines and urgent tasks.',
   },
   {
     number: '50%+',
     label: 'Output Growth',
-    gradient: 'linear-gradient(135deg, #fde68a, #f59e0b)',
+    gradient: '#a500fd',
     description: "Get ready for a major marketing scale-up. Outpace your average agency's output.",
   },
   {
     number: '$100k',
     label: 'Saving',
-    gradient: 'linear-gradient(135deg, #fca5a5, #ef4444)',
+    gradient: '#a500fd',
     description: 'Average saving on annual agency fees',
   },
   {
     number: '10',
     label: 'Extra Hours/Week',
-    gradient: 'linear-gradient(135deg, #93c5fd, #3b82f6)',
+    gradient: '#a500fd',
     description: 'Reclaim your schedule with simplified management. Take your time back to lead.',
   },
   {
     number: '30+',
     label: 'Services On Tap',
-    gradient: 'linear-gradient(135deg, #f0abfc, #d946ef)',
+    gradient: '#a500fd',
     description: 'Every design and marketing service you can imagine. Available to you on-demand.',
   },
   {
     number: '1%',
     label: 'Top 1% Global Experts',
-    gradient: 'linear-gradient(135deg, #fdba74, #f97316)',
+    gradient: '#a500fd',
     description: 'Build a ready-to-go vetted team. Watch your ROI shoot sky-high.',
   },
 ];

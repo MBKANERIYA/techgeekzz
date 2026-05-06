@@ -4,12 +4,12 @@ const AboutHero = () => {
       {/* Ambient glow */}
       <div style={{
         position: 'absolute', top: '-100px', right: '-100px', width: '500px', height: '500px',
-        background: 'radial-gradient(circle, rgba(139,92,246,0.08) 0%, transparent 70%)',
+        background: 'transparent',
         pointerEvents: 'none',
       }} />
       <div style={{
         position: 'absolute', bottom: '-50px', left: '-50px', width: '300px', height: '300px',
-        background: 'radial-gradient(circle, rgba(99,102,241,0.06) 0%, transparent 70%)',
+        background: 'transparent',
         pointerEvents: 'none',
       }} />
 
@@ -17,13 +17,13 @@ const AboutHero = () => {
         <div className="row align-items-center g-5">
           <div className="col-lg-6">
             <div className="d-inline-block rounded-pill px-3 py-1 mb-4" style={{
-              background: 'rgba(139,92,246,0.1)', border: '1px solid rgba(139,92,246,0.2)', fontSize: '0.72rem',
-              color: '#c084fc', letterSpacing: '2px', textTransform: 'uppercase', fontWeight: 600,
-            }}>About NinjaPromo</div>
+              background: 'rgba(165,0,253,0.1)', border: '1px solid rgba(165,0,253,0.2)', fontSize: '0.72rem',
+              color: '#a500fd', letterSpacing: '2px', textTransform: 'uppercase', fontWeight: 600,
+            }}>About Us</div>
 
             <h1 className="fw-bold fst-italic mb-4" style={{ lineHeight: 1.08, letterSpacing: '-2px', fontSize: 'clamp(2.5rem, 5vw, 3.8rem)' }}>
               <span style={{
-                background: 'linear-gradient(135deg, #6366f1, #8b5cf6, #c084fc, #e879f9)',
+                background: '#a500fd',
                 WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
               }}>The Brightest Minds</span>
               <br /><span className="text-white">in Digital at Your</span>
@@ -45,7 +45,7 @@ const AboutHero = () => {
               ].map((s, i) => (
                 <div key={i} className="text-center">
                   <div className="fw-bold" style={{
-                    background: 'linear-gradient(135deg, #8b5cf6, #c084fc)',
+                    background: '#a500fd',
                     WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
                     fontSize: '1.3rem',
                   }}>{s.num}</div>
@@ -60,8 +60,8 @@ const AboutHero = () => {
               <svg width="400" height="400" viewBox="0 0 400 400" fill="none" style={{ position: 'absolute', top: 0, left: 0 }}>
                 {/* Animated circles */}
                 <circle cx="220" cy="185" r="155" stroke="rgba(255,255,255,0.04)" strokeWidth="1" fill="none" strokeDasharray="4 6" />
-                <circle cx="220" cy="185" r="125" stroke="rgba(139,92,246,0.08)" strokeWidth="1" fill="none" />
-                <circle cx="220" cy="185" r="95" stroke="rgba(139,92,246,0.12)" strokeWidth="1" fill="none" />
+                <circle cx="220" cy="185" r="125" stroke="rgba(165,0,253,0.08)" strokeWidth="1" fill="none" />
+                <circle cx="220" cy="185" r="95" stroke="rgba(165,0,253,0.12)" strokeWidth="1" fill="none" />
 
                 {/* Head Silhouette */}
                 <path d="M190 310 L190 280 Q148 268 132 238 Q112 202 122 166 Q128 140 148 122 Q168 105 195 100 Q222 95 247 106 Q272 117 285 142 Q297 168 290 198 Q282 228 255 248 L250 280 L250 310"
@@ -92,13 +92,13 @@ const AboutHero = () => {
 
                 <defs>
                   <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stopColor="#6366f1" /><stop offset="100%" stopColor="#8b5cf6" />
+                    <stop offset="0%" stopColor="#a500fd" /><stop offset="100%" stopColor="#a500fd" />
                   </linearGradient>
                   <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stopColor="#c084fc" /><stop offset="100%" stopColor="#e879f9" />
+                    <stop offset="0%" stopColor="#a500fd" /><stop offset="100%" stopColor="#a500fd" />
                   </linearGradient>
                   <radialGradient id="bGlow">
-                    <stop offset="0%" stopColor="#8b5cf6" /><stop offset="100%" stopColor="transparent" />
+                    <stop offset="0%" stopColor="#a500fd" /><stop offset="100%" stopColor="transparent" />
                   </radialGradient>
                 </defs>
               </svg>

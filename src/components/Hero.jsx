@@ -10,22 +10,22 @@ const Hero = () => {
           <div className="col-lg-7 overflow-visible pe-lg-5">
             <div className="w-100 overflow-visible">
               <h1 className="display-2 fw-bold text-white mb-4 overflow-visible" style={{ lineHeight: 1.05, letterSpacing: '-2px' }}>
-                All your marketing
+                We build brands
                 <br />
-                needs <span className="hero-gradient-text fst-italic fw-normal">in one single monthly subscription</span>
+                that <span className="hero-gradient-text fst-italic fw-normal">stand out and sell</span>
               </h1>
 
               <p className="text-secondary mb-4 fs-5" style={{ lineHeight: 1.7 }}>
-                Crystal-clear hourly billing and hundreds of marketing and creative
-                experts at your disposal. That's what you get when you sign up for
-                NinjaPromo's all-in-one marketing service.
+                Branding, SEO, paid ads, and social media management -- all under
+                one roof. TechGeekz is the creative agency that turns your
+                vision into measurable growth.
               </p>
 
               <div className="d-flex align-items-center gap-3 flex-wrap">
-                <a href="#" className="btn btn-cta rounded-pill px-5 py-3 fw-semibold text-white text-decoration-none fs-6">Book a demo</a>
+                <a href="#" className="btn btn-cta rounded-pill px-5 py-3 fw-semibold text-white text-decoration-none fs-6">Get a free consultation</a>
                 <p className="text-muted mb-0" style={{ maxWidth: '240px', fontSize: '0.9rem' }}>
-                  Design, develop, create ads, and more within
-                  one handy marketing subscription.
+                  Strategy, creative, and execution --
+                  all handled by one dedicated team.
                 </p>
               </div>
             </div>
@@ -60,7 +60,7 @@ const Hero = () => {
                   </svg>
                 </div>
                 <div>
-                  <div className="text-white fw-bold fs-4">4.9+ <span style={{ color: '#ff3d2e' }}>★</span></div>
+                  <div className="text-white fw-bold fs-4">4.9+ <span style={{ color: '#ff3d2e' }}></span></div>
                   <div className="text-secondary small">rating on Clutch</div>
                 </div>
               </div>

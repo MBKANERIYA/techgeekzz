@@ -10,11 +10,11 @@ const tags = [
 ];
 
 const reviewDetails = [
-  { emoji: "🏢", text: "Digital Marketing" },
-  { emoji: "📍", text: "San Francisco, California" },
-  { emoji: "👥", text: "10,001+ Employees" },
-  { emoji: "💰", text: "$50,000 to $199,999" },
-  { emoji: "📅", text: "Jan 2024 - Ongoing" },
+  { emoji: "", text: "Digital Marketing" },
+  { emoji: "", text: "San Francisco, California" },
+  { emoji: "", text: "10,001+ Employees" },
+  { emoji: "", text: "$50,000 to $199,999" },
+  { emoji: "", text: "Jan 2024 - Ongoing" },
 ];
 
 const ReferralReviews = () => {
@@ -23,7 +23,7 @@ const ReferralReviews = () => {
       <div className="container">
         <hr className="premium-divider" />
         <div className="text-center mb-5 pt-4">
-          <span className="d-inline-block rounded-pill px-3 py-1 mb-3" style={{ background: 'rgba(139,92,246,0.1)', border: '1px solid rgba(139,92,246,0.15)', color: '#c084fc', fontSize: '0.78rem', fontWeight: 600 }}>Verified Reviews</span>
+          <span className="d-inline-block rounded-pill px-3 py-1 mb-3" style={{ background: 'rgba(165,0,253,0.1)', border: '1px solid rgba(165,0,253,0.15)', color: '#a500fd', fontSize: '0.78rem', fontWeight: 600 }}>Verified Reviews</span>
           <h2 className="display-6 fw-bold text-white" style={{ letterSpacing: '-1px' }}>Trusted by <span className="hero-gradient-text fst-italic">Industry Leaders</span></h2>
         </div>
 
@@ -78,7 +78,7 @@ const ReferralReviews = () => {
               <div>
                 <h4 className="text-white fw-bold fs-4 mb-2" style={{ letterSpacing: '1px' }}>◆ airbnb</h4>
                 <p className="text-secondary small mb-1">Jose Robertson | Distribution Company</p>
-                <p className="small mb-0" style={{ color: '#8b5cf6' }}>Head of Marketing</p>
+                <p className="small mb-0" style={{ color: '#a500fd' }}>Head of Marketing</p>
               </div>
             </div>
           </div>

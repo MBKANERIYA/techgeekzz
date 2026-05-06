@@ -30,7 +30,7 @@ const PartnersLogos = () => {
       <div className="container">
         <hr className="premium-divider" />
         <div className="text-center mb-5 pt-4">
-          <span className="d-inline-block rounded-pill px-3 py-1 mb-3" style={{ background: 'rgba(139,92,246,0.1)', border: '1px solid rgba(139,92,246,0.15)', color: '#c084fc', fontSize: '0.78rem', fontWeight: 600 }}>Our Ecosystem</span>
+          <span className="d-inline-block rounded-pill px-3 py-1 mb-3" style={{ background: 'rgba(165,0,253,0.1)', border: '1px solid rgba(165,0,253,0.15)', color: '#a500fd', fontSize: '0.78rem', fontWeight: 600 }}>Our Ecosystem</span>
           <h2 className="display-6 fw-bold text-white" style={{ letterSpacing: '-1px' }}>Technology <span className="hero-gradient-text fst-italic">Partners</span></h2>
           <p className="text-secondary mx-auto" style={{ maxWidth: 520, fontSize: '0.9rem' }}>Certified partnerships with the platforms that power modern marketing.</p>
         </div>
@@ -44,12 +44,12 @@ const PartnersLogos = () => {
                 style={{ background: '#12121a', border: '1px solid rgba(255,255,255,0.06)' }}
               >
                 {/* Logo placeholder */}
-                <div className="d-flex align-items-center justify-content-center mb-3 mx-auto rounded-3" style={{ width: 56, height: 56, background: 'linear-gradient(135deg, rgba(139,92,246,0.15), rgba(99,102,241,0.08))', border: '1px solid rgba(139,92,246,0.2)' }}>
+                <div className="d-flex align-items-center justify-content-center mb-3 mx-auto rounded-3" style={{ width: 56, height: 56, background: 'rgba(165,0,253,0.12)', border: '1px solid rgba(165,0,253,0.2)' }}>
                   <span className="fw-bold text-white" style={{ fontSize: '1.1rem' }}>{partner.name.charAt(0)}</span>
                 </div>
                 <h6 className="text-white fw-bold mb-1" style={{ fontSize: '0.9rem' }}>{partner.name}</h6>
                 <p className="text-secondary mb-2" style={{ fontSize: '0.72rem' }}>{partner.category}</p>
-                <span className="d-inline-block rounded-pill px-2 py-1" style={{ background: 'rgba(139,92,246,0.1)', border: '1px solid rgba(139,92,246,0.15)', color: '#c084fc', fontSize: '0.65rem', fontWeight: 600 }}>{partner.tier}</span>
+                <span className="d-inline-block rounded-pill px-2 py-1" style={{ background: 'rgba(165,0,253,0.1)', border: '1px solid rgba(165,0,253,0.15)', color: '#a500fd', fontSize: '0.65rem', fontWeight: 600 }}>{partner.tier}</span>
               </div>
             </div>
           ))}
@@ -64,7 +64,7 @@ const PartnersLogos = () => {
             <div key={i} className="col-lg-3 col-md-4 col-6">
               <div className="rounded-4 p-3 text-center glow-card" style={{ background: '#12121a', border: '1px solid rgba(255,255,255,0.06)' }}>
                 <div className="d-flex align-items-center justify-content-center mb-2 mx-auto rounded-circle" style={{ width: 44, height: 44, background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)' }}>
-                  <span className="fw-bold" style={{ color: '#c084fc', fontSize: '0.95rem' }}>{partner.name.charAt(0)}</span>
+                  <span className="fw-bold" style={{ color: '#a500fd', fontSize: '0.95rem' }}>{partner.name.charAt(0)}</span>
                 </div>
                 <h6 className="text-white fw-semibold mb-0" style={{ fontSize: '0.82rem' }}>{partner.name}</h6>
                 <p className="text-secondary mb-0" style={{ fontSize: '0.7rem' }}>{partner.category}</p>

@@ -5,10 +5,10 @@ const Avatar = ({ size = 60, initials, glow = false }) => (
       width: `${size}px`,
       height: `${size}px`,
       background: glow
-        ? 'linear-gradient(135deg, #6366f1, #8b5cf6, #c084fc)'
+        ? '#a500fd'
         : '#1e1e2a',
       border: glow ? 'none' : '2px solid rgba(255,255,255,0.1)',
-      boxShadow: glow ? '0 0 40px rgba(139, 92, 246, 0.4)' : 'none',
+      boxShadow: glow ? '0 0 40px rgba(165, 0, 253, 0.4)' : 'none',
       fontSize: `${size * 0.3}px`,
       color: '#ccc',
       fontWeight: 600,
@@ -45,7 +45,7 @@ const TeamSection = () => {
       <div className="container">
         {/* Heading */}
         <h2 className="text-white text-center display-5 fw-bold mb-3" style={{ letterSpacing: '-1px' }}>
-          Your Full Subscription-Based Team
+          Your Full Creative Team
         </h2>
         <p className="text-secondary text-center small fst-italic mb-5" style={{ maxWidth: '600px', margin: '0 auto' }}>
           An estimated schedule of specialists' working hours under the $12,800/month rate is outlined

@@ -1,30 +1,30 @@
 const industries = [
   {
-    icon: '☁️',
-    iconBg: 'linear-gradient(135deg, #3b82f6, #60a5fa)',
+    icon: '',
+    iconBg: '#a500fd',
     title: 'SaaS',
-    titleGradient: 'linear-gradient(135deg, #60a5fa, #93c5fd)',
-    description: "Your software solves problems — let's make sure the world knows it. We craft campaigns that dominate user acquisition, slash churn, and scale subscriptions.",
+    titleGradient: '#a500fd',
+    description: "Your software solves problems -- let's make sure the world knows it. We craft campaigns that dominate user acquisition, build brand authority, and drive signups.",
   },
   {
-    icon: '🏛️',
-    iconBg: 'linear-gradient(135deg, #a855f7, #c084fc)',
+    icon: '',
+    iconBg: '#a500fd',
     title: 'Fintech',
-    titleGradient: 'linear-gradient(135deg, #c084fc, #e9d5ff)',
+    titleGradient: '#a500fd',
     description: "In a sector built on security and speed, we engineer campaigns that convert skeptics into loyal users. Regulatory-compliant ads, high-ROI funnels, and storytelling that turns complex tech into irresistible value.",
   },
   {
-    icon: '🛒',
-    iconBg: 'linear-gradient(135deg, #ef4444, #f87171)',
+    icon: '',
+    iconBg: '#a500fd',
     title: 'eCommerce',
-    titleGradient: 'linear-gradient(135deg, #f87171, #fca5a5)',
+    titleGradient: '#a500fd',
     description: "Turbocharge your store with performance marketing that doesn't just drive traffic — it drives sales. Dynamic ads, AI-powered retargeting, and checkout flows smoother than your best-selling product.",
   },
   {
-    icon: '💲',
-    iconBg: 'linear-gradient(135deg, #f59e0b, #fbbf24)',
+    icon: '',
+    iconBg: '#a500fd',
     title: 'Financial',
-    titleGradient: 'linear-gradient(135deg, #fbbf24, #fde68a)',
+    titleGradient: '#a500fd',
     description: "High-trust industries demand high-impact strategies. We build compliant campaigns that turn cold leads into long-term clients. Think wealth management ads that perform as well as your funds.",
   },
 ];
@@ -40,7 +40,7 @@ const IndustriesSection = () => {
           Performance Marketing Work for You
         </h2>
         <p className="text-secondary text-center small fst-italic mb-5 mx-auto" style={{ maxWidth: '650px', lineHeight: 1.7 }}>
-          We don't need to compromise on quality for short-term profit because our subscription model is built on long-term, mutually beneficial partnerships with hourly billing.
+          We invest in understanding your industry so every campaign we run is built on insight, not guesswork. Long-term partnerships, measurable results.
         </p>
 
         {/* Industry Cards - 2x2 Grid */}

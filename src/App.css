@@ -55,7 +55,7 @@ section > .container {
 
 /* === Premium Text Selection === */
 ::selection {
-  background: rgba(139, 92, 246, 0.3);
+  background: rgba(165, 0, 253, 0.3);
   color: #fff;
 }
 
@@ -69,34 +69,29 @@ section > .container {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(139, 92, 246, 0.3);
+  background: rgba(165, 0, 253, 0.3);
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(139, 92, 246, 0.5);
+  background: rgba(165, 0, 253, 0.5);
 }
 
-/* === Gradient CTA Button === */
+/* === CTA Button === */
 .btn-cta {
-  background: linear-gradient(135deg, #6366f1, #8b5cf6, #d946ef) !important;
+  background: #a500fd !important;
   border: none !important;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .btn-cta:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(139, 92, 246, 0.4);
+  box-shadow: 0 8px 25px rgba(165, 0, 253, 0.4);
 }
 
-/* === Gradient Heading Text === */
+/* === Brand Accent Text === */
 .hero-gradient-text {
-  background: linear-gradient(135deg, #8b5cf6, #c084fc, #e879f9);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
+  color: #a500fd;
   padding: 0 0.25em;
 }
 
@@ -138,15 +133,14 @@ section > .container {
 }
 
 .challenge-card-active {
-  border-image-source: linear-gradient(135deg, #3b82f6, #8b5cf6, #ec4899) !important;
-  border-image-slice: 1 !important;
-  box-shadow: 0 0 25px rgba(139, 92, 246, 0.15);
+  border-color: #a500fd !important;
+  box-shadow: 0 0 25px rgba(165, 0, 253, 0.15);
 }
 
 /* === Premium Glow Dividers === */
 .premium-divider {
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(139, 92, 246, 0.3), transparent);
+  background: linear-gradient(90deg, transparent, rgba(165, 0, 253, 0.3), transparent);
   border: none;
   margin: 1rem 0;
 }
@@ -173,8 +167,8 @@ textarea:focus {
 }
 
 .glow-card:hover {
-  border-color: rgba(139, 92, 246, 0.2) !important;
-  box-shadow: 0 0 30px rgba(139, 92, 246, 0.08);
+  border-color: rgba(165, 0, 253, 0.2) !important;
+  box-shadow: 0 0 30px rgba(165, 0, 253, 0.08);
   transform: translateY(-2px);
 }
 

@@ -1,27 +1,27 @@
 const types = [
   {
-    icon: "⚡",
+    icon: "",
     title: "Technology Partners",
-    description: "Integrate your platform with NinjaPromo to offer joint solutions. We embed your tools into our workflows and co-market to shared audiences.",
+    description: "Integrate your platform with TechGeekz to offer joint solutions. We embed your tools into our workflows and co-market to shared audiences.",
     benefits: ["API & SDK integration support", "Co-branded documentation", "Joint webinars & events", "Dedicated integration engineer"],
-    color: "#8b5cf6",
+    color: "#a500fd",
   },
   {
-    icon: "🏢",
+    icon: "",
     title: "Agency Partners",
     description: "White-label our services or refer overflow work. We act as your silent growth engine while you maintain client relationships.",
     benefits: ["White-label fulfillment", "Revenue sharing model", "Shared Slack channel", "Priority SLA guarantees"],
     color: "#3b82f6",
   },
   {
-    icon: "📊",
+    icon: "",
     title: "Strategic Alliance",
     description: "For enterprise-level collaborations. Joint go-to-market strategies, shared pipelines, and exclusive co-selling opportunities.",
     benefits: ["Joint GTM strategy", "Co-selling & pipeline sharing", "Executive sponsor pairing", "Quarterly business reviews"],
     color: "#ec4899",
   },
   {
-    icon: "🎓",
+    icon: "",
     title: "Education Partners",
     description: "Collaborate on thought leadership, training programs, and certification courses. Build the next generation of digital marketers together.",
     benefits: ["Co-authored research", "Guest lecture programs", "Certification pathways", "Student internship pipeline"],
@@ -35,7 +35,7 @@ const PartnersTypes = () => {
       <div className="container">
         <hr className="premium-divider" />
         <div className="text-center mb-5 pt-4">
-          <span className="d-inline-block rounded-pill px-3 py-1 mb-3" style={{ background: 'rgba(139,92,246,0.1)', border: '1px solid rgba(139,92,246,0.15)', color: '#c084fc', fontSize: '0.78rem', fontWeight: 600 }}>Partnership Models</span>
+          <span className="d-inline-block rounded-pill px-3 py-1 mb-3" style={{ background: 'rgba(165,0,253,0.1)', border: '1px solid rgba(165,0,253,0.15)', color: '#a500fd', fontSize: '0.78rem', fontWeight: 600 }}>Partnership Models</span>
           <h2 className="display-6 fw-bold text-white" style={{ letterSpacing: '-1px' }}>Find Your <span className="hero-gradient-text fst-italic">Partnership Fit</span></h2>
           <p className="text-secondary mx-auto" style={{ maxWidth: 520, fontSize: '0.9rem' }}>Choose the partnership model that best aligns with your goals and capabilities.</p>
         </div>
@@ -62,7 +62,7 @@ const PartnersTypes = () => {
                 }}
               >
                 {/* Corner glow */}
-                <div style={{ position: 'absolute', top: -40, right: -40, width: 120, height: 120, borderRadius: '50%', background: `radial-gradient(circle, ${type.color}15 0%, transparent 70%)`, pointerEvents: 'none' }} />
+                <div style={{ position: 'absolute', top: -40, right: -40, width: 120, height: 120, borderRadius: '50%', background: 'transparent', pointerEvents: 'none' }} />
 
                 <div className="position-relative" style={{ zIndex: 1 }}>
                   <div className="d-flex align-items-center gap-3 mb-4">
@@ -78,7 +78,7 @@ const PartnersTypes = () => {
                     {type.benefits.map((benefit, j) => (
                       <div key={j} className="col-6">
                         <div className="d-flex align-items-center gap-2">
-                          <span style={{ color: type.color, fontSize: '0.7rem' }}>✦</span>
+                          <span style={{ color: type.color, fontSize: '0.7rem' }}></span>
                           <span className="text-secondary" style={{ fontSize: '0.8rem' }}>{benefit}</span>
                         </div>
                       </div>
