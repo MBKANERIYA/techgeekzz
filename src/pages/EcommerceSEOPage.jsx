@@ -3,61 +3,61 @@ import ReviewsSection from '../components/ReviewsSection';
 
 const expertise = [
   {
-    icon: '🧠',
-    title: 'AI Intent & Query Analysis',
-    desc: 'We analyze conversational queries and long-tail prompts to understand exactly how users are interacting with AI search engines like ChatGPT, Google AI Overviews, and Perplexity.',
+    icon: '🛍️',
+    title: 'E-commerce Site Audit',
+    desc: 'We start by conducting a comprehensive technical and content audit of your online store to identify issues hindering your visibility on search engines.',
   },
   {
-    icon: '🏗️',
-    title: 'Semantic Content Structuring',
-    desc: 'We structure your content using advanced schema markup, entity relationships, and clear hierarchies so LLMs can easily parse, understand, and cite your data.',
+    icon: '🔑',
+    title: 'Keyword Strategy',
+    desc: 'Our experts perform deep keyword research focused on high-intent buyer keywords that will drive qualified traffic and sales to your products and categories.',
+  },
+  {
+    icon: '🛒',
+    title: 'Product & Category Optimization',
+    desc: 'We optimize your product descriptions, category pages, titles, and meta tags to ensure they align with the search engine algorithm and resonate with your target audience.',
+  },
+  {
+    icon: '⚙️',
+    title: 'Technical SEO for E-commerce',
+    desc: 'We resolve site architecture issues, improve page speed, implement schema markup, and ensure your store has a seamless, mobile-friendly responsive layout.',
+  },
+  {
+    icon: '📝',
+    title: 'Content & Link Building',
+    desc: 'We create unique campaigns and authoritative backlinks to boost your website\'s authority and secure the attention of your target audience by outshining competitors.',
   },
   {
     icon: '📊',
-    title: 'Entity Optimization',
-    desc: 'We build robust digital knowledge graphs around your brand, establishing your business as an authoritative entity within Large Language Model training data.',
-  },
-  {
-    icon: '💬',
-    title: 'Conversational Content Creation',
-    desc: 'We produce comprehensive, expert-level content formatted as direct answers, lists, and deep dives that AI engines prefer to extract for their conversational responses.',
-  },
-  {
-    icon: '🔗',
-    title: 'AI Citation Building',
-    desc: 'We focus on acquiring mentions and citations from highly authoritative, fact-checked domains that AI engines heavily weight as trustworthy sources.',
-  },
-  {
-    icon: '🔄',
-    title: 'Continuous GEO Tracking',
-    desc: 'We monitor your brand\'s visibility across AI search platforms, adapting your strategy to keep up with the rapidly evolving generative search landscape.',
+    title: 'Tracking & Iteration',
+    desc: 'We monitor your eCommerce performance, tracking organic traffic, keyword rankings, and conversion rates, refining our strategy to continually improve your revenue.',
   },
 ];
 
 const faqs = [
   {
-    q: 'What is Generative Engine Optimization (GEO)?',
-    a: 'GEO is the evolution of traditional SEO. It focuses on optimizing your website and digital presence to be recommended, cited, and summarized by Generative AI search engines like Google AI Overviews (SGE), ChatGPT, and Perplexity.',
+    q: 'What is eCommerce SEO?',
+    a: 'ECommerce SEO is the process of optimizing your online store so that it ranks higher in search engine results for specific product keywords. It helps potential customers find your products easily.',
   },
   {
-    q: 'How is GEO different from traditional SEO?',
-    a: 'While traditional SEO optimizes for keywords to rank on a list of blue links, GEO optimizes for entities and semantics to ensure your brand is the direct, conversational answer provided by an AI.',
+    q: 'Why is eCommerce SEO important?',
+    a: 'Even with the best products, if your target audience isn\'t aware your business exists, you won\'t make sales. ECommerce SEO improves visibility, drives organic traffic, and generates qualified leads that boost revenue.',
   },
   {
-    q: 'Why does my business need GEO now?',
-    a: 'Search behavior is rapidly shifting from typing keywords to asking conversational questions to AI. If you aren\'t optimizing for AI engines now, you risk becoming invisible to the next generation of searchers.',
+    q: 'How does eCommerce SEO differ from regular SEO?',
+    a: 'ECommerce SEO involves managing large-scale site architectures, optimizing hundreds or thousands of product and category pages, handling out-of-stock items, and implementing specific product schema markups.',
   },
   {
-    q: 'What makes content "AI-friendly"?',
-    a: 'AI engines prefer content that is highly authoritative, factually accurate, structured with clear headings/schema, and directly answers specific questions without fluff.',
+    q: 'Will eCommerce SEO improve my sales?',
+    a: 'Yes! By optimizing your product pages for high-intent keywords, improving the user experience, and driving qualified traffic, eCommerce SEO is directly correlated with boosting your conversion rates and sales.',
   },
   {
-    q: 'Can GEO and traditional SEO work together?',
-    a: 'Yes! They are highly complementary. A strong traditional SEO foundation (fast site speed, authoritative backlinks, high-quality content) is a prerequisite for successful GEO. We combine both for maximum visibility.',
+    q: 'Which platforms do you support?',
+    a: 'We provide tailored eCommerce SEO services for a variety of digital stores, including Shopify, WordPress (WooCommerce), Magento, and custom-built ecommerce platforms.',
   },
 ];
 
-const GEOPage = () => {
+const EcommerceSEOPage = () => {
   const [openFaq, setOpenFaq] = useState(null);
   const [formData, setFormData] = useState({ name: '', email: '', phone: '', service: '' });
   const [submitted, setSubmitted] = useState(false);
@@ -72,7 +72,7 @@ const GEOPage = () => {
     <div>
       {/* ════════════ HERO ════════════ */}
       <section className="position-relative overflow-hidden" style={{ paddingTop: '8rem', paddingBottom: '3rem' }}>
-        <div style={{ position: 'absolute', width: 500, height: 500, borderRadius: '50%', background: 'radial-gradient(circle, rgba(14,165,233,0.12) 0%, transparent 70%)', top: '-10%', right: '-5%', filter: 'blur(80px)', pointerEvents: 'none', zIndex: 1 }} />
+        <div style={{ position: 'absolute', width: 500, height: 500, borderRadius: '50%', background: 'radial-gradient(circle, rgba(239,68,68,0.12) 0%, transparent 70%)', top: '-10%', right: '-5%', filter: 'blur(80px)', pointerEvents: 'none', zIndex: 1 }} />
         <div style={{ position: 'absolute', width: 400, height: 400, borderRadius: '50%', background: 'radial-gradient(circle, rgba(165,0,253,0.1) 0%, transparent 70%)', bottom: '0%', left: '-5%', filter: 'blur(60px)', pointerEvents: 'none', zIndex: 1 }} />
 
         <div className="container position-relative" style={{ zIndex: 2 }}>
@@ -80,15 +80,15 @@ const GEOPage = () => {
             {/* Left - Content */}
             <div className="col-lg-7">
               <h1 className="display-4 fw-bold text-white mb-4" style={{ lineHeight: 1.1, letterSpacing: '-1px' }}>
-                Future-Proof Your Brand with <span className="hero-gradient-text">GEO</span> (Generative Engine Optimization)
+                <span className="hero-gradient-text">ECommerce SEO:</span> Be Where Your Customers Are For Better Revenue
               </h1>
 
               <p className="text-secondary mb-4" style={{ maxWidth: 580, lineHeight: 1.8, fontSize: '1rem' }}>
-                The search landscape has changed forever. Users are no longer just clicking blue links; they are having conversations with AI. Is your brand the answer they are getting?
+                Why is your ecommerce store not doing well despite having the best products? Chances are that your target audience isn't even aware your business exists! Worry not; we can help you be where your target audience is on the search engine with ECommerce SEO! Our tailored ECommerce SEO services cater to the unique needs of your digital store.
               </p>
 
               <p className="text-secondary mb-5" style={{ maxWidth: 580, lineHeight: 1.8, fontSize: '1rem' }}>
-                Generative Engine Optimization (GEO) ensures your business is cited, recommended, and summarized by AI search engines like ChatGPT, Google AI Overviews, and Perplexity. TechGeekz positions your brand as the authoritative entity AI engines trust.
+                Generate qualified leads and boost your conversion rates through eCommerce SEO optimization. TechGeekz utilizes advanced eCommerce SEO techniques to improve the website performance and align the website structure to the search engine algorithm. Let's make your website's SERP ranking and sales skyrocket with ECommerce SEO services with TechGeekz!
               </p>
 
               <a href="#cta" className="btn btn-cta rounded-pill px-5 py-3 fw-semibold text-white text-decoration-none d-inline-flex align-items-center gap-2" style={{ fontSize: '0.95rem' }}>
@@ -106,7 +106,7 @@ const GEOPage = () => {
                   <div className="text-center p-5">
                     <div style={{ fontSize: '3rem', marginBottom: 12 }}>✅</div>
                     <h4 className="fw-bold text-white">Request Received!</h4>
-                    <p className="text-secondary" style={{ fontSize: '0.85rem' }}>Our AI specialists will reach out within 24 hours.</p>
+                    <p className="text-secondary" style={{ fontSize: '0.85rem' }}>Our team will reach out within 24 hours.</p>
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="p-4 p-lg-4">
@@ -115,7 +115,7 @@ const GEOPage = () => {
                       <div className="d-inline-flex align-items-center justify-content-center rounded-circle mb-3" style={{ width: 44, height: 44, background: 'rgba(165,0,253,0.12)', border: '1px solid rgba(165,0,253,0.25)' }}>
                         <span style={{ fontSize: '1.1rem' }}>📩</span>
                       </div>
-                      <h4 className="text-white fw-bold mb-1" style={{ fontSize: '1.1rem' }}>Get Free GEO Consultation</h4>
+                      <h4 className="text-white fw-bold mb-1" style={{ fontSize: '1.1rem' }}>Get Free Consultation</h4>
                       <p className="text-secondary mb-0" style={{ fontSize: '0.75rem' }}>We'll get back to you within 24 hours</p>
                     </div>
 
@@ -158,10 +158,11 @@ const GEOPage = () => {
                         onBlur={(e) => { e.target.style.borderColor = 'rgba(255,255,255,0.1)'; e.target.style.boxShadow = 'none'; }}
                       >
                         <option value="" style={{ background: '#1a1a2e' }}>Select a service...</option>
-                        <option value="geo" style={{ background: '#1a1a2e' }}>Generative Engine Optimization (GEO)</option>
-                        <option value="seo" style={{ background: '#1a1a2e' }}>Traditional SEO</option>
                         <option value="ecommerce-seo" style={{ background: '#1a1a2e' }}>E-commerce SEO</option>
                         <option value="local-seo" style={{ background: '#1a1a2e' }}>Local SEO</option>
+                        <option value="international-seo" style={{ background: '#1a1a2e' }}>International SEO</option>
+                        <option value="seo" style={{ background: '#1a1a2e' }}>General SEO</option>
+                        <option value="web-dev" style={{ background: '#1a1a2e' }}>Website Development</option>
                       </select>
                     </div>
 
@@ -188,20 +189,20 @@ const GEOPage = () => {
             {/* Left - Illustration */}
             <div className="col-lg-5">
               <div className="rounded-4 p-4 text-center" style={{ background: 'rgba(165,0,253,0.03)' }}>
-                <img src="/images/geo-seo-illustration.png" alt="Generative Engine Optimization Illustration" className="img-fluid" style={{ maxHeight: 380 }} />
+                <img src="/images/ecommerce-seo-illustration.png" alt="E-Commerce SEO Services Illustration" className="img-fluid" style={{ maxHeight: 380 }} />
               </div>
             </div>
 
             {/* Right - Content */}
             <div className="col-lg-7">
               <h2 className="display-6 fw-bold text-white mb-4" style={{ letterSpacing: '-1px', lineHeight: 1.15 }}>
-                Why Choose <span className="hero-gradient-text fst-italic">TechGeekz</span> for GEO?
+                Why Choose <span className="hero-gradient-text fst-italic">TechGeekz?</span>
               </h2>
               <p className="text-secondary mb-4" style={{ fontSize: '0.95rem', lineHeight: 1.8 }}>
-                TechGeekz is at the forefront of the AI search revolution. As one of the first agencies to pioneer Generative Engine Optimization strategies, we understand how Large Language Models (LLMs) parse, evaluate, and cite information. We bridge the gap between traditional SEO and artificial intelligence.
+                TechGeekz is the best eCommerce SEO agency with 4+ years of hands-on experience in the industry. Our SEO consultants have worked with diverse niches like healthcare, fintech, real estate, fashion, education, and more to hone their skills. We offer eCommerce SEO for small businesses, startups, and big-scale businesses to digitize their company, sell their product to the desired target audience, and improve their revenues.
               </p>
               <p className="text-secondary" style={{ fontSize: '0.95rem', lineHeight: 1.8 }}>
-                Our proprietary GEO methodologies are designed to build your brand into an undeniable "entity" within AI training data. Whether a user is asking ChatGPT for recommendations or getting an AI overview on Google, we ensure your business is presented as the primary, authoritative answer.
+                Our Affordable eCommerce SEO services are tailored to the needs of businesses and help them boost conversion, leading to better ranking and more revenue. Choose TechGeekz so your website structure aligns with the search engine algorithm and the content resonates with the target audience! Whether you have a Shopify store, WordPress site, or another digital store, our ECommerce service can help you grow!
               </p>
             </div>
           </div>
@@ -214,34 +215,34 @@ const GEOPage = () => {
           <hr className="premium-divider" />
           <div className="text-center mb-5 pt-4">
             <h2 className="display-6 fw-bold text-white" style={{ letterSpacing: '-1px', maxWidth: 800, margin: '0 auto' }}>
-              Advantages of <span className="hero-gradient-text fst-italic">GEO Services</span>
+              Advantages of <span className="hero-gradient-text fst-italic">ECommerce SEO</span>
             </h2>
             <p className="text-secondary mt-3 mx-auto" style={{ fontSize: '0.95rem', maxWidth: 800 }}>
-              The transition to AI search isn't coming—it's already here. Discover the competitive advantages of optimizing your brand for Generative AI.
+              Having a website to create an online presence isn't enough. You need to make your website visible to the target audience to generate leads and boost conversions to make revenue! So, here are a few benefits of eCommerce SEO.
             </p>
           </div>
 
           <div className="row justify-content-center g-4">
             {[
               {
+                icon: '👀',
+                title: 'Improve visibility on search engine',
+                desc: 'Optimize your website with relevant keywords and content for better ranking, leading to improved ranking on the SERP. Increase your chances of selling with better visibility online.',
+              },
+              {
+                icon: '💻',
+                title: 'Enhance user experience',
+                desc: 'Improve the structure of your website with better navigation, responsive layout, and enhanced speed to ensure a seamless user experience, leading to more conversions.',
+              },
+              {
                 icon: '🚀',
-                title: 'Unmatched AI Visibility',
-                desc: 'Secure placement directly within conversational answers provided by ChatGPT, Google AI Overviews, and Copilot, bypassing traditional blue links entirely.',
+                title: 'Boost traffic and conversions',
+                desc: 'Drive organic traffic, generate qualified leads, and boost conversion rates by optimizing your product page for SERP indexing to be where your audience is looking for products.',
               },
               {
-                icon: '👑',
-                title: 'High-Authority Positioning',
-                desc: 'When an AI recommends your brand over competitors, it serves as the ultimate endorsement, skyrocketing your perceived authority and trustworthiness.',
-              },
-              {
-                icon: '🎯',
-                title: 'Capture High-Intent Traffic',
-                desc: 'Users interacting with AI search are often looking for direct, highly specific answers. GEO positions you perfectly to capture these high-intent, ready-to-convert users.',
-              },
-              {
-                icon: '🛡️',
-                title: 'Future-Proof Marketing',
-                desc: 'By establishing your brand as a core entity in LLM data now, you secure a long-term competitive moat that is exceptionally difficult for competitors to disrupt.',
+                icon: '🏆',
+                title: 'Gain competitive edge',
+                desc: 'Secure the attention of your target audience by outshining your competitors with ECommerce SEO solutions to identify opportunities and create unique campaigns to boost website ranking.',
               },
             ].map((card, i) => (
               <div key={i} className="col-lg-6 col-md-6">
@@ -282,13 +283,13 @@ const GEOPage = () => {
             <div className="col-lg-4">
               <div style={{ position: 'sticky', top: '120px' }}>
                 <h2 className="display-6 fw-bold text-white mb-4" style={{ letterSpacing: '-1px', lineHeight: 1.15 }}>
-                  Our GEO <span className="hero-gradient-text fst-italic">Implementation Process</span>
+                  Our ECommerce <span className="hero-gradient-text fst-italic">SEO Process</span>
                 </h2>
                 <p className="text-secondary mb-3" style={{ fontSize: '0.9rem', lineHeight: 1.7 }}>
-                  We don't just guess what AI wants; we engineer your digital footprint to guarantee AI comprehension and citation.
+                  Our process for ECommerce SEO is data-driven and tailored specifically to online storefronts.
                 </p>
                 <p className="text-secondary" style={{ fontSize: '0.9rem', lineHeight: 1.7 }}>
-                  From advanced schema deployment to conversational content structuring, our comprehensive methodology ensures your brand dominates the Generative Search landscape.
+                  From auditing your product architecture to implementing complex schema markup, TechGeekz ensures every product page on your site works as a high-converting landing page to maximize your online revenue.
                 </p>
               </div>
             </div>
@@ -485,10 +486,10 @@ const GEOPage = () => {
           <hr className="premium-divider" />
           <div className="text-center pt-4 pb-5">
             <h2 className="display-5 fw-bold text-white mb-4 fst-italic" style={{ letterSpacing: '-1px', lineHeight: 1.15 }}>
-              Ready to dominate <span className="hero-gradient-text">AI Search?</span>
+              Ready to dominate your <span className="hero-gradient-text">eCommerce niche?</span>
             </h2>
             <p className="text-secondary mx-auto mb-5" style={{ maxWidth: 600, fontSize: '0.95rem', lineHeight: 1.7 }}>
-              Let's work together to position your brand as the definitive authority in the age of Generative Engine Optimization.
+              Let's work together to boost your store's visibility, drive high-intent shoppers, and grow your revenue.
             </p>
             <div className="d-flex flex-wrap justify-content-center gap-3">
               <a href="#" className="btn btn-cta rounded-pill px-5 py-3 fw-semibold text-white text-decoration-none" style={{ fontSize: '1rem' }}>Work With Us</a>
@@ -504,4 +505,4 @@ const GEOPage = () => {
   );
 };
 
-export default GEOPage;
+export default EcommerceSEOPage;

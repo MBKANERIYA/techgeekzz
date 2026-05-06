@@ -3,61 +3,61 @@ import ReviewsSection from '../components/ReviewsSection';
 
 const expertise = [
   {
-    icon: '🧠',
-    title: 'AI Intent & Query Analysis',
-    desc: 'We analyze conversational queries and long-tail prompts to understand exactly how users are interacting with AI search engines like ChatGPT, Google AI Overviews, and Perplexity.',
+    icon: '📱',
+    title: 'Mobile Usability Audit',
+    desc: 'We start by evaluating your website\'s mobile layout, touch elements, and overall usability to ensure an optimal experience across all smartphone and tablet devices.',
   },
   {
-    icon: '🏗️',
-    title: 'Semantic Content Structuring',
-    desc: 'We structure your content using advanced schema markup, entity relationships, and clear hierarchies so LLMs can easily parse, understand, and cite your data.',
+    icon: '⚡',
+    title: 'Page Speed Optimization',
+    desc: 'Mobile users expect lightning-fast load times. We optimize images, minify code, and leverage browser caching to drastically reduce your mobile page load speed.',
   },
   {
-    icon: '📊',
-    title: 'Entity Optimization',
-    desc: 'We build robust digital knowledge graphs around your brand, establishing your business as an authoritative entity within Large Language Model training data.',
+    icon: '🔍',
+    title: 'Mobile-First Indexing',
+    desc: 'We structure your site\'s content and metadata to align perfectly with Google\'s mobile-first indexing algorithms, ensuring maximum SERP visibility.',
   },
   {
-    icon: '💬',
-    title: 'Conversational Content Creation',
-    desc: 'We produce comprehensive, expert-level content formatted as direct answers, lists, and deep dives that AI engines prefer to extract for their conversational responses.',
+    icon: '📍',
+    title: 'Local SEO Integration',
+    desc: 'Since most mobile searches have local intent, we integrate mobile SEO with local search strategies to capture "near me" traffic and drive footfall.',
   },
   {
-    icon: '🔗',
-    title: 'AI Citation Building',
-    desc: 'We focus on acquiring mentions and citations from highly authoritative, fact-checked domains that AI engines heavily weight as trustworthy sources.',
+    icon: '🎯',
+    title: 'Mobile UI/UX Refinement',
+    desc: 'We analyze user behavior to eliminate frustrating pop-ups, fix unclickable elements, and streamline the mobile conversion funnel for higher sales.',
   },
   {
-    icon: '🔄',
-    title: 'Continuous GEO Tracking',
-    desc: 'We monitor your brand\'s visibility across AI search platforms, adapting your strategy to keep up with the rapidly evolving generative search landscape.',
+    icon: '📈',
+    title: 'Performance Tracking',
+    desc: 'We constantly monitor your mobile search rankings, organic mobile traffic, and user engagement metrics, making data-driven iterations to improve results.',
   },
 ];
 
 const faqs = [
   {
-    q: 'What is Generative Engine Optimization (GEO)?',
-    a: 'GEO is the evolution of traditional SEO. It focuses on optimizing your website and digital presence to be recommended, cited, and summarized by Generative AI search engines like Google AI Overviews (SGE), ChatGPT, and Perplexity.',
+    q: 'What is Mobile SEO?',
+    a: 'Mobile SEO is the practice of optimizing your website for users on smartphones and tablets. It ensures your site looks great, functions flawlessly, and ranks high in search engine results when users search from mobile devices.',
   },
   {
-    q: 'How is GEO different from traditional SEO?',
-    a: 'While traditional SEO optimizes for keywords to rank on a list of blue links, GEO optimizes for entities and semantics to ensure your brand is the direct, conversational answer provided by an AI.',
+    q: 'Why is Mobile SEO so important?',
+    a: 'With over 60% of global web traffic coming from mobile devices, and Google using mobile-first indexing, having a mobile-optimized site is no longer optional. Without it, you lose rankings, traffic, and potential customers.',
   },
   {
-    q: 'Why does my business need GEO now?',
-    a: 'Search behavior is rapidly shifting from typing keywords to asking conversational questions to AI. If you aren\'t optimizing for AI engines now, you risk becoming invisible to the next generation of searchers.',
+    q: 'What does "Mobile-First Indexing" mean?',
+    a: 'Mobile-first indexing means Google predominantly uses the mobile version of the content for indexing and ranking. If your site isn\'t optimized for mobile, your desktop rankings will also suffer.',
   },
   {
-    q: 'What makes content "AI-friendly"?',
-    a: 'AI engines prefer content that is highly authoritative, factually accurate, structured with clear headings/schema, and directly answers specific questions without fluff.',
+    q: 'How do you improve mobile page speed?',
+    a: 'We improve speed by optimizing server response times, compressing images, minifying CSS and JavaScript, eliminating render-blocking resources, and utilizing Content Delivery Networks (CDNs).',
   },
   {
-    q: 'Can GEO and traditional SEO work together?',
-    a: 'Yes! They are highly complementary. A strong traditional SEO foundation (fast site speed, authoritative backlinks, high-quality content) is a prerequisite for successful GEO. We combine both for maximum visibility.',
+    q: 'Will Mobile SEO increase my conversion rate?',
+    a: 'Absolutely. A frustrating mobile experience drives users to your competitors. By streamlining navigation, improving load times, and making checkout processes seamless on mobile, conversion rates naturally increase.',
   },
 ];
 
-const GEOPage = () => {
+const MobileSEOPage = () => {
   const [openFaq, setOpenFaq] = useState(null);
   const [formData, setFormData] = useState({ name: '', email: '', phone: '', service: '' });
   const [submitted, setSubmitted] = useState(false);
@@ -72,7 +72,7 @@ const GEOPage = () => {
     <div>
       {/* ════════════ HERO ════════════ */}
       <section className="position-relative overflow-hidden" style={{ paddingTop: '8rem', paddingBottom: '3rem' }}>
-        <div style={{ position: 'absolute', width: 500, height: 500, borderRadius: '50%', background: 'radial-gradient(circle, rgba(14,165,233,0.12) 0%, transparent 70%)', top: '-10%', right: '-5%', filter: 'blur(80px)', pointerEvents: 'none', zIndex: 1 }} />
+        <div style={{ position: 'absolute', width: 500, height: 500, borderRadius: '50%', background: 'radial-gradient(circle, rgba(168,85,247,0.12) 0%, transparent 70%)', top: '-10%', right: '-5%', filter: 'blur(80px)', pointerEvents: 'none', zIndex: 1 }} />
         <div style={{ position: 'absolute', width: 400, height: 400, borderRadius: '50%', background: 'radial-gradient(circle, rgba(165,0,253,0.1) 0%, transparent 70%)', bottom: '0%', left: '-5%', filter: 'blur(60px)', pointerEvents: 'none', zIndex: 1 }} />
 
         <div className="container position-relative" style={{ zIndex: 2 }}>
@@ -80,15 +80,15 @@ const GEOPage = () => {
             {/* Left - Content */}
             <div className="col-lg-7">
               <h1 className="display-4 fw-bold text-white mb-4" style={{ lineHeight: 1.1, letterSpacing: '-1px' }}>
-                Future-Proof Your Brand with <span className="hero-gradient-text">GEO</span> (Generative Engine Optimization)
+                Dominate the Small Screen with <span className="hero-gradient-text">Mobile SEO</span>
               </h1>
 
               <p className="text-secondary mb-4" style={{ maxWidth: 580, lineHeight: 1.8, fontSize: '1rem' }}>
-                The search landscape has changed forever. Users are no longer just clicking blue links; they are having conversations with AI. Is your brand the answer they are getting?
+                Did you know that over 60% of all online searches now happen on a mobile device? If your website isn't fully optimized for smartphones and tablets, you are invisible to the majority of your target audience.
               </p>
 
               <p className="text-secondary mb-5" style={{ maxWidth: 580, lineHeight: 1.8, fontSize: '1rem' }}>
-                Generative Engine Optimization (GEO) ensures your business is cited, recommended, and summarized by AI search engines like ChatGPT, Google AI Overviews, and Perplexity. TechGeekz positions your brand as the authoritative entity AI engines trust.
+                With Google's mobile-first indexing, your mobile experience dictates your overall search engine ranking. TechGeekz delivers cutting-edge Mobile SEO services designed to increase site speed, enhance mobile user experience, and drive high-converting traffic directly to the palm of your customers' hands.
               </p>
 
               <a href="#cta" className="btn btn-cta rounded-pill px-5 py-3 fw-semibold text-white text-decoration-none d-inline-flex align-items-center gap-2" style={{ fontSize: '0.95rem' }}>
@@ -106,7 +106,7 @@ const GEOPage = () => {
                   <div className="text-center p-5">
                     <div style={{ fontSize: '3rem', marginBottom: 12 }}>✅</div>
                     <h4 className="fw-bold text-white">Request Received!</h4>
-                    <p className="text-secondary" style={{ fontSize: '0.85rem' }}>Our AI specialists will reach out within 24 hours.</p>
+                    <p className="text-secondary" style={{ fontSize: '0.85rem' }}>Our team will reach out within 24 hours.</p>
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="p-4 p-lg-4">
@@ -115,7 +115,7 @@ const GEOPage = () => {
                       <div className="d-inline-flex align-items-center justify-content-center rounded-circle mb-3" style={{ width: 44, height: 44, background: 'rgba(165,0,253,0.12)', border: '1px solid rgba(165,0,253,0.25)' }}>
                         <span style={{ fontSize: '1.1rem' }}>📩</span>
                       </div>
-                      <h4 className="text-white fw-bold mb-1" style={{ fontSize: '1.1rem' }}>Get Free GEO Consultation</h4>
+                      <h4 className="text-white fw-bold mb-1" style={{ fontSize: '1.1rem' }}>Get Free Consultation</h4>
                       <p className="text-secondary mb-0" style={{ fontSize: '0.75rem' }}>We'll get back to you within 24 hours</p>
                     </div>
 
@@ -158,10 +158,11 @@ const GEOPage = () => {
                         onBlur={(e) => { e.target.style.borderColor = 'rgba(255,255,255,0.1)'; e.target.style.boxShadow = 'none'; }}
                       >
                         <option value="" style={{ background: '#1a1a2e' }}>Select a service...</option>
-                        <option value="geo" style={{ background: '#1a1a2e' }}>Generative Engine Optimization (GEO)</option>
-                        <option value="seo" style={{ background: '#1a1a2e' }}>Traditional SEO</option>
+                        <option value="mobile-seo" style={{ background: '#1a1a2e' }}>Mobile SEO</option>
                         <option value="ecommerce-seo" style={{ background: '#1a1a2e' }}>E-commerce SEO</option>
                         <option value="local-seo" style={{ background: '#1a1a2e' }}>Local SEO</option>
+                        <option value="international-seo" style={{ background: '#1a1a2e' }}>International SEO</option>
+                        <option value="seo" style={{ background: '#1a1a2e' }}>General SEO</option>
                       </select>
                     </div>
 
@@ -188,20 +189,20 @@ const GEOPage = () => {
             {/* Left - Illustration */}
             <div className="col-lg-5">
               <div className="rounded-4 p-4 text-center" style={{ background: 'rgba(165,0,253,0.03)' }}>
-                <img src="/images/geo-seo-illustration.png" alt="Generative Engine Optimization Illustration" className="img-fluid" style={{ maxHeight: 380 }} />
+                <img src="/images/mobile-seo-illustration.png" alt="Mobile SEO Services Illustration" className="img-fluid" style={{ maxHeight: 380 }} />
               </div>
             </div>
 
             {/* Right - Content */}
             <div className="col-lg-7">
               <h2 className="display-6 fw-bold text-white mb-4" style={{ letterSpacing: '-1px', lineHeight: 1.15 }}>
-                Why Choose <span className="hero-gradient-text fst-italic">TechGeekz</span> for GEO?
+                Why Choose <span className="hero-gradient-text fst-italic">TechGeekz?</span>
               </h2>
               <p className="text-secondary mb-4" style={{ fontSize: '0.95rem', lineHeight: 1.8 }}>
-                TechGeekz is at the forefront of the AI search revolution. As one of the first agencies to pioneer Generative Engine Optimization strategies, we understand how Large Language Models (LLMs) parse, evaluate, and cite information. We bridge the gap between traditional SEO and artificial intelligence.
+                TechGeekz is an elite SEO agency with deep expertise in mobile search algorithms. We don't just shrink your desktop site to fit a smaller screen; we re-engineer the mobile user journey. From resolving complex Core Web Vitals issues to ensuring perfect mobile responsive design, our team has a proven track record of boosting mobile rankings across diverse industries.
               </p>
               <p className="text-secondary" style={{ fontSize: '0.95rem', lineHeight: 1.8 }}>
-                Our proprietary GEO methodologies are designed to build your brand into an undeniable "entity" within AI training data. Whether a user is asking ChatGPT for recommendations or getting an AI overview on Google, we ensure your business is presented as the primary, authoritative answer.
+                Our Mobile SEO services are engineered to capture high-intent users on the go. Whether your audience is searching for local services, shopping online, or consuming content, we ensure your mobile presence is fast, flawless, and favored by search engines. Choose TechGeekz to turn smartphone users into loyal customers!
               </p>
             </div>
           </div>
@@ -214,34 +215,34 @@ const GEOPage = () => {
           <hr className="premium-divider" />
           <div className="text-center mb-5 pt-4">
             <h2 className="display-6 fw-bold text-white" style={{ letterSpacing: '-1px', maxWidth: 800, margin: '0 auto' }}>
-              Advantages of <span className="hero-gradient-text fst-italic">GEO Services</span>
+              Advantages of <span className="hero-gradient-text fst-italic">Mobile SEO</span>
             </h2>
             <p className="text-secondary mt-3 mx-auto" style={{ fontSize: '0.95rem', maxWidth: 800 }}>
-              The transition to AI search isn't coming—it's already here. Discover the competitive advantages of optimizing your brand for Generative AI.
+              Mobile optimization is the foundation of modern digital marketing. Discover the key benefits of aligning your website with mobile-first standards.
             </p>
           </div>
 
           <div className="row justify-content-center g-4">
             {[
               {
-                icon: '🚀',
-                title: 'Unmatched AI Visibility',
-                desc: 'Secure placement directly within conversational answers provided by ChatGPT, Google AI Overviews, and Copilot, bypassing traditional blue links entirely.',
+                icon: '📈',
+                title: 'Higher Search Engine Rankings',
+                desc: 'Because search engines prioritize mobile-friendly sites, optimizing your mobile experience directly improves your overall domain authority and ranking across all devices.',
               },
               {
-                icon: '👑',
-                title: 'High-Authority Positioning',
-                desc: 'When an AI recommends your brand over competitors, it serves as the ultimate endorsement, skyrocketing your perceived authority and trustworthiness.',
+                icon: '⚡',
+                title: 'Reduced Bounce Rates',
+                desc: 'Fast-loading, easy-to-navigate mobile pages prevent users from leaving your site in frustration, drastically lowering your bounce rate and increasing time on site.',
               },
               {
-                icon: '🎯',
-                title: 'Capture High-Intent Traffic',
-                desc: 'Users interacting with AI search are often looking for direct, highly specific answers. GEO positions you perfectly to capture these high-intent, ready-to-convert users.',
+                icon: '🤝',
+                title: 'Improved Brand Perception',
+                desc: 'A seamless mobile interface builds trust. Users are far more likely to return to and recommend a business that provides a modern, frictionless mobile browsing experience.',
               },
               {
-                icon: '🛡️',
-                title: 'Future-Proof Marketing',
-                desc: 'By establishing your brand as a core entity in LLM data now, you secure a long-term competitive moat that is exceptionally difficult for competitors to disrupt.',
+                icon: '💰',
+                title: 'Increased Mobile Conversions',
+                desc: 'By streamlining mobile checkout flows and touch targets, we remove the friction that stops smartphone users from buying, leading to significant revenue growth.',
               },
             ].map((card, i) => (
               <div key={i} className="col-lg-6 col-md-6">
@@ -282,13 +283,13 @@ const GEOPage = () => {
             <div className="col-lg-4">
               <div style={{ position: 'sticky', top: '120px' }}>
                 <h2 className="display-6 fw-bold text-white mb-4" style={{ letterSpacing: '-1px', lineHeight: 1.15 }}>
-                  Our GEO <span className="hero-gradient-text fst-italic">Implementation Process</span>
+                  Our Mobile <span className="hero-gradient-text fst-italic">SEO Process</span>
                 </h2>
                 <p className="text-secondary mb-3" style={{ fontSize: '0.9rem', lineHeight: 1.7 }}>
-                  We don't just guess what AI wants; we engineer your digital footprint to guarantee AI comprehension and citation.
+                  We deploy a meticulous, technical approach to ensure your website excels in a mobile-first world.
                 </p>
                 <p className="text-secondary" style={{ fontSize: '0.9rem', lineHeight: 1.7 }}>
-                  From advanced schema deployment to conversational content structuring, our comprehensive methodology ensures your brand dominates the Generative Search landscape.
+                  From fixing Core Web Vitals to redesigning touch interfaces, our comprehensive methodology guarantees your business captures and converts mobile search traffic effectively.
                 </p>
               </div>
             </div>
@@ -485,10 +486,10 @@ const GEOPage = () => {
           <hr className="premium-divider" />
           <div className="text-center pt-4 pb-5">
             <h2 className="display-5 fw-bold text-white mb-4 fst-italic" style={{ letterSpacing: '-1px', lineHeight: 1.15 }}>
-              Ready to dominate <span className="hero-gradient-text">AI Search?</span>
+              Ready to dominate the <span className="hero-gradient-text">small screen?</span>
             </h2>
             <p className="text-secondary mx-auto mb-5" style={{ maxWidth: 600, fontSize: '0.95rem', lineHeight: 1.7 }}>
-              Let's work together to position your brand as the definitive authority in the age of Generative Engine Optimization.
+              Let's work together to boost your mobile visibility, drive high-intent mobile users, and grow your revenue on the go.
             </p>
             <div className="d-flex flex-wrap justify-content-center gap-3">
               <a href="#" className="btn btn-cta rounded-pill px-5 py-3 fw-semibold text-white text-decoration-none" style={{ fontSize: '1rem' }}>Work With Us</a>
@@ -504,4 +505,4 @@ const GEOPage = () => {
   );
 };
 
-export default GEOPage;
+export default MobileSEOPage;

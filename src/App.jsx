@@ -23,6 +23,8 @@ import SEOPage from './pages/SEOPage';
 import LocalSEOPage from './pages/LocalSEOPage';
 import TechnicalSEOPage from './pages/TechnicalSEOPage';
 import InternationalSEOPage from './pages/InternationalSEOPage';
+import EcommerceSEOPage from './pages/EcommerceSEOPage';
+import MobileSEOPage from './pages/MobileSEOPage';
 import MultilingualSEOPage from './pages/MultilingualSEOPage';
 import GEOPage from './pages/GEOPage';
 // Paid Advertising
@@ -69,6 +71,8 @@ function App() {
             <Route path="/services/seo/local" element={<LocalSEOPage />} />
             <Route path="/services/seo/technical" element={<TechnicalSEOPage />} />
             <Route path="/services/seo/international" element={<InternationalSEOPage />} />
+            <Route path="/services/seo/ecommerce" element={<EcommerceSEOPage />} />
+            <Route path="/services/seo/mobile" element={<MobileSEOPage />} />
             <Route path="/services/seo/multilingual" element={<MultilingualSEOPage />} />
             <Route path="/services/seo/geo" element={<GEOPage />} />
             {/* Paid Advertising */}

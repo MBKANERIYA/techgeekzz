@@ -172,6 +172,26 @@ textarea:focus {
   transform: translateY(-2px);
 }
 
+/* === Advantage Card Hover Flip === */
+.advantage-card .advantage-hover {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.advantage-card:hover .advantage-hover {
+  opacity: 1;
+}
+
+.advantage-card:hover .advantage-default {
+  opacity: 0;
+}
+
+.advantage-card:hover {
+  border-color: rgba(165, 0, 253, 0.4) !important;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(165, 0, 253, 0.2);
+}
+
 /* === Link Hover Underline Animation === */
 a {
   transition: color 0.2s ease, opacity 0.2s ease;

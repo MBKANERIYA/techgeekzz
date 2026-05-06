@@ -1,42 +1,512 @@
-import ServicePageTemplate from '../components/services/ServicePageTemplate';
-const config = {
-  title: "International SEO", icon: "", badge: "International SEO", glowColor: "rgba(236,72,153,1)",
-  heroImage: '/images/heroes/hero-seo.png',
-  heroTitle: "Expand", heroHighlight: "Globally.",
-  heroDescription: "Reach new markets with <strong style='color:#a500fd'>international SEO strategies</strong> that adapt your content and technical setup for global search dominance.",
-  stats: [
-    { value: "30+", label: "Countries Served" }, { value: "50+", label: "Markets Entered" },
-    { value: "400%", label: "Intl. Traffic Growth" }, { value: "20+", label: "Languages" },
-  ],
-  services: [
-    { icon: "", title: "Hreflang Implementation", desc: "Correct hreflang setup to serve the right language/region to each user." },
-    { icon: "", title: "Geo-Targeting Strategy", desc: "ccTLD, subdomain, or subdirectory — we choose the best structure for your goals." },
-    { icon: "", title: "Localized Content", desc: "Content adapted for local culture, search intent, and regional keywords." },
-    { icon: "", title: "Regional Link Building", desc: "Build authority with country-specific backlinks and local media placements." },
-    { icon: "", title: "Market Research", desc: "Search demand analysis, competitor mapping, and opportunity sizing per market." },
-    { icon: "", title: "Technical Setup", desc: "CDN configuration, server location, and international site architecture." },
-  ],
-  process: [
-    { icon: "", title: "Market Analysis", desc: "Identify highest-opportunity markets based on search demand and competition." },
-    { icon: "", title: "Architecture", desc: "Design the optimal international site structure and technical setup." },
-    { icon: "", title: "Localize", desc: "Create and optimize localized content for each target market." },
-    { icon: "", title: "Launch & Scale", desc: "Roll out market by market, measure performance, and expand." },
-  ],
-  whyUs: [
-    { icon: "", title: "Global Experience", desc: "Successfully launched SEO campaigns in 30+ countries across 6 continents." },
-    { icon: "", title: "Native Speakers", desc: "Content created by native speakers, not machine translated." },
-    { icon: "", title: "Technical Precision", desc: "Flawless hreflang, canonical, and geo-targeting implementations." },
-    { icon: "", title: "Market Intelligence", desc: "Deep understanding of regional search engines beyond just Google." },
-    { icon: "", title: "Local Connections", desc: "Link building networks in key markets worldwide." },
-    { icon: "", title: "Scalable Approach", desc: "Frameworks that scale from 2 markets to 50+ efficiently." },
-  ],
-  faqs: [
-    { q: "Should I use subdomains or subdirectories?", a: "It depends on your resources and goals. Subdirectories consolidate domain authority while ccTLDs send the strongest geo-signals. We recommend based on your situation." },
-    { q: "Do you handle content translation?", a: "We go beyond translation — we do full content localization with native speakers who understand local search intent and culture." },
-    { q: "Which countries do you cover?", a: "We have experience in 30+ countries including the US, UK, Germany, France, Spain, Japan, Brazil, UAE, and many more." },
-    { q: "How do you handle different search engines?", a: "Beyond Google, we optimize for Baidu (China), Yandex (Russia), Naver (Korea), and Yahoo Japan based on target markets." },
-    { q: "What is hreflang and why does it matter?", a: "Hreflang tags tell search engines which language/region version of a page to show. Incorrect implementation can cause duplicate content and traffic loss." },
-  ],
+import { useState } from 'react';
+import ReviewsSection from '../components/ReviewsSection';
+
+const expertise = [
+  {
+    icon: '👥',
+    title: 'Discussion',
+    desc: 'Our international SEO services are customized to your business needs. We start by understanding your business, its goals, target markets, and desired goals through consultation sessions and back-and-forth messages.',
+  },
+  {
+    icon: '🔍',
+    title: 'Research',
+    desc: 'Research is our strength. Our international SEO consultants focus on extensive research to identify the target markets, local buyer persona in each market, relevant keywords, and opportunities and challenges.',
+  },
+  {
+    icon: '⚙️',
+    title: 'Strategizing',
+    desc: 'We develop custom international SEO strategies focused on the key performance metrics and achieve the desired goals.',
+  },
+  {
+    icon: '🚀',
+    title: 'Implementation',
+    desc: 'We implement the strategy, optimizing every aspect of your website to ensure it meets global SEO standards.',
+  },
+  {
+    icon: '📋',
+    title: 'Audits',
+    desc: 'Our international SEO consultants conduct regular audits to measure the performance and effectiveness of SEO strategies. With the audit result and analysis, we identify problem areas.',
+  },
+  {
+    icon: '🔄',
+    title: 'Iteration',
+    desc: 'We refine the SEO strategy based on the improvement areas identified in the SEO audits. With consistent iterations, your website ranking and visibility will improve.',
+  },
+];
+
+const faqs = [
+  {
+    q: 'What is International SEO?',
+    a: 'International SEO (Search Engine Optimization) is the practice of optimizing your website so that search engines can easily identify which countries you want to target and which languages you use for business. It is your ultimate solution if your goal is to grow globally.',
+  },
+  {
+    q: 'Why is International SEO important for my business?',
+    a: 'Your potential customers are spread across borders, and the Internet is the fastest and most reliable way to reach them. International SEO helps you tap into your global market effectively, overcoming language and location barriers.',
+  },
+  {
+    q: 'How much does International SEO cost?',
+    a: 'The cost varies depending on the specific project scope, number of target countries/languages, competition level, and services required. We offer customized packages to fit different budgets while delivering maximum ROI for your global business.',
+  },
+  {
+    q: 'How can International SEO help grow my business?',
+    a: 'It drives targeted traffic from multiple countries and languages, increasing global reach, brand visibility, and international sales. It puts you ahead of competitors by ranking higher on the global SERPs.',
+  },
+  {
+    q: 'How long does it take to see results?',
+    a: 'Results vary depending on your business type, target regions, and competition level. Generally, international SEO is a long-term strategy, and significant improvements can often be seen within 3 to 6 months.',
+  },
+];
+
+const InternationalSEOPage = () => {
+  const [openFaq, setOpenFaq] = useState(null);
+  const [formData, setFormData] = useState({ name: '', email: '', phone: '', service: '' });
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setSubmitted(true);
+    setTimeout(() => { setSubmitted(false); setFormData({ name: '', email: '', phone: '', service: '' }); }, 4000);
+  };
+
+  return (
+    <div>
+      {/* ════════════ HERO ════════════ */}
+      <section className="position-relative overflow-hidden" style={{ paddingTop: '8rem', paddingBottom: '3rem' }}>
+        <div style={{ position: 'absolute', width: 500, height: 500, borderRadius: '50%', background: 'radial-gradient(circle, rgba(59,130,246,0.12) 0%, transparent 70%)', top: '-10%', right: '-5%', filter: 'blur(80px)', pointerEvents: 'none', zIndex: 1 }} />
+        <div style={{ position: 'absolute', width: 400, height: 400, borderRadius: '50%', background: 'radial-gradient(circle, rgba(165,0,253,0.1) 0%, transparent 70%)', bottom: '0%', left: '-5%', filter: 'blur(60px)', pointerEvents: 'none', zIndex: 1 }} />
+
+        <div className="container position-relative" style={{ zIndex: 2 }}>
+          <div className="row align-items-start g-5">
+            {/* Left - Content */}
+            <div className="col-lg-7">
+              <h1 className="display-4 fw-bold text-white mb-4" style={{ lineHeight: 1.1, letterSpacing: '-1px' }}>
+                Grow Globally <span className="hero-gradient-text">International SEO</span>
+              </h1>
+
+              <p className="text-secondary mb-4" style={{ maxWidth: 580, lineHeight: 1.8, fontSize: '1rem' }}>
+                Whether you are a small startup or a thriving business with a national presence, international SEO is your ultimate solution if your goal is to grow globally. Why? Your potential customers are spread across borders, and the Internet is the fastest and most reliable way to reach them.
+              </p>
+
+              <p className="text-secondary mb-5" style={{ maxWidth: 580, lineHeight: 1.8, fontSize: '1rem' }}>
+                However, you need a reliable international SEO strategy to effectively reach and tap into your global market with your website. It can be tricky, but that's where TechGeekz can help you!
+              </p>
+
+              <a href="#cta" className="btn btn-cta rounded-pill px-5 py-3 fw-semibold text-white text-decoration-none d-inline-flex align-items-center gap-2" style={{ fontSize: '0.95rem' }}>
+                Get In Touch <span>→</span>
+              </a>
+            </div>
+
+            {/* Right - Contact Form */}
+            <div className="col-lg-5">
+              <div className="rounded-4 overflow-hidden position-relative" style={{ background: 'linear-gradient(145deg, #15152a, #1a1a35)', border: '1px solid rgba(165,0,253,0.15)', boxShadow: '0 20px 60px rgba(0,0,0,0.4)' }}>
+                {/* Purple glow accent */}
+                <div style={{ position: 'absolute', top: '-40px', right: '-40px', width: 120, height: 120, borderRadius: '50%', background: 'radial-gradient(circle, rgba(165,0,253,0.15) 0%, transparent 70%)', pointerEvents: 'none' }} />
+
+                {submitted ? (
+                  <div className="text-center p-5">
+                    <div style={{ fontSize: '3rem', marginBottom: 12 }}>✅</div>
+                    <h4 className="fw-bold text-white">Request Received!</h4>
+                    <p className="text-secondary" style={{ fontSize: '0.85rem' }}>Our team will reach out within 24 hours.</p>
+                  </div>
+                ) : (
+                  <form onSubmit={handleSubmit} className="p-4 p-lg-4">
+                    {/* Form Header */}
+                    <div className="text-center mb-4">
+                      <div className="d-inline-flex align-items-center justify-content-center rounded-circle mb-3" style={{ width: 44, height: 44, background: 'rgba(165,0,253,0.12)', border: '1px solid rgba(165,0,253,0.25)' }}>
+                        <span style={{ fontSize: '1.1rem' }}>📩</span>
+                      </div>
+                      <h4 className="text-white fw-bold mb-1" style={{ fontSize: '1.1rem' }}>Get Free Consultation</h4>
+                      <p className="text-secondary mb-0" style={{ fontSize: '0.75rem' }}>We'll get back to you within 24 hours</p>
+                    </div>
+
+                    {/* Full Name */}
+                    <div className="mb-3">
+                      <label className="d-block fw-semibold text-white mb-2" style={{ fontSize: '0.78rem', letterSpacing: '0.3px' }}>Full Name <span style={{ color: '#a500fd' }}>*</span></label>
+                      <input type="text" placeholder="Enter your full name" required value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                        className="w-100 rounded-3 px-3 py-2" style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', color: '#fff', fontSize: '0.85rem', outline: 'none', transition: 'border-color 0.3s ease, box-shadow 0.3s ease' }}
+                        onFocus={(e) => { e.target.style.borderColor = 'rgba(165,0,253,0.4)'; e.target.style.boxShadow = '0 0 0 3px rgba(165,0,253,0.08)'; }}
+                        onBlur={(e) => { e.target.style.borderColor = 'rgba(255,255,255,0.1)'; e.target.style.boxShadow = 'none'; }}
+                      />
+                    </div>
+
+                    {/* Email */}
+                    <div className="mb-3">
+                      <label className="d-block fw-semibold text-white mb-2" style={{ fontSize: '0.78rem', letterSpacing: '0.3px' }}>Email Address <span style={{ color: '#a500fd' }}>*</span></label>
+                      <input type="email" placeholder="Enter your email address" required value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                        className="w-100 rounded-3 px-3 py-2" style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', color: '#fff', fontSize: '0.85rem', outline: 'none', transition: 'border-color 0.3s ease, box-shadow 0.3s ease' }}
+                        onFocus={(e) => { e.target.style.borderColor = 'rgba(165,0,253,0.4)'; e.target.style.boxShadow = '0 0 0 3px rgba(165,0,253,0.08)'; }}
+                        onBlur={(e) => { e.target.style.borderColor = 'rgba(255,255,255,0.1)'; e.target.style.boxShadow = 'none'; }}
+                      />
+                    </div>
+
+                    {/* Mobile Number */}
+                    <div className="mb-3">
+                      <label className="d-block fw-semibold text-white mb-2" style={{ fontSize: '0.78rem', letterSpacing: '0.3px' }}>Mobile Number</label>
+                      <input type="tel" placeholder="+91 XXXXX XXXXX" value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                        className="w-100 rounded-3 px-3 py-2" style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', color: '#fff', fontSize: '0.85rem', outline: 'none', transition: 'border-color 0.3s ease, box-shadow 0.3s ease' }}
+                        onFocus={(e) => { e.target.style.borderColor = 'rgba(165,0,253,0.4)'; e.target.style.boxShadow = '0 0 0 3px rgba(165,0,253,0.08)'; }}
+                        onBlur={(e) => { e.target.style.borderColor = 'rgba(255,255,255,0.1)'; e.target.style.boxShadow = 'none'; }}
+                      />
+                    </div>
+
+                    {/* I would like to */}
+                    <div className="mb-4">
+                      <label className="d-block fw-semibold text-white mb-2" style={{ fontSize: '0.78rem', letterSpacing: '0.3px' }}>I would like to</label>
+                      <select value={formData.service} onChange={(e) => setFormData({ ...formData, service: e.target.value })}
+                        className="w-100 rounded-3 px-3 py-2" style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', color: formData.service ? '#fff' : 'rgba(255,255,255,0.4)', fontSize: '0.85rem', outline: 'none', transition: 'border-color 0.3s ease, box-shadow 0.3s ease', appearance: 'auto' }}
+                        onFocus={(e) => { e.target.style.borderColor = 'rgba(165,0,253,0.4)'; e.target.style.boxShadow = '0 0 0 3px rgba(165,0,253,0.08)'; }}
+                        onBlur={(e) => { e.target.style.borderColor = 'rgba(255,255,255,0.1)'; e.target.style.boxShadow = 'none'; }}
+                      >
+                        <option value="" style={{ background: '#1a1a2e' }}>Select a service...</option>
+                        <option value="international-seo" style={{ background: '#1a1a2e' }}>International SEO</option>
+                        <option value="local-seo" style={{ background: '#1a1a2e' }}>Local SEO Services</option>
+                        <option value="seo" style={{ background: '#1a1a2e' }}>SEO Service</option>
+                        <option value="web-dev" style={{ background: '#1a1a2e' }}>Website Development</option>
+                      </select>
+                    </div>
+
+                    {/* Submit */}
+                    <button type="submit" className="btn w-100 py-3 fw-bold text-white rounded-3" style={{ background: 'linear-gradient(135deg, #a500fd, #8b00d4)', border: 'none', fontSize: '0.95rem', transition: 'all 0.3s ease', boxShadow: '0 4px 15px rgba(165,0,253,0.25)' }}
+                      onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 8px 25px rgba(165,0,253,0.4)'; }}
+                      onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 4px 15px rgba(165,0,253,0.25)'; }}
+                    >Submit →</button>
+
+                    <p className="text-center text-secondary mt-3 mb-0" style={{ fontSize: '0.68rem' }}>🔒 Your data is secure & will never be shared</p>
+                  </form>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ════════════ WHY CHOOSE US ════════════ */}
+      <section>
+        <div className="container">
+          <hr className="premium-divider" />
+          <div className="row align-items-center g-5 pt-4">
+            {/* Left - Illustration */}
+            <div className="col-lg-5">
+              <div className="rounded-4 p-4 text-center" style={{ background: 'rgba(165,0,253,0.03)' }}>
+                <img src="/images/international-seo-illustration.png" alt="International SEO Services Illustration" className="img-fluid" style={{ maxHeight: 380 }} />
+              </div>
+            </div>
+
+            {/* Right - Content */}
+            <div className="col-lg-7">
+              <h2 className="display-6 fw-bold text-white mb-4" style={{ letterSpacing: '-1px', lineHeight: 1.15 }}>
+                Why Choose <span className="hero-gradient-text fst-italic">TechGeekz?</span>
+              </h2>
+              <p className="text-secondary mb-4" style={{ fontSize: '0.95rem', lineHeight: 1.8 }}>
+                TechGeekz is an expert international SEO company with 4+ years of experience helping companies from diverse niches grow globally. We offer unique solutions based on the latest innovative technologies to enhance your digital presence and reach your target audience beyond the borders. Our affordable international SEO services are designed to boost your brand credibility, website authority, and ranking on the search engine and build a strong connection with your target audience.
+              </p>
+              <p className="text-secondary" style={{ fontSize: '0.95rem', lineHeight: 1.8 }}>
+                So, whether you need <strong className="text-white">international SEO for small businesses</strong> or MNCs, we can help you with a strategic approach to grow globally.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ════════════ ADVANTAGES ════════════ */}
+      <section>
+        <div className="container">
+          <hr className="premium-divider" />
+          <div className="text-center mb-5 pt-4">
+            <h2 className="display-6 fw-bold text-white" style={{ letterSpacing: '-1px', maxWidth: 800, margin: '0 auto' }}>
+              The benefits of <span className="hero-gradient-text fst-italic">international SEO</span> for your business!
+            </h2>
+            <p className="text-secondary mt-3" style={{ fontSize: '0.95rem' }}>
+              Venture into the global market with your website by optimizing it for the global market. Following are a few benefits of International SEO services!
+            </p>
+          </div>
+
+          <div className="row g-4">
+            {[
+              {
+                icon: '📈',
+                title: 'Maximize reach and website traffic',
+                desc: 'Why limit your business potential by sticking to the local market? With International SEO, you can take your business beyond borders from your local office! Reach your website and boost the website traffic by optimizing the content for the global market and creating an effective international SEO strategy.',
+              },
+              {
+                icon: '👁️',
+                title: 'Boosting website visibility',
+                desc: 'The International SEO techniques ensure your website is optimized per the international market\'s search engine requirements. Whether it\'s Google, Yahoo, Bing, Yandex, Naver, Baidu, or any local search engine used more in your international market, International SEO ensures that your website is visible by ranking in the first SERP!',
+              },
+              {
+                icon: '🌐',
+                title: 'Overcome the language barrier',
+                desc: 'A survey shows that 68% prefer interacting with brands in their native language. Understanding what language your target audience is more comfortable with is critical to building trust, communicating clearly, and boosting conversion rate. Multilingual SEO makes translation and communication easier and win brownie points from your customers.',
+              },
+              {
+                icon: '🏆',
+                title: 'Gain competitive advantage',
+                desc: 'You can leverage international SEO services to put yourself ahead of the competitors by ranking higher on the SERP. While your competitors are targeting the local markets, you can generate authentic leads from the global market. It drives traffic to your website for better reach and build brand image.',
+              },
+              {
+                icon: '👑',
+                title: 'Establish a brand in the global market',
+                desc: 'By incorporating international and multilingual SEO, you can build a brand reputation, credibility, and a loyal customer base in the global market. You can make an inclusive website to build a consistent brand image in diverse international markets by overcoming the language barrier and delivering your brand message accurately.',
+              },
+            ].map((card, i) => (
+              <div key={i} className="col-lg-4 col-md-6">
+                <div
+                  className="advantage-card rounded-4 p-5 h-100 text-center position-relative overflow-hidden"
+                  style={{
+                    background: '#12121a',
+                    border: '1px solid rgba(255,255,255,0.08)',
+                    cursor: 'pointer',
+                    transition: 'all 0.4s ease',
+                    minHeight: 280,
+                  }}
+                >
+                  {/* Default state - icon + title */}
+                  <div className="advantage-default" style={{ transition: 'opacity 0.3s ease' }}>
+                    <div className="d-flex align-items-center justify-content-center rounded-circle mx-auto mb-4" style={{ width: 80, height: 80, border: '2px solid rgba(165,0,253,0.25)', background: 'rgba(165,0,253,0.05)', fontSize: '2rem' }}>
+                      {card.icon}
+                    </div>
+                    <h5 className="text-white fw-bold" style={{ fontSize: '1rem', lineHeight: 1.4 }}>{card.title}</h5>
+                  </div>
+
+                  {/* Hover state - description */}
+                  <div className="advantage-hover" style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'linear-gradient(135deg, #a500fd, #7b00bd)', borderRadius: 'inherit', padding: '1.5rem', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <p className="text-white mb-0" style={{ fontSize: '0.85rem', lineHeight: 1.6 }}>{card.desc}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="expertise">
+        <div className="container">
+          <hr className="premium-divider" />
+          <div className="row g-5 pt-4">
+            {/* Left - Sticky Heading */}
+            <div className="col-lg-4">
+              <div style={{ position: 'sticky', top: '120px' }}>
+                <h2 className="display-6 fw-bold text-white mb-4" style={{ letterSpacing: '-1px', lineHeight: 1.15 }}>
+                  Our international <span className="hero-gradient-text fst-italic">SEO consultation</span> process!
+                </h2>
+                <p className="text-secondary mb-3" style={{ fontSize: '0.9rem', lineHeight: 1.7 }}>
+                  Our process of Global SEO services is result-driven and designed to deliver seamless services.
+                </p>
+                <p className="text-secondary" style={{ fontSize: '0.9rem', lineHeight: 1.7 }}>
+                  TechGeekz is an expert international SEO agency with a skilled team that offers diverse and customized global SEO services. From the content your target audience understands to the off-page and technical SEO for the search engine to crawl, we ensure your website is optimized to reach #1 on the search engine result page (SERP).
+                </p>
+              </div>
+            </div>
+
+            {/* Right - Timeline */}
+            <div className="col-lg-8">
+              <div className="position-relative" style={{ paddingLeft: 40 }}>
+                {/* Vertical line */}
+                <div style={{ position: 'absolute', left: 20, top: 0, bottom: 0, width: 2, background: 'linear-gradient(to bottom, rgba(165,0,253,0.3), rgba(165,0,253,0.05))' }} />
+
+                {expertise.map((item, i) => (
+                  <div key={i} className="position-relative mb-5" style={{ paddingLeft: 30 }}>
+                    {/* Circle icon on timeline */}
+                    <div className="position-absolute d-flex align-items-center justify-content-center rounded-circle" style={{ left: -40, top: 0, width: 44, height: 44, background: '#0a0a0f', border: '2px solid rgba(165,0,253,0.3)', zIndex: 2 }}>
+                      <span style={{ fontSize: '1.1rem' }}>{item.icon}</span>
+                    </div>
+
+                    {/* Content */}
+                    <h4 className="text-white fw-bold mb-3" style={{ fontSize: '1.1rem' }}>{item.title}</h4>
+                    <p className="text-secondary mb-0" style={{ fontSize: '0.88rem', lineHeight: 1.75 }}>{item.desc}</p>
+
+                    {/* Divider between items */}
+                    {i < expertise.length - 1 && (
+                      <hr style={{ borderColor: 'rgba(255,255,255,0.05)', marginTop: '2rem' }} />
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ════════════ REVIEWS ════════════ */}
+      <div className="container"><hr className="premium-divider" /></div>
+      <ReviewsSection />
+
+      {/* ════════════ OUR WORK ════════════ */}
+      <section>
+        <div className="container">
+          <hr className="premium-divider" />
+          <div className="text-center mb-5 pt-4">
+            <h2 className="display-6 fw-bold text-white" style={{ letterSpacing: '-1px' }}>
+              Our work <span className="hero-gradient-text fst-italic">is in action!</span>
+            </h2>
+          </div>
+
+          <div className="row g-4">
+            {[
+              { img: '/images/case-studies/navitas-solar.png', name: 'Navitas Solar' },
+              { img: '/images/case-studies/maanvi-homes.png', name: 'Maanvi Homes' },
+              { img: '/images/case-studies/bubnas-ias.png', name: 'Bubnas IAS' },
+              { img: '/images/case-studies/21by72.png', name: '21by72.com' },
+              { img: '/images/case-studies/prescient-strategist.png', name: 'Prescient Strategist' },
+              { img: '/images/case-studies/vijay-dairy.png', name: 'Vijay Dairy' },
+            ].map((item, i) => (
+              <div key={i} className="col-lg-4 col-md-6">
+                <div className="rounded-4 overflow-hidden h-100" style={{ background: '#12121a', border: '1px solid rgba(255,255,255,0.06)', transition: 'transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease' }}
+                  onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-6px)'; e.currentTarget.style.borderColor = 'rgba(165,0,253,0.25)'; e.currentTarget.style.boxShadow = '0 12px 40px rgba(165,0,253,0.1)'; }}
+                  onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.06)'; e.currentTarget.style.boxShadow = 'none'; }}
+                >
+                  <div style={{ overflow: 'hidden' }}>
+                    <img src={item.img} alt={item.name} className="w-100" style={{ height: 200, objectFit: 'cover', transition: 'transform 0.4s ease' }}
+                      onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
+                      onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
+                    />
+                  </div>
+                  <div className="p-3 text-center">
+                    <h5 className="text-white fw-bold mb-0" style={{ fontSize: '1rem' }}>{item.name}</h5>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ════════════ FAQ ════════════ */}
+      <section>
+        <div className="container">
+          <hr className="premium-divider" />
+          <div className="text-center mb-5 pt-4">
+            <span className="d-inline-block rounded-pill px-3 py-1 mb-3" style={{ background: 'rgba(165,0,253,0.1)', border: '1px solid rgba(165,0,253,0.15)', color: '#a500fd', fontSize: '0.78rem', fontWeight: 600 }}>FAQ</span>
+            <h2 className="display-6 fw-bold text-white" style={{ letterSpacing: '-1px' }}>Frequently <span className="hero-gradient-text fst-italic">Asked</span></h2>
+          </div>
+
+          <div className="mx-auto" style={{ maxWidth: 720 }}>
+            {faqs.map((faq, i) => (
+              <div key={i} className="rounded-4 mb-3 overflow-hidden" style={{ background: '#12121a', border: '1px solid rgba(255,255,255,0.06)', transition: 'border-color 0.3s', borderColor: openFaq === i ? 'rgba(165,0,253,0.3)' : 'rgba(255,255,255,0.06)' }}>
+                <button className="w-100 d-flex justify-content-between align-items-center p-4 border-0 bg-transparent text-start" style={{ color: '#fff', fontSize: '0.92rem', fontWeight: 600 }} onClick={() => setOpenFaq(openFaq === i ? null : i)}>
+                  {faq.q}
+                  <span style={{ color: '#a500fd', fontSize: '1.2rem', transition: 'transform 0.3s', transform: openFaq === i ? 'rotate(45deg)' : 'rotate(0deg)', flexShrink: 0, marginLeft: 12 }}>+</span>
+                </button>
+                <div style={{ maxHeight: openFaq === i ? 200 : 0, overflow: 'hidden', transition: 'max-height 0.35s ease, padding 0.35s ease', padding: openFaq === i ? '0 1.5rem 1.25rem' : '0 1.5rem' }}>
+                  <p className="text-secondary mb-0" style={{ fontSize: '0.85rem', lineHeight: 1.7 }}>{faq.a}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ════════════ CLIENT REVIEWS ════════════ */}
+      <section>
+        <div className="container">
+          <hr className="premium-divider" />
+          <div className="row align-items-start g-5 pt-4">
+            {/* Left - Heading + Company Info */}
+            <div className="col-lg-4">
+              <h2 className="display-6 fw-bold text-white mb-3" style={{ letterSpacing: '-1px', lineHeight: 1.15 }}>
+                What Our Clients <span className="hero-gradient-text fst-italic">Says?</span>
+              </h2>
+              <p className="text-secondary mb-4" style={{ fontSize: '0.88rem', lineHeight: 1.7 }}>
+                TechGeekz is the best SEO service provider, and they said that! Take a look.
+              </p>
+
+              <div className="d-flex align-items-center gap-3 mb-3">
+                <div className="d-flex align-items-center justify-content-center rounded-circle" style={{ width: 48, height: 48, background: 'rgba(165,0,253,0.1)', border: '1px solid rgba(165,0,253,0.2)' }}>
+                  <span style={{ fontSize: '1.2rem' }}>⭐</span>
+                </div>
+                <div>
+                  <h5 className="text-white fw-bold mb-0" style={{ fontSize: '0.95rem' }}>TechGeekz - SEO & Web Development</h5>
+                  <div className="d-flex align-items-center gap-1 mt-1">
+                    {[1,2,3,4,5].map(s => (
+                      <svg key={s} width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                    ))}
+                    <span className="text-secondary ms-1" style={{ fontSize: '0.75rem' }}>102 Google reviews</span>
+                  </div>
+                </div>
+              </div>
+
+              <a href="#" className="btn rounded-pill px-4 py-2 fw-medium text-white text-decoration-none mt-2" style={{ background: 'transparent', border: '1px solid rgba(255,255,255,0.2)', fontSize: '0.85rem', transition: 'all 0.3s ease' }}
+                onMouseEnter={(e) => { e.currentTarget.style.borderColor = '#a500fd'; e.currentTarget.style.background = 'rgba(165,0,253,0.1)'; }}
+                onMouseLeave={(e) => { e.currentTarget.style.borderColor = 'rgba(255,255,255,0.2)'; e.currentTarget.style.background = 'transparent'; }}
+              >Write a review</a>
+            </div>
+
+            {/* Right - Review Cards */}
+            <div className="col-lg-8">
+              <div className="d-flex gap-3 overflow-auto pb-3" style={{ scrollSnapType: 'x mandatory' }}>
+                {[
+                  { name: 'Chemox Pharma', initial: 'C', color: '#ef4444', time: '2 months ago', text: 'We have been taking SEO and website services from TechGeekz for over one year, and the experience has been excellent. Their team has done a great job with SEO and successfully ranked our website on the first page of Google.' },
+                  { name: 'Maruti Exim', initial: 'M', color: '#a500fd', time: '2 months ago', text: 'When I met the team from TechGeekz for developing my websites, the experience was excellent. The team clearly understood my requirements and delivered the websites exactly the way I wanted.' },
+                  { name: 'Parag Four Pillars', initial: 'P', color: '#3b82f6', time: '3 months ago', text: 'Within 2 months we started getting organic enquiries we never got before. Highly recommend for any business looking for professional website development and SEO services.' },
+                  { name: 'Dhruv Singh', initial: 'D', color: '#22c55e', time: '1 month ago', text: 'As a manufacturing company, we never focused much on digital marketing. TechGeekz helped us understand the importance of SEO for B2B growth. They optimized our website and improved keyword rankings.' },
+                  { name: 'Pooja Thakar', initial: 'P', color: '#f59e0b', time: '3 months ago', text: 'They redesigned the entire UI/UX, and our enquiry rate literally doubled in the first month. The attention to detail is genuinely impressive.' },
+                ].map((review, i) => (
+                  <div key={i} className="flex-shrink-0 rounded-4 p-4" style={{ width: 300, background: '#12121a', border: '1px solid rgba(255,255,255,0.06)', scrollSnapAlign: 'start', transition: 'border-color 0.3s ease' }}
+                    onMouseEnter={(e) => e.currentTarget.style.borderColor = 'rgba(165,0,253,0.2)'}
+                    onMouseLeave={(e) => e.currentTarget.style.borderColor = 'rgba(255,255,255,0.06)'}
+                  >
+                    {/* Header */}
+                    <div className="d-flex align-items-center justify-content-between mb-3">
+                      <div className="d-flex align-items-center gap-2">
+                        <div className="d-flex align-items-center justify-content-center rounded-circle fw-bold text-white" style={{ width: 36, height: 36, background: review.color, fontSize: '0.85rem' }}>
+                          {review.initial}
+                        </div>
+                        <div>
+                          <h6 className="text-white fw-bold mb-0" style={{ fontSize: '0.82rem' }}>{review.name}</h6>
+                          <span className="text-secondary" style={{ fontSize: '0.7rem' }}>{review.time}</span>
+                        </div>
+                      </div>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                        <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/>
+                        <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                        <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18A10.96 10.96 0 001 12c0 1.77.42 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
+                        <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                      </svg>
+                    </div>
+
+                    {/* Stars */}
+                    <div className="d-flex gap-1 mb-3">
+                      {[1,2,3,4,5].map(s => (
+                        <svg key={s} width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                      ))}
+                    </div>
+
+                    {/* Review text */}
+                    <p className="text-secondary mb-2" style={{ fontSize: '0.8rem', lineHeight: 1.6, display: '-webkit-box', WebkitLineClamp: 4, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
+                      {review.text}
+                    </p>
+                    <span style={{ color: '#a500fd', fontSize: '0.75rem', cursor: 'pointer' }}>Read more</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ════════════ CTA ════════════ */}
+      <section id="cta">
+        <div className="container">
+          <hr className="premium-divider" />
+          <div className="text-center pt-4 pb-5">
+            <h2 className="display-5 fw-bold text-white mb-4 fst-italic" style={{ letterSpacing: '-1px', lineHeight: 1.15 }}>
+              Ready to dominate your <span className="hero-gradient-text">global market?</span>
+            </h2>
+            <p className="text-secondary mx-auto mb-5" style={{ maxWidth: 600, fontSize: '0.95rem', lineHeight: 1.7 }}>
+              Let's work together to boost your global visibility, drive international traffic, and grow your worldwide revenue.
+            </p>
+            <div className="d-flex flex-wrap justify-content-center gap-3">
+              <a href="#" className="btn btn-cta rounded-pill px-5 py-3 fw-semibold text-white text-decoration-none" style={{ fontSize: '1rem' }}>Work With Us</a>
+              <a href="#" className="btn rounded-pill px-5 py-3 fw-medium text-white text-decoration-none" style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.1)', fontSize: '1rem', transition: 'all 0.3s ease' }}
+                onMouseEnter={(e) => { e.currentTarget.style.background = 'rgba(255,255,255,0.1)'; e.currentTarget.style.borderColor = 'rgba(165,0,253,0.3)'; }}
+                onMouseLeave={(e) => { e.currentTarget.style.background = 'rgba(255,255,255,0.06)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.1)'; }}
+              >Book Intro Call</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
 };
-const InternationalSEOPage = () => <ServicePageTemplate config={config} />;
+
 export default InternationalSEOPage;
