@@ -1,5 +1,16 @@
 # Changelog
 
+## 2026-05-06 -- SEO Pages Expansion & Hover Fixes
+**What**: Created E-commerce, Mobile, and GEO SEO pages and fixed advantage card hover animations
+**Why**: Expanding SEO service offerings and resolving a UI bug where advantage cards disappeared on hover
+**Files Changed**:
+- `src/pages/EcommerceSEOPage.jsx` (NEW) — Added E-commerce SEO page with custom illustration
+- `src/pages/MobileSEOPage.jsx` (NEW) — Added Mobile SEO page with custom illustration
+- `src/pages/GEOPage.jsx` (NEW) — Added GEO SEO page with custom illustration
+- `src/App.jsx` — Registered the new routes
+- `src/pages/LocalSEOPage.jsx`, `InternationalSEOPage.jsx`, `EcommerceSEOPage.jsx`, `MobileSEOPage.jsx`, `GEOPage.jsx` — Removed inline `opacity: 0` from `.advantage-hover` elements to allow the `App.css` hover animation to function correctly.
+- `public/images/` — Added `ecommerce-seo-illustration.png`, `mobile-seo-illustration.png`, `geo-seo-illustration.png`
+
 ## 2026-04-29 -- Rebranding: NinjaPromo -> TechGeekz + Subscription Model Removal
 **What**: Replaced all NinjaPromo branding, copy, and subscription-based business model references with TechGeekz creative agency identity
 **Why**: Website content was copied from NinjaPromo and needed to be rebranded for TechGeekz (branding, SEO, ads, social media)
