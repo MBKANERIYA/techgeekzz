@@ -104,7 +104,9 @@ const InternationalSEOPage = () => {
 
                 {submitted ? (
                   <div className="text-center p-5">
-                    <div style={{ fontSize: '3rem', marginBottom: 12 }}>✅</div>
+                    <div style={{ marginBottom: 16 }}>
+                      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#a500fd" strokeWidth="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                    </div>
                     <h4 className="fw-bold text-white">Request Received!</h4>
                     <p className="text-secondary" style={{ fontSize: '0.85rem' }}>Our team will reach out within 24 hours.</p>
                   </div>
@@ -113,7 +115,7 @@ const InternationalSEOPage = () => {
                     {/* Form Header */}
                     <div className="text-center mb-4">
                       <div className="d-inline-flex align-items-center justify-content-center rounded-circle mb-3" style={{ width: 44, height: 44, background: 'rgba(165,0,253,0.12)', border: '1px solid rgba(165,0,253,0.25)' }}>
-                        <span style={{ fontSize: '1.1rem' }}>📩</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#a500fd" strokeWidth="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                       </div>
                       <h4 className="text-white fw-bold mb-1" style={{ fontSize: '1.1rem' }}>Get Free Consultation</h4>
                       <p className="text-secondary mb-0" style={{ fontSize: '0.75rem' }}>We'll get back to you within 24 hours</p>
@@ -262,8 +264,8 @@ const InternationalSEOPage = () => {
                 >
                   {/* Default state - icon + title */}
                   <div className="advantage-default" style={{ transition: 'opacity 0.3s ease' }}>
-                    <div className="d-flex align-items-center justify-content-center rounded-circle mx-auto mb-4" style={{ width: 80, height: 80, border: '2px solid rgba(165,0,253,0.25)', background: 'rgba(165,0,253,0.05)', fontSize: '2rem' }}>
-                      {card.icon}
+                    <div className="d-flex align-items-center justify-content-center rounded-circle mx-auto mb-4" style={{ width: 80, height: 80, border: '2px solid rgba(165,0,253,0.25)', background: 'rgba(165,0,253,0.05)' }}>
+                      <span className="fw-bold" style={{ color: '#a500fd', fontSize: '1.8rem', fontFamily: 'monospace' }}>0{i + 1}</span>
                     </div>
                     <h5 className="text-white fw-bold" style={{ fontSize: '1rem', lineHeight: 1.4 }}>{card.title}</h5>
                   </div>
@@ -308,7 +310,7 @@ const InternationalSEOPage = () => {
                   <div key={i} className="position-relative mb-5" style={{ paddingLeft: 30 }}>
                     {/* Circle icon on timeline */}
                     <div className="position-absolute d-flex align-items-center justify-content-center rounded-circle" style={{ left: -40, top: 0, width: 44, height: 44, background: '#0a0a0f', border: '2px solid rgba(165,0,253,0.3)', zIndex: 2 }}>
-                      <span style={{ fontSize: '1.1rem' }}>{item.icon}</span>
+                      <span style={{ fontSize: '1rem', color: '#a500fd', fontWeight: 'bold', fontFamily: 'monospace' }}>0{i + 1}</span>
                     </div>
 
                     {/* Content */}
@@ -412,7 +414,7 @@ const InternationalSEOPage = () => {
 
               <div className="d-flex align-items-center gap-3 mb-3">
                 <div className="d-flex align-items-center justify-content-center rounded-circle" style={{ width: 48, height: 48, background: 'rgba(165,0,253,0.1)', border: '1px solid rgba(165,0,253,0.2)' }}>
-                  <span style={{ fontSize: '1.2rem' }}>⭐</span>
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="#a500fd" stroke="#a500fd" strokeWidth="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
                 </div>
                 <div>
                   <h5 className="text-white fw-bold mb-0" style={{ fontSize: '0.95rem' }}>TechGeekz - SEO & Web Development</h5>
