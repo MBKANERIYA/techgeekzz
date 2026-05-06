@@ -54,36 +54,17 @@ const IndustriesSection = () => {
                   border: '1px solid rgba(255,255,255,0.06)',
                   transition: 'border-color 0.3s ease',
                 }}
-                onMouseEnter={(e) => e.currentTarget.style.borderColor = 'rgba(255,255,255,0.15)'}
+                onMouseEnter={(e) => e.currentTarget.style.borderColor = 'rgba(165,0,253,0.3)'}
                 onMouseLeave={(e) => e.currentTarget.style.borderColor = 'rgba(255,255,255,0.06)'}
               >
-                {/* Icon */}
-                <div
-                  className="rounded-4 d-flex align-items-center justify-content-center flex-shrink-0"
-                  style={{
-                    width: '120px',
-                    height: '120px',
-                    background: item.iconBg,
-                    fontSize: '3rem',
-                    boxShadow: `0 8px 30px ${item.iconBg.includes('#3b82f6') ? 'rgba(59,130,246,0.3)' : item.iconBg.includes('#a855f7') ? 'rgba(168,85,247,0.3)' : item.iconBg.includes('#ef4444') ? 'rgba(239,68,68,0.3)' : 'rgba(245,158,11,0.3)'}`,
-                  }}
-                >
-                  {item.icon}
-                </div>
-
                 {/* Content */}
                 <div className="d-flex flex-column justify-content-center">
-                  <h3
-                    className="fw-bold fs-3 mb-2 fst-italic"
-                    style={{
-                      background: item.titleGradient,
-                      WebkitBackgroundClip: 'text',
-                      WebkitTextFillColor: 'transparent',
-                      backgroundClip: 'text',
-                    }}
-                  >
-                    {item.title}
-                  </h3>
+                  <div className="d-flex align-items-center gap-2 mb-2">
+                    <div style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#a500fd', flexShrink: 0 }} />
+                    <h3 className="fw-bold fs-3 mb-0 fst-italic" style={{ color: '#a500fd' }}>
+                      {item.title}
+                    </h3>
+                  </div>
                   <p className="text-secondary small mb-0" style={{ lineHeight: 1.6 }}>
                     {item.description}
                   </p>
