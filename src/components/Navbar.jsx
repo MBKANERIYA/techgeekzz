@@ -5,10 +5,19 @@ const servicesData = [
   {
     icon: '', title: 'SEO', titleHref: '/services/seo',
     links: [
-      { label: 'Local', href: '/services/seo/local' },
-      { label: 'Technical', href: '/services/seo/technical' },
-      { label: 'International', href: '/services/seo/international' },
-      { label: 'Multilingual', href: '/services/seo/multilingual' },
+      { label: 'Local SEO', href: '/services/seo/local' },
+      { label: 'Technical SEO', href: '/services/seo/technical' },
+      { label: 'International SEO', href: '/services/seo/international' },
+      { label: 'eCommerce SEO', href: '/services/seo/ecommerce' },
+      { label: 'Mobile SEO', href: '/services/seo/mobile' },
+      { label: 'On Page SEO', href: '/services/seo/on-page' },
+      { label: 'Off Page SEO', href: '/services/seo/off-page' },
+      { label: 'Shopify SEO', href: '/services/seo/shopify' },
+      { label: 'WordPress SEO', href: '/services/seo/wordpress' },
+      { label: 'SEO Audit', href: '/services/seo/audit' },
+      { label: 'SEO Consulting', href: '/services/seo/consulting' },
+      { label: 'White Label SEO', href: '/services/seo/white-label' },
+      { label: 'Multilingual SEO', href: '/services/seo/multilingual' },
       { label: 'Generative Engine Optimization', href: '/services/seo/geo' },
     ],
   },
@@ -23,14 +32,7 @@ const servicesData = [
       { label: 'Amazon Ads', href: '/services/paid-advertising/amazon-ads' },
     ],
   },
-  {
-    icon: '', title: 'Digital Design', titleHref: '/services/digital-design',
-    links: [
-      { label: 'Web Design', href: '/services/digital-design/web-design' },
-      { label: 'UI/UX Design', href: '/services/digital-design/ui-ux-design' },
-      { label: 'Branding', href: '/services/digital-design/branding' },
-    ],
-  },
+
 ];
 
 const servicesRight = [
@@ -183,7 +185,7 @@ const Navbar = () => {
                       top: '100%',
                       left: '50%',
                       transform: 'translateX(-50%)',
-                      width: '900px',
+                      width: '1100px',
                       maxWidth: '95vw',
                       background: '#0f0f1a',
                       border: '1px solid rgba(255,255,255,0.08)',
@@ -197,19 +199,24 @@ const Navbar = () => {
                       {/* Left Columns - Services with sub-links */}
                       <div className="d-flex gap-4" style={{ flex: 3 }}>
                         {servicesData.map((cat, i) => (
-                          <div key={i} style={{ minWidth: '140px' }}>
+                          <div key={i} style={{ minWidth: cat.links.length > 6 ? '280px' : '140px' }}>
                             <Link to={cat.titleHref} onClick={closeDropdown} className="d-flex align-items-center gap-2 mb-3 text-decoration-none">
                               <span style={{ fontSize: '0.7rem' }}>{cat.icon}</span>
                               <span className="text-white fw-bold" style={{ fontSize: '0.85rem' }}>{cat.title}</span>
                             </Link>
-                            <div className="d-flex flex-column gap-1">
+                            <div style={{
+                              display: cat.links.length > 6 ? 'grid' : 'flex',
+                              gridTemplateColumns: cat.links.length > 6 ? '1fr 1fr' : undefined,
+                              gap: cat.links.length > 6 ? '2px 16px' : '4px',
+                              flexDirection: cat.links.length > 6 ? undefined : 'column',
+                            }}>
                               {cat.links.map((link, j) => (
                                 <Link
                                   key={j}
                                   to={link.href}
                                   onClick={closeDropdown}
                                   className="text-decoration-none d-flex align-items-center gap-1"
-                                  style={{ color: 'rgba(255,255,255,0.45)', fontSize: '0.78rem', transition: 'color 0.2s' }}
+                                  style={{ color: 'rgba(255,255,255,0.45)', fontSize: '0.78rem', transition: 'color 0.2s', whiteSpace: 'nowrap' }}
                                   onMouseEnter={(e) => e.currentTarget.style.color = '#a500fd'}
                                   onMouseLeave={(e) => e.currentTarget.style.color = 'rgba(255,255,255,0.45)'}
                                 >
@@ -304,151 +311,151 @@ const Navbar = () => {
                   Blog
                 </a>
 
-    {/* Desktop Blog Dropdown */}
-    {!isMobile && (
-      <div
-        className={`position-absolute rounded-4 ${openDropdown === 'blog' ? 'd-block' : 'd-none'}`}
-        style={{
-          top: '100%',
-          right: '10%',
-          width: '520px',
-          maxWidth: '95vw',
-          background: '#0f0f1a',
-          border: '1px solid rgba(255,255,255,0.08)',
-          boxShadow: '0 20px 60px rgba(0,0,0,0.5)',
-          padding: '28px 32px',
-          marginTop: '8px',
-          animation: 'fadeInUp 0.2s ease-out',
-        }}
-      >
-        <div className="d-flex gap-4">
-          <div style={{ flex: 1, borderRight: '1px solid rgba(255,255,255,0.06)', paddingRight: '24px' }}>
-            <h5 className="text-white fw-bold mb-3" style={{ fontSize: '1.1rem' }}>TechGeekz Academy</h5>
-            <p style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.8rem', lineHeight: 1.6 }}>
-              Access in-depth guides, cutting-edge strategies, and insider insights to stay ahead of the curve.
-            </p>
-          </div>
-          <div style={{ flex: 1 }}>
-            <div className="d-flex flex-column gap-2">
-              {[
-                { label: 'Guides', slug: 'guides' },
-                { label: 'Strategies', slug: 'strategies' },
-                { label: 'Ratings', slug: 'ratings' },
-                { label: 'Our Authors', slug: 'authors' },
-                { label: 'Editorial Standards', slug: 'editorial' },
-              ].map((link, j) => (
-                <Link key={j} to={`/blog/${link.slug}`} onClick={closeDropdown} className="text-decoration-none fw-medium py-1"
-                  style={{ color: '#fff', fontSize: '0.85rem', transition: 'color 0.2s' }}
-                  onMouseEnter={(e) => e.currentTarget.style.color = '#a500fd'}
-                  onMouseLeave={(e) => e.currentTarget.style.color = '#fff'}
-                >{link.label}</Link>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-    )}
+                {/* Desktop Blog Dropdown */}
+                {!isMobile && (
+                  <div
+                    className={`position-absolute rounded-4 ${openDropdown === 'blog' ? 'd-block' : 'd-none'}`}
+                    style={{
+                      top: '100%',
+                      right: '10%',
+                      width: '520px',
+                      maxWidth: '95vw',
+                      background: '#0f0f1a',
+                      border: '1px solid rgba(255,255,255,0.08)',
+                      boxShadow: '0 20px 60px rgba(0,0,0,0.5)',
+                      padding: '28px 32px',
+                      marginTop: '8px',
+                      animation: 'fadeInUp 0.2s ease-out',
+                    }}
+                  >
+                    <div className="d-flex gap-4">
+                      <div style={{ flex: 1, borderRight: '1px solid rgba(255,255,255,0.06)', paddingRight: '24px' }}>
+                        <h5 className="text-white fw-bold mb-3" style={{ fontSize: '1.1rem' }}>TechGeekz Academy</h5>
+                        <p style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.8rem', lineHeight: 1.6 }}>
+                          Access in-depth guides, cutting-edge strategies, and insider insights to stay ahead of the curve.
+                        </p>
+                      </div>
+                      <div style={{ flex: 1 }}>
+                        <div className="d-flex flex-column gap-2">
+                          {[
+                            { label: 'Guides', slug: 'guides' },
+                            { label: 'Strategies', slug: 'strategies' },
+                            { label: 'Ratings', slug: 'ratings' },
+                            { label: 'Our Authors', slug: 'authors' },
+                            { label: 'Editorial Standards', slug: 'editorial' },
+                          ].map((link, j) => (
+                            <Link key={j} to={`/blog/${link.slug}`} onClick={closeDropdown} className="text-decoration-none fw-medium py-1"
+                              style={{ color: '#fff', fontSize: '0.85rem', transition: 'color 0.2s' }}
+                              onMouseEnter={(e) => e.currentTarget.style.color = '#a500fd'}
+                              onMouseLeave={(e) => e.currentTarget.style.color = '#fff'}
+                            >{link.label}</Link>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
 
-    {/* Mobile Blog Dropdown */}
-    {isMobile && openDropdown === 'blog' && (
-      <div className="mobile-dropdown">
-        <Link to="/blog" onClick={closeMobileMenu} className="d-block text-decoration-none text-white fw-bold mb-2" style={{ fontSize: '0.9rem' }}>
-          All Blog Posts
-        </Link>
-        {[
-          { label: 'Guides', slug: 'guides' },
-          { label: 'Strategies', slug: 'strategies' },
-          { label: 'Ratings', slug: 'ratings' },
-          { label: 'Our Authors', slug: 'authors' },
-          { label: 'Editorial Standards', slug: 'editorial' },
-        ].map((link, j) => (
-          <Link key={j} to={`/blog/${link.slug}`} onClick={closeMobileMenu}
-            className="d-block text-decoration-none py-1"
-            style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.85rem' }}>
-            {link.label}
-          </Link>
-        ))}
-      </div>
-    )}
-  </li>
+                {/* Mobile Blog Dropdown */}
+                {isMobile && openDropdown === 'blog' && (
+                  <div className="mobile-dropdown">
+                    <Link to="/blog" onClick={closeMobileMenu} className="d-block text-decoration-none text-white fw-bold mb-2" style={{ fontSize: '0.9rem' }}>
+                      All Blog Posts
+                    </Link>
+                    {[
+                      { label: 'Guides', slug: 'guides' },
+                      { label: 'Strategies', slug: 'strategies' },
+                      { label: 'Ratings', slug: 'ratings' },
+                      { label: 'Our Authors', slug: 'authors' },
+                      { label: 'Editorial Standards', slug: 'editorial' },
+                    ].map((link, j) => (
+                      <Link key={j} to={`/blog/${link.slug}`} onClick={closeMobileMenu}
+                        className="d-block text-decoration-none py-1"
+                        style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.85rem' }}>
+                        {link.label}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </li>
 
-  {/* ===== COMPANY MEGA MENU ===== */}
-  <li
-    className="nav-item position-static"
-    onMouseEnter={() => handleMouseEnter('company')}
-    onMouseLeave={handleMouseLeave}
-  >
-    <a
-      className="nav-link fw-medium px-3 dropdown-toggle"
-      href="#"
-      style={navLinkStyle}
-      onClick={(e) => { e.preventDefault(); toggleDropdown('company'); }}
-    >
-      Company
-    </a>
+              {/* ===== COMPANY MEGA MENU ===== */}
+              <li
+                className="nav-item position-static"
+                onMouseEnter={() => handleMouseEnter('company')}
+                onMouseLeave={handleMouseLeave}
+              >
+                <a
+                  className="nav-link fw-medium px-3 dropdown-toggle"
+                  href="#"
+                  style={navLinkStyle}
+                  onClick={(e) => { e.preventDefault(); toggleDropdown('company'); }}
+                >
+                  Company
+                </a>
 
-    {/* Desktop Company Dropdown */}
-    {!isMobile && (
-      <div
-        className={`position-absolute rounded-4 ${openDropdown === 'company' ? 'd-block' : 'd-none'}`}
-        style={{
-          top: '100%',
-          right: '5%',
-          width: '560px',
-          maxWidth: '95vw',
-          background: '#0f0f1a',
-          border: '1px solid rgba(255,255,255,0.08)',
-          boxShadow: '0 20px 60px rgba(0,0,0,0.5)',
-          padding: '28px 32px',
-          marginTop: '8px',
-          animation: 'fadeInUp 0.2s ease-out',
-        }}
-      >
-        <div className="d-flex gap-4">
-          {/* Left - Description */}
-          <div style={{ flex: 1, borderRight: '1px solid rgba(255,255,255,0.06)', paddingRight: '24px' }}>
-            <h5 className="text-white fw-bold mb-3" style={{ fontSize: '1.1rem' }}>Company</h5>
-            <p style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.8rem', lineHeight: 1.6 }}>
-              Our strength lies in our people. We foster a culture of creativity, collaboration, and continuous learning to tackle the industry's biggest challenges.
-            </p>
-          </div>
+                {/* Desktop Company Dropdown */}
+                {!isMobile && (
+                  <div
+                    className={`position-absolute rounded-4 ${openDropdown === 'company' ? 'd-block' : 'd-none'}`}
+                    style={{
+                      top: '100%',
+                      right: '5%',
+                      width: '560px',
+                      maxWidth: '95vw',
+                      background: '#0f0f1a',
+                      border: '1px solid rgba(255,255,255,0.08)',
+                      boxShadow: '0 20px 60px rgba(0,0,0,0.5)',
+                      padding: '28px 32px',
+                      marginTop: '8px',
+                      animation: 'fadeInUp 0.2s ease-out',
+                    }}
+                  >
+                    <div className="d-flex gap-4">
+                      {/* Left - Description */}
+                      <div style={{ flex: 1, borderRight: '1px solid rgba(255,255,255,0.06)', paddingRight: '24px' }}>
+                        <h5 className="text-white fw-bold mb-3" style={{ fontSize: '1.1rem' }}>Company</h5>
+                        <p style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.8rem', lineHeight: 1.6 }}>
+                          Our strength lies in our people. We foster a culture of creativity, collaboration, and continuous learning to tackle the industry's biggest challenges.
+                        </p>
+                      </div>
 
-          {/* Right - Links */}
-          <div style={{ flex: 1 }}>
-            <div className="d-flex flex-column gap-2">
-              {[{ label: 'About Us', href: '/about' }, { label: 'Referral Program', href: '/referral' }, { label: 'Rewards And Recognition', href: '#' }, { label: 'Marketing And Technology Partners', href: '/partners' }, { label: 'Careers', href: '#' }, { label: 'Events', href: '#' }, { label: 'Contacts', href: '/contact' }].map((link, j) => (
-                <Link key={j} to={link.href} className="text-decoration-none fw-medium py-1"
-                  style={{ color: '#fff', fontSize: '0.85rem', transition: 'color 0.2s' }}
-                  onMouseEnter={(e) => e.currentTarget.style.color = '#a500fd'}
-                  onMouseLeave={(e) => e.currentTarget.style.color = '#fff'}
-                  onClick={closeDropdown}
-                >{link.label}</Link>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-    )}
+                      {/* Right - Links */}
+                      <div style={{ flex: 1 }}>
+                        <div className="d-flex flex-column gap-2">
+                          {[{ label: 'About Us', href: '/about' }, { label: 'Referral Program', href: '/referral' }, { label: 'Rewards And Recognition', href: '#' }, { label: 'Marketing And Technology Partners', href: '/partners' }, { label: 'Careers', href: '#' }, { label: 'Events', href: '#' }, { label: 'Contacts', href: '/contact' }].map((link, j) => (
+                            <Link key={j} to={link.href} className="text-decoration-none fw-medium py-1"
+                              style={{ color: '#fff', fontSize: '0.85rem', transition: 'color 0.2s' }}
+                              onMouseEnter={(e) => e.currentTarget.style.color = '#a500fd'}
+                              onMouseLeave={(e) => e.currentTarget.style.color = '#fff'}
+                              onClick={closeDropdown}
+                            >{link.label}</Link>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
 
-    {/* Mobile Company Dropdown */}
-    {isMobile && openDropdown === 'company' && (
-      <div className="mobile-dropdown">
-        {[{ label: 'About Us', href: '/about' }, { label: 'Referral Program', href: '/referral' }, { label: 'Rewards And Recognition', href: '#' }, { label: 'Marketing And Technology Partners', href: '/partners' }, { label: 'Careers', href: '#' }, { label: 'Events', href: '#' }, { label: 'Contacts', href: '/contact' }].map((link, j) => (
-          <Link key={j} to={link.href} onClick={closeMobileMenu}
-            className="d-block text-decoration-none py-2"
-            style={{ color: 'rgba(255,255,255,0.7)', fontSize: '0.88rem' }}>
-            {link.label}
-          </Link>
-        ))}
-      </div>
-    )}
-  </li>
-</ul>
+                {/* Mobile Company Dropdown */}
+                {isMobile && openDropdown === 'company' && (
+                  <div className="mobile-dropdown">
+                    {[{ label: 'About Us', href: '/about' }, { label: 'Referral Program', href: '/referral' }, { label: 'Rewards And Recognition', href: '#' }, { label: 'Marketing And Technology Partners', href: '/partners' }, { label: 'Careers', href: '#' }, { label: 'Events', href: '#' }, { label: 'Contacts', href: '/contact' }].map((link, j) => (
+                      <Link key={j} to={link.href} onClick={closeMobileMenu}
+                        className="d-block text-decoration-none py-2"
+                        style={{ color: 'rgba(255,255,255,0.7)', fontSize: '0.88rem' }}>
+                        {link.label}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </li>
+            </ul>
 
-{/* CTA Button */ }
-<a href="#" className="btn btn-cta rounded-pill px-4 py-2 fw-semibold text-white text-decoration-none mobile-cta-btn" style={{ fontSize: '0.85rem' }}>
-  Book Intro Call
-</a>
+            {/* CTA Button */}
+            <a href="#" className="btn btn-cta rounded-pill px-4 py-2 fw-semibold text-white text-decoration-none mobile-cta-btn" style={{ fontSize: '0.85rem' }}>
+              Book Intro Call
+            </a>
           </div >
         </div >
       </nav >

@@ -2,59 +2,24 @@ import { useState } from 'react';
 import ReviewsSection from '../components/ReviewsSection';
 
 const expertise = [
-  {
-    icon: '🎯',
-    title: 'Customized Campaigns Focused on the Audience',
-    desc: 'Every local market is unique. We develop highly tailored campaigns based on your location, niche, and target audience to ensure maximum visibility and conversions in your specific service area.',
-  },
-  {
-    icon: '🛡️',
-    title: 'White-Hat SEO Practices',
-    desc: 'As a Google-recognized agency, we prioritize ethical SEO strategies. We build strong, useful citations and high-quality backlinks that support the development of a powerful local brand identity.',
-  },
-  {
-    icon: '⭐',
-    title: 'Enhance Your Local Image',
-    desc: 'Ratings and client reviews are essential for local business legitimacy. Our team works to enhance your online reputation and solicits authentic feedback to give your business more credibility.',
-  },
-  {
-    icon: '📊',
-    title: 'Personalised Reporting',
-    desc: 'We provide sophisticated, comprehensive, and easily understandable reports so you stay informed of all developments. Real-time insights help you make necessary adjustments to ongoing campaigns.',
-  },
-  {
-    icon: '🔍',
-    title: 'Comprehensive Citation Audit',
-    desc: 'Our team performs a thorough citation audit to correct erroneous information across the internet and achieve local search dominance. We ensure NAP consistency across 100+ directories.',
-  },
+  { title: 'High-Quality Link Building', desc: 'We build authoritative, relevant backlinks from trusted domains to strengthen your website domain authority and improve your search engine rankings organically.' },
+  { title: 'Guest Posting & Outreach', desc: 'Our team identifies high-authority blogs and publications in your niche for guest posting opportunities that build brand awareness and earn quality backlinks.' },
+  { title: 'Social Media Signals', desc: 'We amplify your content across social platforms to generate engagement signals that search engines consider when evaluating your site authority and relevance.' },
+  { title: 'Brand Mentions & Citations', desc: 'We secure branded mentions and citations across authoritative directories and industry publications to build trust signals and strengthen your online reputation.' },
+  { title: 'Toxic Link Removal', desc: 'We identify and disavow harmful backlinks pointing to your site that could trigger Google penalties and damage your rankings and domain authority.' },
 ];
 
 const faqs = [
-  {
-    q: 'What is Local SEO?',
-    a: 'Local SEO (Search Engine Optimization) is the practice of improving your business\'s website and listings in internet search results for customers in your area. It\'s advantageous for any company that caters to a specific geographic region.',
-  },
-  {
-    q: 'Why is Local SEO important for my business?',
-    a: 'Local SEO is one of the strongest strategies for boosting traffic from your specific location. If your business depends on organic traffic, local SEO services can bring in the highly targeted visitors you\'re looking for, driving more footfall and revenue.',
-  },
-  {
-    q: 'How much does Local SEO cost?',
-    a: 'The cost of local SEO varies depending on the specific project scope, competition level, and services required. We offer customized packages to fit different budgets while delivering maximum ROI for your local business.',
-  },
-  {
-    q: 'How can Local SEO help grow my business?',
-    a: 'Local SEO attracts a sizable local audience to your business. The goal is to become the top service provider in your specific area, driving local traffic and leads that increase sales from customers near your location.',
-  },
-  {
-    q: 'How long does it take to see results?',
-    a: 'Results vary depending on your business type and competition level. Some businesses see improvements within the first few weeks, while others may need 2-3 months to see optimal outcomes. Local SEO generally shows faster results than traditional SEO.',
-  },
+  { q: 'What is Off Page SEO?', a: 'Off Page SEO refers to all optimization activities done outside your website to improve search rankings. This includes link building, brand mentions, social signals, guest posting, and building domain authority through external sources.' },
+  { q: 'Why are backlinks important for SEO?', a: 'Backlinks act as votes of confidence from other websites. When authoritative sites link to yours, search engines view your content as more trustworthy and relevant, which directly improves your rankings.' },
+  { q: 'How do you build backlinks?', a: 'We use ethical, white-hat strategies including guest posting on authoritative blogs, digital PR, broken link building, resource page outreach, and creating link-worthy content that naturally earns backlinks.' },
+  { q: 'How long does link building take to show results?', a: 'Link building is a long-term strategy. You can expect to see ranking improvements within 2-4 months as new backlinks are indexed and their authority is recognized by search engines.' },
+  { q: 'Can bad backlinks hurt my site?', a: 'Yes. Low-quality, spammy, or toxic backlinks can trigger Google penalties and damage your rankings. Our team identifies and disavows harmful links to protect your site authority.' },
 ];
 
 
 
-const LocalSEOPage = () => {
+const OffPageSEOPage = () => {
   const [openFaq, setOpenFaq] = useState(null);
   const [formData, setFormData] = useState({ name: '', email: '', phone: '', service: '' });
   const [submitted, setSubmitted] = useState(false);
@@ -77,15 +42,15 @@ const LocalSEOPage = () => {
             {/* Left - Content */}
             <div className="col-lg-7">
               <h1 className="display-4 fw-bold text-white mb-4" style={{ lineHeight: 1.1, letterSpacing: '-1px' }}>
-                <span className="hero-gradient-text">Local SEO</span> Services
+                <span className="hero-gradient-text">Off Page SEO</span> Services
               </h1>
 
               <p className="text-secondary mb-4" style={{ maxWidth: 580, lineHeight: 1.8, fontSize: '1rem' }}>
-                TechGeekz is one of the best SEO companies, offering expert services to boost your rankings, drive traffic, and grow your online presence. With our local SEO services, we promise the best conversion rates possible across all local advertising platforms.
+                Off Page SEO builds your website authority and credibility through strategic link building, brand mentions, and social signals that search engines value highly.
               </p>
 
               <p className="text-secondary mb-5" style={{ maxWidth: 580, lineHeight: 1.8, fontSize: '1rem' }}>
-                As a leading <strong className="text-white">Local SEO Company</strong>, TechGeekz brings together an innovation-led approach and search engine-friendly practices to help your local business reach and be found by your target users. Our team of <strong className="text-white">Local SEO Experts</strong> ensures that your business gains visibility and drives more customers and ultimately revenue.
+                As a leading <strong className="text-white">Off Page SEO Agency</strong>, Our Off Page SEO Experts craft customized link building campaigns that earn high-quality backlinks from authoritative sources, boosting your domain authority and rankings.
               </p>
 
               <a href="#cta" className="btn btn-cta rounded-pill px-5 py-3 fw-semibold text-white text-decoration-none d-inline-flex align-items-center gap-2" style={{ fontSize: '0.95rem' }}>
@@ -157,7 +122,7 @@ const LocalSEOPage = () => {
                         onBlur={(e) => { e.target.style.borderColor = 'rgba(255,255,255,0.1)'; e.target.style.boxShadow = 'none'; }}
                       >
                         <option value="" style={{ background: '#1a1a2e' }}>Select a service...</option>
-                        <option value="local-seo" style={{ background: '#1a1a2e' }}>Local SEO Services</option>
+                        <option value="off-page-seo" style={{ background: '#1a1a2e' }}>Off Page SEO Services</option>
                         <option value="seo" style={{ background: '#1a1a2e' }}>SEO Service</option>
                         <option value="web-dev" style={{ background: '#1a1a2e' }}>Website Development</option>
                         <option value="digital-marketing" style={{ background: '#1a1a2e' }}>Digital Marketing</option>
@@ -188,7 +153,7 @@ const LocalSEOPage = () => {
             {/* Left - Illustration */}
             <div className="col-lg-5">
               <div className="rounded-4 p-4 text-center" style={{ background: 'rgba(165,0,253,0.03)' }}>
-                <img src="/images/local-seo-illustration.png" alt="Local SEO Services Illustration" className="img-fluid" style={{ maxHeight: 380 }} />
+                <img src="/images/off-page-seo-illustration.png" alt="Off Page SEO Services Illustration" className="img-fluid" style={{ maxHeight: 380 }} />
               </div>
             </div>
 
@@ -196,10 +161,10 @@ const LocalSEOPage = () => {
             <div className="col-lg-7">
               <h2 className="display-6 fw-bold text-white mb-4" style={{ letterSpacing: '-1px', lineHeight: 1.15 }}>
                 Why Choose TechGeekz, for{' '}
-                <span className="hero-gradient-text fst-italic">Local SEO</span> Services?
+                <span className="hero-gradient-text fst-italic">Off Page SEO</span> Services?
               </h2>
               <p className="text-secondary" style={{ fontSize: '0.95rem', lineHeight: 1.8 }}>
-                TechGeekz is here to assist you with the most advanced SEO solutions available. We will create high-quality local citations to raise your local Google map rankings. As one of the most well-known local SEO agencies, TechGeekz specializes in both building a strong online presence and listing your company for local searches.
+                TechGeekz specializes in ethical, white-hat off-page SEO strategies that build lasting authority for your website through quality backlinks, brand mentions, and strategic outreach.
               </p>
             </div>
           </div>
@@ -212,49 +177,26 @@ const LocalSEOPage = () => {
           <hr className="premium-divider" />
           <div className="text-center mb-5 pt-4">
             <h2 className="display-6 fw-bold text-white" style={{ letterSpacing: '-1px' }}>
-              Advantages of our <span className="hero-gradient-text fst-italic">local SEO services</span>
+              Advantages of our <span className="hero-gradient-text fst-italic">Off Page SEO services</span>
             </h2>
           </div>
 
           <div className="row g-4">
             {[
               {
-                icon: (
-                  <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#a500fd" strokeWidth="1.5">
-                    <rect x="3" y="3" width="18" height="18" rx="2" />
-                    <path d="M7 13l3 3 7-7" />
-                    <path d="M3 9h18" />
-                    <circle cx="6" cy="6" r="1" fill="#a500fd" />
-                    <circle cx="9" cy="6" r="1" fill="#a500fd" />
-                  </svg>
-                ),
-                title: 'Brings more visitors to your website',
-                desc: 'With the help of our local SEO services for small business, your website will rank higher and receive more visitors from local searches. People rarely care to look at Google\'s second-page results, so if your local business is on the first page, you will receive clicks and your website will gain more visibility.',
+                icon: null,
+                title: 'Boost domain authority',
+                desc: 'Quality backlinks from authoritative websites signal trust to search engines, directly increasing your domain authority and helping your pages rank higher.',
               },
               {
-                icon: (
-                  <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#a500fd" strokeWidth="1.5">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c1.85 0 3.58-.5 5.07-1.38" />
-                    <path d="M17 8c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z" />
-                    <path d="M7 8c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z" />
-                    <path d="M12 22V12" />
-                    <path d="M8 16l4-4 4 4" />
-                  </svg>
-                ),
-                title: 'Aids in attracting local clients for your company',
-                desc: 'Our local SEO strategies target customers who are actively searching for services in your area. By optimizing your Google Business Profile and local listings, we connect your business directly with high-intent local buyers ready to convert.',
+                icon: null,
+                title: 'Drive referral traffic',
+                desc: 'Strategic link placements on relevant websites bring qualified visitors directly to your site, generating leads beyond organic search traffic.',
               },
               {
-                icon: (
-                  <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#a500fd" strokeWidth="1.5">
-                    <rect x="4" y="12" width="4" height="8" rx="1" />
-                    <rect x="10" y="8" width="4" height="12" rx="1" />
-                    <rect x="16" y="4" width="4" height="16" rx="1" />
-                    <circle cx="6" cy="10" r="2" fill="none" stroke="#a500fd" />
-                  </svg>
-                ),
-                title: 'Increases leads and conversions',
-                desc: 'Local SEO drives highly targeted traffic that converts at a much higher rate. When customers find your business at the top of local results, they are more likely to call, visit, or make a purchase — directly boosting your revenue and ROI.',
+                icon: null,
+                title: 'Build brand credibility',
+                desc: 'Being featured on reputable industry websites and publications builds trust with both search engines and potential customers, establishing your brand as an authority.',
               },
             ].map((card, i) => (
               <div key={i} className="col-lg-4 col-md-6">
@@ -296,7 +238,7 @@ const LocalSEOPage = () => {
               <div style={{ position: 'sticky', top: '120px' }}>
                 <h2 className="display-6 fw-bold text-white" style={{ letterSpacing: '-1px', lineHeight: 1.15 }}>
                   Our Expertise in{' '}
-                  <span className="hero-gradient-text fst-italic">Local SEO</span> Services
+                  <span className="hero-gradient-text fst-italic">Off Page SEO</span> Services
                 </h2>
               </div>
             </div>
@@ -493,7 +435,7 @@ const LocalSEOPage = () => {
           <hr className="premium-divider" />
           <div className="text-center pt-4 pb-5">
             <h2 className="display-5 fw-bold text-white mb-4 fst-italic" style={{ letterSpacing: '-1px', lineHeight: 1.15 }}>
-              Ready to dominate your <span className="hero-gradient-text">local market?</span>
+              Ready to dominate your <span className="hero-gradient-text">website health?</span>
             </h2>
             <p className="text-secondary mx-auto mb-5" style={{ maxWidth: 600, fontSize: '0.95rem', lineHeight: 1.7 }}>
               Let's work together to boost your local visibility, drive more customers, and grow your revenue.
@@ -512,4 +454,4 @@ const LocalSEOPage = () => {
   );
 };
 
-export default LocalSEOPage;
+export default OffPageSEOPage;

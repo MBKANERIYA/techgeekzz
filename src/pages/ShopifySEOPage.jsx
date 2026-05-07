@@ -2,59 +2,24 @@ import { useState } from 'react';
 import ReviewsSection from '../components/ReviewsSection';
 
 const expertise = [
-  {
-    icon: '🎯',
-    title: 'Customized Campaigns Focused on the Audience',
-    desc: 'Every local market is unique. We develop highly tailored campaigns based on your location, niche, and target audience to ensure maximum visibility and conversions in your specific service area.',
-  },
-  {
-    icon: '🛡️',
-    title: 'White-Hat SEO Practices',
-    desc: 'As a Google-recognized agency, we prioritize ethical SEO strategies. We build strong, useful citations and high-quality backlinks that support the development of a powerful local brand identity.',
-  },
-  {
-    icon: '⭐',
-    title: 'Enhance Your Local Image',
-    desc: 'Ratings and client reviews are essential for local business legitimacy. Our team works to enhance your online reputation and solicits authentic feedback to give your business more credibility.',
-  },
-  {
-    icon: '📊',
-    title: 'Personalised Reporting',
-    desc: 'We provide sophisticated, comprehensive, and easily understandable reports so you stay informed of all developments. Real-time insights help you make necessary adjustments to ongoing campaigns.',
-  },
-  {
-    icon: '🔍',
-    title: 'Comprehensive Citation Audit',
-    desc: 'Our team performs a thorough citation audit to correct erroneous information across the internet and achieve local search dominance. We ensure NAP consistency across 100+ directories.',
-  },
+  { title: 'Shopify Store Technical Audit', desc: 'We analyze your Shopify store structure, theme code, and technical setup to identify issues like duplicate content from collections, slow loading apps, and poor URL structures.' },
+  { title: 'Product Page Optimization', desc: 'We optimize your product titles, descriptions, images, and meta tags with high-intent buyer keywords to increase visibility and drive conversions from organic search.' },
+  { title: 'Collection & Category SEO', desc: 'We structure and optimize your Shopify collections with keyword-rich descriptions, proper hierarchy, and internal linking to capture category-level search traffic.' },
+  { title: 'Shopify App & Speed Optimization', desc: 'We audit and optimize your installed apps, remove bloated code, implement lazy loading, and optimize images to dramatically improve your store page load speed.' },
+  { title: 'Schema & Rich Snippets', desc: 'We implement product schema markup, review snippets, and breadcrumb data to help your products appear with rich results in Google, increasing click-through rates.' },
 ];
 
 const faqs = [
-  {
-    q: 'What is Local SEO?',
-    a: 'Local SEO (Search Engine Optimization) is the practice of improving your business\'s website and listings in internet search results for customers in your area. It\'s advantageous for any company that caters to a specific geographic region.',
-  },
-  {
-    q: 'Why is Local SEO important for my business?',
-    a: 'Local SEO is one of the strongest strategies for boosting traffic from your specific location. If your business depends on organic traffic, local SEO services can bring in the highly targeted visitors you\'re looking for, driving more footfall and revenue.',
-  },
-  {
-    q: 'How much does Local SEO cost?',
-    a: 'The cost of local SEO varies depending on the specific project scope, competition level, and services required. We offer customized packages to fit different budgets while delivering maximum ROI for your local business.',
-  },
-  {
-    q: 'How can Local SEO help grow my business?',
-    a: 'Local SEO attracts a sizable local audience to your business. The goal is to become the top service provider in your specific area, driving local traffic and leads that increase sales from customers near your location.',
-  },
-  {
-    q: 'How long does it take to see results?',
-    a: 'Results vary depending on your business type and competition level. Some businesses see improvements within the first few weeks, while others may need 2-3 months to see optimal outcomes. Local SEO generally shows faster results than traditional SEO.',
-  },
+  { q: 'What is Shopify SEO?', a: 'Shopify SEO is the process of optimizing your Shopify store to rank higher in search engines. It addresses Shopify-specific challenges like duplicate content from collections, URL structures, and theme optimization.' },
+  { q: 'Can Shopify stores rank well on Google?', a: 'Absolutely. With proper SEO optimization, Shopify stores can rank just as well as any other platform. The key is addressing Shopify-specific technical issues and optimizing product and collection pages properly.' },
+  { q: 'What Shopify SEO issues do you fix?', a: 'We fix duplicate content from collections and tags, optimize slow-loading themes, configure proper URL structures, implement schema markup for products, and optimize product descriptions for target keywords.' },
+  { q: 'Do I need to change my Shopify theme for SEO?', a: 'Not necessarily. We can optimize most Shopify themes for SEO. However, if your theme has significant performance issues or poor code quality, we may recommend a theme upgrade for best results.' },
+  { q: 'How long until my Shopify store ranks?', a: 'Results vary based on competition and current site health. Most Shopify stores see measurable ranking improvements within 3-6 months of implementing our SEO recommendations.' },
 ];
 
 
 
-const LocalSEOPage = () => {
+const ShopifySEOPage = () => {
   const [openFaq, setOpenFaq] = useState(null);
   const [formData, setFormData] = useState({ name: '', email: '', phone: '', service: '' });
   const [submitted, setSubmitted] = useState(false);
@@ -77,15 +42,15 @@ const LocalSEOPage = () => {
             {/* Left - Content */}
             <div className="col-lg-7">
               <h1 className="display-4 fw-bold text-white mb-4" style={{ lineHeight: 1.1, letterSpacing: '-1px' }}>
-                <span className="hero-gradient-text">Local SEO</span> Services
+                <span className="hero-gradient-text">Shopify SEO</span> Services
               </h1>
 
               <p className="text-secondary mb-4" style={{ maxWidth: 580, lineHeight: 1.8, fontSize: '1rem' }}>
-                TechGeekz is one of the best SEO companies, offering expert services to boost your rankings, drive traffic, and grow your online presence. With our local SEO services, we promise the best conversion rates possible across all local advertising platforms.
+                Is your Shopify store invisible on Google? Our Shopify SEO services optimize every aspect of your store to drive organic traffic and increase sales without relying solely on paid ads.
               </p>
 
               <p className="text-secondary mb-5" style={{ maxWidth: 580, lineHeight: 1.8, fontSize: '1rem' }}>
-                As a leading <strong className="text-white">Local SEO Company</strong>, TechGeekz brings together an innovation-led approach and search engine-friendly practices to help your local business reach and be found by your target users. Our team of <strong className="text-white">Local SEO Experts</strong> ensures that your business gains visibility and drives more customers and ultimately revenue.
+                As a leading <strong className="text-white">Shopify SEO Agency</strong>, Our Shopify SEO Experts understand the platform inside out, from theme optimization to app performance, ensuring your store ranks for the keywords your customers are searching.
               </p>
 
               <a href="#cta" className="btn btn-cta rounded-pill px-5 py-3 fw-semibold text-white text-decoration-none d-inline-flex align-items-center gap-2" style={{ fontSize: '0.95rem' }}>
@@ -157,7 +122,7 @@ const LocalSEOPage = () => {
                         onBlur={(e) => { e.target.style.borderColor = 'rgba(255,255,255,0.1)'; e.target.style.boxShadow = 'none'; }}
                       >
                         <option value="" style={{ background: '#1a1a2e' }}>Select a service...</option>
-                        <option value="local-seo" style={{ background: '#1a1a2e' }}>Local SEO Services</option>
+                        <option value="shopify-seo" style={{ background: '#1a1a2e' }}>Shopify SEO Services</option>
                         <option value="seo" style={{ background: '#1a1a2e' }}>SEO Service</option>
                         <option value="web-dev" style={{ background: '#1a1a2e' }}>Website Development</option>
                         <option value="digital-marketing" style={{ background: '#1a1a2e' }}>Digital Marketing</option>
@@ -188,7 +153,7 @@ const LocalSEOPage = () => {
             {/* Left - Illustration */}
             <div className="col-lg-5">
               <div className="rounded-4 p-4 text-center" style={{ background: 'rgba(165,0,253,0.03)' }}>
-                <img src="/images/local-seo-illustration.png" alt="Local SEO Services Illustration" className="img-fluid" style={{ maxHeight: 380 }} />
+                <img src="/images/shopify-seo-illustration.png" alt="Shopify SEO Services Illustration" className="img-fluid" style={{ maxHeight: 380 }} />
               </div>
             </div>
 
@@ -196,10 +161,10 @@ const LocalSEOPage = () => {
             <div className="col-lg-7">
               <h2 className="display-6 fw-bold text-white mb-4" style={{ letterSpacing: '-1px', lineHeight: 1.15 }}>
                 Why Choose TechGeekz, for{' '}
-                <span className="hero-gradient-text fst-italic">Local SEO</span> Services?
+                <span className="hero-gradient-text fst-italic">Shopify SEO</span> Services?
               </h2>
               <p className="text-secondary" style={{ fontSize: '0.95rem', lineHeight: 1.8 }}>
-                TechGeekz is here to assist you with the most advanced SEO solutions available. We will create high-quality local citations to raise your local Google map rankings. As one of the most well-known local SEO agencies, TechGeekz specializes in both building a strong online presence and listing your company for local searches.
+                TechGeekz specializes in Shopify-specific SEO strategies that address the unique challenges of the platform, from duplicate content issues to collection optimization and product schema markup.
               </p>
             </div>
           </div>
@@ -212,49 +177,26 @@ const LocalSEOPage = () => {
           <hr className="premium-divider" />
           <div className="text-center mb-5 pt-4">
             <h2 className="display-6 fw-bold text-white" style={{ letterSpacing: '-1px' }}>
-              Advantages of our <span className="hero-gradient-text fst-italic">local SEO services</span>
+              Advantages of our <span className="hero-gradient-text fst-italic">Shopify SEO services</span>
             </h2>
           </div>
 
           <div className="row g-4">
             {[
               {
-                icon: (
-                  <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#a500fd" strokeWidth="1.5">
-                    <rect x="3" y="3" width="18" height="18" rx="2" />
-                    <path d="M7 13l3 3 7-7" />
-                    <path d="M3 9h18" />
-                    <circle cx="6" cy="6" r="1" fill="#a500fd" />
-                    <circle cx="9" cy="6" r="1" fill="#a500fd" />
-                  </svg>
-                ),
-                title: 'Brings more visitors to your website',
-                desc: 'With the help of our local SEO services for small business, your website will rank higher and receive more visitors from local searches. People rarely care to look at Google\'s second-page results, so if your local business is on the first page, you will receive clicks and your website will gain more visibility.',
+                icon: null,
+                title: 'Increase organic store traffic',
+                desc: 'Optimized product and collection pages rank higher in search results, bringing a steady stream of shoppers who are actively looking to buy your products.',
               },
               {
-                icon: (
-                  <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#a500fd" strokeWidth="1.5">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c1.85 0 3.58-.5 5.07-1.38" />
-                    <path d="M17 8c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z" />
-                    <path d="M7 8c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z" />
-                    <path d="M12 22V12" />
-                    <path d="M8 16l4-4 4 4" />
-                  </svg>
-                ),
-                title: 'Aids in attracting local clients for your company',
-                desc: 'Our local SEO strategies target customers who are actively searching for services in your area. By optimizing your Google Business Profile and local listings, we connect your business directly with high-intent local buyers ready to convert.',
+                icon: null,
+                title: 'Reduce dependency on paid ads',
+                desc: 'Strong organic rankings mean you spend less on paid advertising while maintaining consistent traffic and sales from search engines.',
               },
               {
-                icon: (
-                  <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#a500fd" strokeWidth="1.5">
-                    <rect x="4" y="12" width="4" height="8" rx="1" />
-                    <rect x="10" y="8" width="4" height="12" rx="1" />
-                    <rect x="16" y="4" width="4" height="16" rx="1" />
-                    <circle cx="6" cy="10" r="2" fill="none" stroke="#a500fd" />
-                  </svg>
-                ),
-                title: 'Increases leads and conversions',
-                desc: 'Local SEO drives highly targeted traffic that converts at a much higher rate. When customers find your business at the top of local results, they are more likely to call, visit, or make a purchase — directly boosting your revenue and ROI.',
+                icon: null,
+                title: 'Higher conversion rates',
+                desc: 'SEO-optimized product pages with compelling descriptions and proper structure convert visitors into buyers at significantly higher rates than generic pages.',
               },
             ].map((card, i) => (
               <div key={i} className="col-lg-4 col-md-6">
@@ -296,7 +238,7 @@ const LocalSEOPage = () => {
               <div style={{ position: 'sticky', top: '120px' }}>
                 <h2 className="display-6 fw-bold text-white" style={{ letterSpacing: '-1px', lineHeight: 1.15 }}>
                   Our Expertise in{' '}
-                  <span className="hero-gradient-text fst-italic">Local SEO</span> Services
+                  <span className="hero-gradient-text fst-italic">Shopify SEO</span> Services
                 </h2>
               </div>
             </div>
@@ -493,7 +435,7 @@ const LocalSEOPage = () => {
           <hr className="premium-divider" />
           <div className="text-center pt-4 pb-5">
             <h2 className="display-5 fw-bold text-white mb-4 fst-italic" style={{ letterSpacing: '-1px', lineHeight: 1.15 }}>
-              Ready to dominate your <span className="hero-gradient-text">local market?</span>
+              Ready to dominate your <span className="hero-gradient-text">website health?</span>
             </h2>
             <p className="text-secondary mx-auto mb-5" style={{ maxWidth: 600, fontSize: '0.95rem', lineHeight: 1.7 }}>
               Let's work together to boost your local visibility, drive more customers, and grow your revenue.
@@ -512,4 +454,4 @@ const LocalSEOPage = () => {
   );
 };
 
-export default LocalSEOPage;
+export default ShopifySEOPage;

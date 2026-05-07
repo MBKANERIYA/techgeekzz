@@ -27,6 +27,13 @@ import EcommerceSEOPage from './pages/EcommerceSEOPage';
 import MobileSEOPage from './pages/MobileSEOPage';
 import MultilingualSEOPage from './pages/MultilingualSEOPage';
 import GEOPage from './pages/GEOPage';
+import OnPageSEOPage from './pages/OnPageSEOPage';
+import OffPageSEOPage from './pages/OffPageSEOPage';
+import ShopifySEOPage from './pages/ShopifySEOPage';
+import WordPressSEOPage from './pages/WordPressSEOPage';
+import SEOAuditPage from './pages/SEOAuditPage';
+import SEOConsultingPage from './pages/SEOConsultingPage';
+import WhiteLabelSEOPage from './pages/WhiteLabelSEOPage';
 // Paid Advertising
 import PaidAdvertisingPage from './pages/PaidAdvertisingPage';
 import GoogleAdsPage from './pages/GoogleAdsPage';
@@ -75,6 +82,13 @@ function App() {
             <Route path="/services/seo/mobile" element={<MobileSEOPage />} />
             <Route path="/services/seo/multilingual" element={<MultilingualSEOPage />} />
             <Route path="/services/seo/geo" element={<GEOPage />} />
+            <Route path="/services/seo/on-page" element={<OnPageSEOPage />} />
+            <Route path="/services/seo/off-page" element={<OffPageSEOPage />} />
+            <Route path="/services/seo/shopify" element={<ShopifySEOPage />} />
+            <Route path="/services/seo/wordpress" element={<WordPressSEOPage />} />
+            <Route path="/services/seo/audit" element={<SEOAuditPage />} />
+            <Route path="/services/seo/consulting" element={<SEOConsultingPage />} />
+            <Route path="/services/seo/white-label" element={<WhiteLabelSEOPage />} />
             {/* Paid Advertising */}
             <Route path="/services/paid-advertising" element={<PaidAdvertisingPage />} />
             <Route path="/services/paid-advertising/google-ads" element={<GoogleAdsPage />} />

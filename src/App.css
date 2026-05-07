@@ -24,7 +24,7 @@ body {
 
 .app {
   min-height: 100vh;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 .main-content {
@@ -38,7 +38,7 @@ section {
 }
 
 /* === Smooth Fade-In on Scroll === */
-section > .container {
+section>.container {
   animation: fadeInUp 0.6s ease-out both;
 }
 
@@ -47,6 +47,7 @@ section > .container {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -117,13 +118,23 @@ section > .container {
 }
 
 @keyframes marqueeScroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 @keyframes marqueeScrollReverse {
-  0% { transform: translateX(-50%); }
-  100% { transform: translateX(0); }
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
 
 /* === Challenge Card === */
@@ -245,6 +256,7 @@ a {
       opacity: 0;
       transform: translateY(-8px);
     }
+
     to {
       opacity: 1;
       transform: translateY(0);
@@ -267,7 +279,8 @@ a {
     padding-bottom: 1rem !important;
   }
 
-  .display-4, .display-5 {
+  .display-4,
+  .display-5 {
     font-size: 2rem !important;
   }
 

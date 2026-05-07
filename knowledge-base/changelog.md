@@ -1,5 +1,32 @@
 # Changelog
 
+## 2026-05-07 — Standardized All SEO Pages to LocalSEO Pattern
+**What**: Converted MultilingualSEOPage and TechnicalSEOPage from old ServicePageTemplate to LocalSEO pattern. Rewrote unique content (expertise, FAQs, hero, advantages, why-choose-us) for all 9 pages: OnPage, OffPage, Shopify, WordPress, SEOAudit, SEOConsulting, WhiteLabel, Multilingual, Technical
+**Why**: User requested all SEO pages match the same layout pattern
+**Files Changed**:
+- All 9 new SEO page files — unique expertise items, FAQs, hero text, advantage cards, and why-choose-us content
+- `public/images/` — Added multilingual-seo-illustration.png and technical-seo-illustration.png
+
+## 2026-05-07 — Created 7 New SEO Service Pages
+**What**: Created On Page SEO, Off Page SEO, Shopify SEO, WordPress SEO, SEO Audit, SEO Consulting, and White Label SEO pages
+**Why**: All navbar SEO dropdown links needed working pages
+**Files Changed**:
+- `src/pages/OnPageSEOPage.jsx` (NEW), `OffPageSEOPage.jsx` (NEW), `ShopifySEOPage.jsx` (NEW), `WordPressSEOPage.jsx` (NEW), `SEOAuditPage.jsx` (NEW), `SEOConsultingPage.jsx` (NEW), `WhiteLabelSEOPage.jsx` (NEW)
+- `src/App.jsx` — Added 7 imports and routes
+- `public/images/` — Added 7 illustrations
+- All pages follow LocalSEOPage template structure
+
+## 2026-05-07 — Expanded SEO Services in Navbar Dropdown
+**What**: Added 9 additional SEO sub-services to the navbar mega menu dropdown
+**Why**: To match competitor sites (riofos.com reference) with comprehensive SEO service listing
+**Files Changed**:
+- `src/components/Navbar.jsx`:
+  - Added to SEO links: eCommerce SEO, Mobile SEO, On Page SEO, Off Page SEO, Shopify SEO, WordPress SEO, SEO Audit, SEO Consulting, White Label SEO (14 total, up from 5)
+  - Made labels more descriptive (e.g., "Local" → "Local SEO")
+  - Widened mega menu from 900px to 1100px
+  - SEO column now uses 2-column CSS grid layout (auto-triggered when >6 links)
+  - Note: New pages (On Page, Off Page, Shopify, WordPress, SEO Audit, Consulting, White Label) still need to be created
+
 ## 2026-05-06 -- SEO Pages Emoji Removal
 **What**: Removed all emojis from newly created SEO pages and replaced them with numbers or SVGs
 **Why**: Emojis contradict the newly established clean brand aesthetic. Replaced with numbered lists and custom SVGs to maintain a professional, high-end look.

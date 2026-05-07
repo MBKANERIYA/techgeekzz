@@ -5,7 +5,7 @@ const expertise = [
   {
     icon: '🎯',
     title: 'Customized Campaigns Focused on the Audience',
-    desc: 'Every local market is unique. We develop highly tailored campaigns based on your location, niche, and target audience to ensure maximum visibility and conversions in your specific service area.',
+    desc: 'Every website health is unique. We develop highly tailored campaigns based on your location, niche, and target audience to ensure maximum visibility and conversions in your specific service area.',
   },
   {
     icon: '🛡️',
@@ -15,7 +15,7 @@ const expertise = [
   {
     icon: '⭐',
     title: 'Enhance Your Local Image',
-    desc: 'Ratings and client reviews are essential for local business legitimacy. Our team works to enhance your online reputation and solicits authentic feedback to give your business more credibility.',
+    desc: 'Ratings and client reviews are essential for website legitimacy. Our team works to enhance your online reputation and solicits authentic feedback to give your business more credibility.',
   },
   {
     icon: '📊',
@@ -30,31 +30,16 @@ const expertise = [
 ];
 
 const faqs = [
-  {
-    q: 'What is Local SEO?',
-    a: 'Local SEO (Search Engine Optimization) is the practice of improving your business\'s website and listings in internet search results for customers in your area. It\'s advantageous for any company that caters to a specific geographic region.',
-  },
-  {
-    q: 'Why is Local SEO important for my business?',
-    a: 'Local SEO is one of the strongest strategies for boosting traffic from your specific location. If your business depends on organic traffic, local SEO services can bring in the highly targeted visitors you\'re looking for, driving more footfall and revenue.',
-  },
-  {
-    q: 'How much does Local SEO cost?',
-    a: 'The cost of local SEO varies depending on the specific project scope, competition level, and services required. We offer customized packages to fit different budgets while delivering maximum ROI for your local business.',
-  },
-  {
-    q: 'How can Local SEO help grow my business?',
-    a: 'Local SEO attracts a sizable local audience to your business. The goal is to become the top service provider in your specific area, driving local traffic and leads that increase sales from customers near your location.',
-  },
-  {
-    q: 'How long does it take to see results?',
-    a: 'Results vary depending on your business type and competition level. Some businesses see improvements within the first few weeks, while others may need 2-3 months to see optimal outcomes. Local SEO generally shows faster results than traditional SEO.',
-  },
+  { q: 'What is SEO Consulting?', a: 'SEO Consulting provides expert strategic guidance for your SEO efforts without full-service execution. We analyze your situation, develop strategies, train your team, and provide ongoing advisory to help you achieve organic growth.' },
+  { q: 'How is consulting different from full-service SEO?', a: 'With full-service SEO, we execute everything. With consulting, we provide the strategy, training, and guidance while your team handles the implementation. It is ideal for companies with in-house marketing teams.' },
+  { q: 'What does an SEO consulting engagement look like?', a: 'Typically it starts with a comprehensive audit, followed by strategy development, team training sessions, and ongoing monthly advisory calls with detailed performance reviews and recommendations.' },
+  { q: 'Is SEO consulting suitable for small businesses?', a: 'Yes. SEO consulting is actually very cost-effective for small businesses that want expert guidance without the full agency retainer. We help you prioritize the highest-impact activities for your budget.' },
+  { q: 'How often do we meet during consulting?', a: 'We typically hold bi-weekly or monthly strategy calls depending on your needs. Between calls, you have email access for questions and we provide detailed written recommendations and action items.' },
 ];
 
 
 
-const LocalSEOPage = () => {
+const SEOConsultingPage = () => {
   const [openFaq, setOpenFaq] = useState(null);
   const [formData, setFormData] = useState({ name: '', email: '', phone: '', service: '' });
   const [submitted, setSubmitted] = useState(false);
@@ -77,15 +62,15 @@ const LocalSEOPage = () => {
             {/* Left - Content */}
             <div className="col-lg-7">
               <h1 className="display-4 fw-bold text-white mb-4" style={{ lineHeight: 1.1, letterSpacing: '-1px' }}>
-                <span className="hero-gradient-text">Local SEO</span> Services
+                <span className="hero-gradient-text">SEO Consulting</span> Services
               </h1>
 
               <p className="text-secondary mb-4" style={{ maxWidth: 580, lineHeight: 1.8, fontSize: '1rem' }}>
-                TechGeekz is one of the best SEO companies, offering expert services to boost your rankings, drive traffic, and grow your online presence. With our local SEO services, we promise the best conversion rates possible across all local advertising platforms.
+                TechGeekz is one of the best SEO companies, offering expert services to boost your rankings, drive traffic, and grow your online presence. With our SEO Consulting services, we promise the best conversion rates possible across all search platforms.
               </p>
 
               <p className="text-secondary mb-5" style={{ maxWidth: 580, lineHeight: 1.8, fontSize: '1rem' }}>
-                As a leading <strong className="text-white">Local SEO Company</strong>, TechGeekz brings together an innovation-led approach and search engine-friendly practices to help your local business reach and be found by your target users. Our team of <strong className="text-white">Local SEO Experts</strong> ensures that your business gains visibility and drives more customers and ultimately revenue.
+                As a leading <strong className="text-white">SEO Consulting Company</strong>, TechGeekz brings together an innovation-led approach and search engine-friendly practices to help your website reach and be found by your target users. Our team of <strong className="text-white">SEO Consulting Experts</strong> ensures that your business gains visibility and drives more customers and ultimately revenue.
               </p>
 
               <a href="#cta" className="btn btn-cta rounded-pill px-5 py-3 fw-semibold text-white text-decoration-none d-inline-flex align-items-center gap-2" style={{ fontSize: '0.95rem' }}>
@@ -157,7 +142,7 @@ const LocalSEOPage = () => {
                         onBlur={(e) => { e.target.style.borderColor = 'rgba(255,255,255,0.1)'; e.target.style.boxShadow = 'none'; }}
                       >
                         <option value="" style={{ background: '#1a1a2e' }}>Select a service...</option>
-                        <option value="local-seo" style={{ background: '#1a1a2e' }}>Local SEO Services</option>
+                        <option value="seo-consulting" style={{ background: '#1a1a2e' }}>SEO Consulting Services</option>
                         <option value="seo" style={{ background: '#1a1a2e' }}>SEO Service</option>
                         <option value="web-dev" style={{ background: '#1a1a2e' }}>Website Development</option>
                         <option value="digital-marketing" style={{ background: '#1a1a2e' }}>Digital Marketing</option>
@@ -188,7 +173,7 @@ const LocalSEOPage = () => {
             {/* Left - Illustration */}
             <div className="col-lg-5">
               <div className="rounded-4 p-4 text-center" style={{ background: 'rgba(165,0,253,0.03)' }}>
-                <img src="/images/local-seo-illustration.png" alt="Local SEO Services Illustration" className="img-fluid" style={{ maxHeight: 380 }} />
+                <img src="/images/seo-consulting-illustration.png" alt="SEO Consulting Services Illustration" className="img-fluid" style={{ maxHeight: 380 }} />
               </div>
             </div>
 
@@ -196,10 +181,10 @@ const LocalSEOPage = () => {
             <div className="col-lg-7">
               <h2 className="display-6 fw-bold text-white mb-4" style={{ letterSpacing: '-1px', lineHeight: 1.15 }}>
                 Why Choose TechGeekz, for{' '}
-                <span className="hero-gradient-text fst-italic">Local SEO</span> Services?
+                <span className="hero-gradient-text fst-italic">SEO Consulting</span> Services?
               </h2>
               <p className="text-secondary" style={{ fontSize: '0.95rem', lineHeight: 1.8 }}>
-                TechGeekz is here to assist you with the most advanced SEO solutions available. We will create high-quality local citations to raise your local Google map rankings. As one of the most well-known local SEO agencies, TechGeekz specializes in both building a strong online presence and listing your company for local searches.
+                TechGeekz is here to assist you with the most advanced SEO solutions available. We will create high-quality local citations to raise your overall SEO health. As one of the most well-known SEO Consulting agencies, TechGeekz specializes in both building a strong online presence and listing your company for search performance.
               </p>
             </div>
           </div>
@@ -212,7 +197,7 @@ const LocalSEOPage = () => {
           <hr className="premium-divider" />
           <div className="text-center mb-5 pt-4">
             <h2 className="display-6 fw-bold text-white" style={{ letterSpacing: '-1px' }}>
-              Advantages of our <span className="hero-gradient-text fst-italic">local SEO services</span>
+              Advantages of our <span className="hero-gradient-text fst-italic">SEO Consulting services</span>
             </h2>
           </div>
 
@@ -229,7 +214,7 @@ const LocalSEOPage = () => {
                   </svg>
                 ),
                 title: 'Brings more visitors to your website',
-                desc: 'With the help of our local SEO services for small business, your website will rank higher and receive more visitors from local searches. People rarely care to look at Google\'s second-page results, so if your local business is on the first page, you will receive clicks and your website will gain more visibility.',
+                desc: 'With the help of our SEO Consulting services for small business, your website will rank higher and receive more visitors from search performance. People rarely care to look at Google\'s second-page results, so if your website is on the first page, you will receive clicks and your website will gain more visibility.',
               },
               {
                 icon: (
@@ -241,8 +226,8 @@ const LocalSEOPage = () => {
                     <path d="M8 16l4-4 4 4" />
                   </svg>
                 ),
-                title: 'Aids in attracting local clients for your company',
-                desc: 'Our local SEO strategies target customers who are actively searching for services in your area. By optimizing your Google Business Profile and local listings, we connect your business directly with high-intent local buyers ready to convert.',
+                title: 'Aids in attracting actionable insights for your company',
+                desc: 'Our SEO Consulting strategies target customers who are actively searching for services in your area. By optimizing your Google Business Profile and local listings, we connect your business directly with high-intent local buyers ready to convert.',
               },
               {
                 icon: (
@@ -254,7 +239,7 @@ const LocalSEOPage = () => {
                   </svg>
                 ),
                 title: 'Increases leads and conversions',
-                desc: 'Local SEO drives highly targeted traffic that converts at a much higher rate. When customers find your business at the top of local results, they are more likely to call, visit, or make a purchase — directly boosting your revenue and ROI.',
+                desc: 'SEO Consulting drives highly targeted traffic that converts at a much higher rate. When customers find your business at the top of local results, they are more likely to call, visit, or make a purchase — directly boosting your revenue and ROI.',
               },
             ].map((card, i) => (
               <div key={i} className="col-lg-4 col-md-6">
@@ -296,7 +281,7 @@ const LocalSEOPage = () => {
               <div style={{ position: 'sticky', top: '120px' }}>
                 <h2 className="display-6 fw-bold text-white" style={{ letterSpacing: '-1px', lineHeight: 1.15 }}>
                   Our Expertise in{' '}
-                  <span className="hero-gradient-text fst-italic">Local SEO</span> Services
+                  <span className="hero-gradient-text fst-italic">SEO Consulting</span> Services
                 </h2>
               </div>
             </div>
@@ -493,7 +478,7 @@ const LocalSEOPage = () => {
           <hr className="premium-divider" />
           <div className="text-center pt-4 pb-5">
             <h2 className="display-5 fw-bold text-white mb-4 fst-italic" style={{ letterSpacing: '-1px', lineHeight: 1.15 }}>
-              Ready to dominate your <span className="hero-gradient-text">local market?</span>
+              Ready to dominate your <span className="hero-gradient-text">website health?</span>
             </h2>
             <p className="text-secondary mx-auto mb-5" style={{ maxWidth: 600, fontSize: '0.95rem', lineHeight: 1.7 }}>
               Let's work together to boost your local visibility, drive more customers, and grow your revenue.
@@ -512,4 +497,4 @@ const LocalSEOPage = () => {
   );
 };
 
-export default LocalSEOPage;
+export default SEOConsultingPage;
