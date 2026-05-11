@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-05-11 — Updated Local SEO Page Content
+**What**: Updated the Local SEO page with new content for expertise, advantages, and intro text. Highlighted key "local SEO" terms in bold across the new text. Replaced the "Advantages" section text with an updated version focusing on "Bring More Visitors to Your Website".
+**Why**: User provided new copy to replace the placeholder/old content on the Local SEO page, and requested highlighting key terms for better emphasis and readability.
+**Files Changed**:
+- `src/pages/LocalSEOPage.jsx` — Updated the `expertise` array, the "Why Choose TechGeekz" section, and the "Advantages of our local SEO services" section. Replaced strings with JSX to wrap terms like "local SEO services" and "local SEO agency" in `<strong>` tags.
+
 ## 2026-05-07 — Standardized All SEO Pages to LocalSEO Pattern
 **What**: Converted MultilingualSEOPage and TechnicalSEOPage from old ServicePageTemplate to LocalSEO pattern. Rewrote unique content (expertise, FAQs, hero, advantages, why-choose-us) for all 9 pages: OnPage, OffPage, Shopify, WordPress, SEOAudit, SEOConsulting, WhiteLabel, Multilingual, Technical
 **Why**: User requested all SEO pages match the same layout pattern
