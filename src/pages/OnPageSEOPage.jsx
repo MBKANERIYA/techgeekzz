@@ -2,11 +2,11 @@ import { useState } from 'react';
 import ReviewsSection from '../components/ReviewsSection';
 
 const expertise = [
-  { title: 'Keyword Research & Mapping', desc: 'We identify the most relevant and high-converting keywords for each page, mapping them strategically to maximize search visibility and drive qualified organic traffic.' },
-  { title: 'Title Tag & Meta Description Optimization', desc: 'Our team crafts compelling, keyword-rich title tags and meta descriptions that improve click-through rates and help search engines understand the relevance of each page.' },
-  { title: 'Content Optimization & Enhancement', desc: 'We enhance your existing content with strategic keyword placement, improved readability, internal linking, and value-added information to boost rankings and user engagement.' },
-  { title: 'Header Tag Hierarchy', desc: 'We structure your content with proper header tag hierarchy ensuring logical flow and keyword placement that both users and search engine crawlers can easily understand.' },
-  { title: 'Image Optimization & Alt Tags', desc: 'Every image is optimized with descriptive alt tags, compressed file sizes, and proper naming conventions to improve page speed and image search visibility.' },
+  { title: 'Keyword Research & Mapping', desc: 'As a professional on page SEO company in Surat, we conduct detailed keyword research to identify high-converting and relevant search terms for your business. Our team strategically maps keywords to the right pages to maximize search visibility and attract qualified organic traffic. We focus on improving rankings through targeted keyword optimization and content planning.' },
+  { title: 'Title Tag & Meta Description Optimization', desc: 'Our expert team creates compelling and keyword-rich title tags and meta descriptions that improve click-through rates and search visibility. As a trusted on page SEO agency in Surat, we optimize these important SEO elements to help search engines better understand your website content while encouraging users to click on your pages from search results.' },
+  { title: 'Content Optimization & Enhancement', desc: 'As a leading top SEO company in Surat, we enhance your website content with proper keyword placement, improved readability, internal linking, and user-focused information. Our content optimization strategies improve rankings, increase engagement, and ensure your pages provide value to both users and search engines.' },
+  { title: 'Header Tag Hierarchy', desc: 'We structure your content using proper header tag hierarchy (H1, H2, H3, etc.) to improve readability and SEO performance. As an experienced on page SEO company in Surat, we ensure your content follows a logical structure that search engine crawlers and users can easily understand, improving indexing and user experience.' },
+  { title: 'Image Optimization & Alt Tags', desc: 'Our professional on page SEO services also include image optimization to improve website performance and visibility. As a trusted on page SEO agency in Surat, we optimize images with descriptive alt tags, compressed file sizes, and SEO-friendly naming conventions to improve page speed, accessibility, and image search rankings.' },
 ];
 
 const faqs = [
@@ -46,11 +46,11 @@ const OnPageSEOPage = () => {
               </h1>
 
               <p className="text-secondary mb-4" style={{ maxWidth: 580, lineHeight: 1.8, fontSize: '1rem' }}>
-                On Page SEO is the foundation of every successful SEO strategy. At TechGeekz, we optimize every element on your web pages to ensure maximum search engine visibility.
+                On Page SEO is the foundation of every successful SEO strategy. At TechGeekz, we optimize every important element of your website to improve search engine visibility, user experience, and organic traffic. As a trusted on page SEO agency in Surat, we focus on optimizing website content, title tags, meta descriptions, header structure, internal linking, page speed, and technical SEO elements to help your website rank higher on search engines.
               </p>
 
               <p className="text-secondary mb-5" style={{ maxWidth: 580, lineHeight: 1.8, fontSize: '1rem' }}>
-                As a leading <strong className="text-white">On Page SEO Agency</strong>, TechGeekz brings together data-driven keyword strategies and technical expertise to help your website rank higher. Our On Page SEO Experts ensure every page is fully optimized.
+                As a professional on page SEO company in Surat, TechGeekz combines data-driven keyword strategies with advanced SEO techniques to improve website performance and search rankings. Our experienced SEO experts ensure every page of your website is fully optimized according to search engine guidelines and user intent. As a top SEO company in Surat, we help businesses improve online visibility, attract targeted visitors, and generate long-term organic growth through effective on-page optimization strategies.
               </p>
 
               <a href="#cta" className="btn btn-cta rounded-pill px-5 py-3 fw-semibold text-white text-decoration-none d-inline-flex align-items-center gap-2" style={{ fontSize: '0.95rem' }}>
@@ -160,11 +160,14 @@ const OnPageSEOPage = () => {
             {/* Right - Content */}
             <div className="col-lg-7">
               <h2 className="display-6 fw-bold text-white mb-4" style={{ letterSpacing: '-1px', lineHeight: 1.15 }}>
-                Why Choose TechGeekz, for{' '}
+                Why Choose TechGeekz for{' '}
                 <span className="hero-gradient-text fst-italic">On Page SEO</span> Services?
               </h2>
               <p className="text-secondary" style={{ fontSize: '0.95rem', lineHeight: 1.8 }}>
-                TechGeekz delivers comprehensive on-page SEO services that focus on optimizing every element of your website for search engines and users alike.
+                TechGeekz delivers result-driven on-page optimization strategies designed to improve search rankings and website performance. As a trusted on page SEO agency in Surat, we optimize every element of your website for both search engines and users. Our SEO specialists focus on improving content quality, keyword placement, technical structure, internal linking, and overall user experience to maximize organic traffic and engagement.
+              </p>
+              <p className="text-secondary" style={{ fontSize: '0.95rem', lineHeight: 1.8 }}>
+                As an experienced on page SEO company in Surat, we create customized SEO strategies tailored to your business goals and industry competition. Our expert team uses advanced SEO tools, keyword research, and performance analysis to ensure your website achieves better rankings and improved visibility. Being recognized as a top SEO company in Surat, we focus on delivering measurable SEO results that help businesses grow online.
               </p>
             </div>
           </div>
@@ -177,7 +180,7 @@ const OnPageSEOPage = () => {
           <hr className="premium-divider" />
           <div className="text-center mb-5 pt-4">
             <h2 className="display-6 fw-bold text-white" style={{ letterSpacing: '-1px' }}>
-              Advantages of our <span className="hero-gradient-text fst-italic">On Page SEO services</span>
+              Advantages of Our <span className="hero-gradient-text fst-italic">On Page SEO Services</span>
             </h2>
           </div>
 
@@ -185,18 +188,18 @@ const OnPageSEOPage = () => {
             {[
               {
                 icon: null,
-                title: 'Higher search engine rankings',
-                desc: 'Properly optimized on-page elements signal relevance to search engines, helping your pages climb to the top of search results for your target keywords.',
+                title: 'Higher Search Engine Rankings',
+                desc: 'Our professional on page SEO services help improve your website rankings by optimizing all important on-page elements. As a reliable on page SEO agency in Surat, we optimize keywords, content structure, title tags, URLs, and technical SEO elements to ensure search engines clearly understand your website relevance.',
               },
               {
                 icon: null,
-                title: 'Better user experience',
-                desc: 'On Page SEO improves content structure, page speed, and navigation making your website more enjoyable for visitors and reducing bounce rates.',
+                title: 'Better User Experience',
+                desc: 'A well-optimized website creates a better experience for users and improves engagement. As a trusted on page SEO company in Surat, we improve page speed, content readability, website navigation, mobile responsiveness, and overall usability to reduce bounce rates and increase user satisfaction.',
               },
               {
                 icon: null,
-                title: 'Increased organic traffic',
-                desc: 'With optimized title tags, meta descriptions, and content, your pages attract more clicks from search results, driving a steady stream of qualified organic traffic.',
+                title: 'Increased Organic Traffic',
+                desc: 'Our expert on page SEO agency in Surat focuses on driving qualified organic traffic to your website through strategic optimization. By improving title tags, meta descriptions, content relevance, and keyword targeting, we help your pages attract more clicks from search engine results.',
               },
             ].map((card, i) => (
               <div key={i} className="col-lg-4 col-md-6">

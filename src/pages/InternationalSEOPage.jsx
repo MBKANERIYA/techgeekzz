@@ -5,32 +5,32 @@ const expertise = [
   {
     icon: '👥',
     title: 'Discussion',
-    desc: 'Our international SEO services are customized to your business needs. We start by understanding your business, its goals, target markets, and desired goals through consultation sessions and back-and-forth messages.',
+    desc: 'Our customized international SEO services in India begin with understanding your business, target audience, international goals, and expansion strategy. As a professional international SEO agency, we conduct consultation sessions to identify the best SEO opportunities for your global business growth.',
   },
   {
     icon: '🔍',
     title: 'Research',
-    desc: 'Research is our strength. Our international SEO consultants focus on extensive research to identify the target markets, local buyer persona in each market, relevant keywords, and opportunities and challenges.',
+    desc: 'Research is one of the strongest parts of our strategy. Our experienced international SEO experts conduct detailed market research to identify target countries, local search behavior, competitor analysis, multilingual keyword opportunities, and global SEO trends. This helps our international SEO company build data-driven SEO strategies for better international performance.',
   },
   {
     icon: '⚙️',
     title: 'Strategizing',
-    desc: 'We develop custom international SEO strategies focused on the key performance metrics and achieve the desired goals.',
+    desc: 'We create customized SEO strategies focused on your business objectives and international growth goals. As a leading global SEO services provider in India, we develop country-specific SEO plans, multilingual optimization strategies, and technical SEO solutions that improve rankings and global visibility.',
   },
   {
     icon: '🚀',
     title: 'Implementation',
-    desc: 'We implement the strategy, optimizing every aspect of your website to ensure it meets global SEO standards.',
+    desc: 'Our expert team implements every aspect of the SEO strategy to ensure your website meets international SEO standards. From technical SEO optimization and multilingual content creation to hreflang implementation and international link building, our international SEO agency ensures your website is optimized for global search success.',
   },
   {
     icon: '📋',
     title: 'Audits',
-    desc: 'Our international SEO consultants conduct regular audits to measure the performance and effectiveness of SEO strategies. With the audit result and analysis, we identify problem areas.',
+    desc: 'Our professional international SEO experts conduct regular SEO audits to measure website performance, keyword rankings, international traffic, and conversion growth. As a trusted international SEO company, we identify technical issues, content gaps, and optimization opportunities to improve your global SEO performance continuously.',
   },
   {
     icon: '🔄',
     title: 'Iteration',
-    desc: 'We refine the SEO strategy based on the improvement areas identified in the SEO audits. With consistent iterations, your website ranking and visibility will improve.',
+    desc: 'SEO is an ongoing process, and continuous improvement is essential for international success. Our experienced international SEO agency refines strategies based on audit reports, performance insights, and global market trends. With regular optimization and updates, our international SEO services in India help your website achieve better rankings, stronger visibility, and sustainable international growth.',
   },
 ];
 
@@ -84,11 +84,11 @@ const InternationalSEOPage = () => {
               </h1>
 
               <p className="text-secondary mb-4" style={{ maxWidth: 580, lineHeight: 1.8, fontSize: '1rem' }}>
-                Whether you are a small startup or a thriving business with a national presence, international SEO is your ultimate solution if your goal is to grow globally. Why? Your potential customers are spread across borders, and the Internet is the fastest and most reliable way to reach them.
+                Whether you are a startup, small business, or an established brand, international SEO services in India are the perfect solution to grow your business globally. Your potential customers are spread across multiple countries, and the internet is the fastest and most effective way to reach them. With the right international SEO strategy, your business can improve global visibility, attract international traffic, and connect with customers across different markets and languages.
               </p>
 
               <p className="text-secondary mb-5" style={{ maxWidth: 580, lineHeight: 1.8, fontSize: '1rem' }}>
-                However, you need a reliable international SEO strategy to effectively reach and tap into your global market with your website. It can be tricky, but that's where TechGeekz can help you!
+                However, expanding globally requires more than just a website. You need a reliable international SEO company that understands global search behavior, multilingual optimization, and country-specific SEO strategies. That's where TechGeekz can help you. As a trusted international SEO agency, we create result-driven SEO strategies that help businesses rank higher on international search engines and grow their presence worldwide.
               </p>
 
               <a href="#cta" className="btn btn-cta rounded-pill px-5 py-3 fw-semibold text-white text-decoration-none d-inline-flex align-items-center gap-2" style={{ fontSize: '0.95rem' }}>
@@ -200,10 +200,13 @@ const InternationalSEOPage = () => {
                 Why Choose <span className="hero-gradient-text fst-italic">TechGeekz?</span>
               </h2>
               <p className="text-secondary mb-4" style={{ fontSize: '0.95rem', lineHeight: 1.8 }}>
-                TechGeekz is an expert international SEO company with 4+ years of experience helping companies from diverse niches grow globally. We offer unique solutions based on the latest innovative technologies to enhance your digital presence and reach your target audience beyond the borders. Our affordable international SEO services are designed to boost your brand credibility, website authority, and ranking on the search engine and build a strong connection with your target audience.
+                TechGeekz is an experienced international SEO company with 4+ years of expertise helping businesses from various industries expand globally. As a leading global SEO services provider in India, we use innovative SEO techniques, advanced optimization strategies, and multilingual SEO solutions to improve your digital presence and help your business reach international audiences effectively.
+              </p>
+              <p className="text-secondary mb-4" style={{ fontSize: '0.95rem', lineHeight: 1.8 }}>
+                Our expert team of international SEO experts focuses on increasing your website authority, improving global search rankings, and building strong brand visibility across international markets. We offer affordable and customized international SEO services in India designed to help businesses target customers beyond borders and achieve long-term global growth.
               </p>
               <p className="text-secondary" style={{ fontSize: '0.95rem', lineHeight: 1.8 }}>
-                So, whether you need <strong className="text-white">international SEO for small businesses</strong> or MNCs, we can help you with a strategic approach to grow globally.
+                Whether you need SEO solutions for startups, eCommerce businesses, service providers, or multinational companies, our professional international SEO agency delivers strategic SEO campaigns tailored to your business goals and target countries.
               </p>
             </div>
           </div>
@@ -227,28 +230,28 @@ const InternationalSEOPage = () => {
             {[
               {
                 icon: '📈',
-                title: 'Maximize reach and website traffic',
-                desc: 'Why limit your business potential by sticking to the local market? With International SEO, you can take your business beyond borders from your local office! Reach your website and boost the website traffic by optimizing the content for the global market and creating an effective international SEO strategy.',
+                title: 'Maximize Reach and Website Traffic',
+                desc: 'Why limit your business to local customers when you can reach a global audience? Our professional international SEO services in India help businesses expand into international markets and attract highly targeted global traffic. As a trusted global SEO services provider in India, we ensure your website drives sustainable global growth.',
               },
               {
                 icon: '👁️',
-                title: 'Boosting website visibility',
-                desc: 'The International SEO techniques ensure your website is optimized per the international market\'s search engine requirements. Whether it\'s Google, Yahoo, Bing, Yandex, Naver, Baidu, or any local search engine used more in your international market, International SEO ensures that your website is visible by ranking in the first SERP!',
+                title: 'Boost Website Visibility',
+                desc: 'Our advanced international SEO services ensure your website is optimized according to international search engine requirements. Whether your target market uses Google, Bing, Yahoo, Yandex, Baidu, or Naver, our skilled international SEO experts optimize your website to improve rankings and visibility on global search engines.',
               },
               {
                 icon: '🌐',
-                title: 'Overcome the language barrier',
-                desc: 'A survey shows that 68% prefer interacting with brands in their native language. Understanding what language your target audience is more comfortable with is critical to building trust, communicating clearly, and boosting conversion rate. Multilingual SEO makes translation and communication easier and win brownie points from your customers.',
+                title: 'Overcome the Language Barrier',
+                desc: 'Research shows that most users prefer interacting with brands in their native language. Our multilingual and international SEO services in India help businesses connect with global audiences through localized content and multilingual SEO optimization. As a reliable international SEO company, we bridge the communication gap effectively.',
               },
               {
                 icon: '🏆',
-                title: 'Gain competitive advantage',
-                desc: 'You can leverage international SEO services to put yourself ahead of the competitors by ranking higher on the SERP. While your competitors are targeting the local markets, you can generate authentic leads from the global market. It drives traffic to your website for better reach and build brand image.',
+                title: 'Gain Competitive Advantage',
+                desc: 'With professional international SEO services, your business can outperform competitors and establish a stronger presence in global markets. While many businesses focus only on local SEO, our experienced international SEO experts help you target international customers effectively.',
               },
               {
                 icon: '👑',
-                title: 'Establish a brand in the global market',
-                desc: 'By incorporating international and multilingual SEO, you can build a brand reputation, credibility, and a loyal customer base in the global market. You can make an inclusive website to build a consistent brand image in diverse international markets by overcoming the language barrier and delivering your brand message accurately.',
+                title: 'Establish a Strong Global Brand Presence',
+                desc: 'Building a successful global brand requires a strong online presence across multiple countries and languages. Our result-driven international SEO services in India help businesses establish credibility, trust, and brand recognition in international markets.',
               },
             ].map((card, i) => (
               <div key={i} className="col-lg-4 col-md-6">
@@ -292,10 +295,10 @@ const InternationalSEOPage = () => {
                   Our international <span className="hero-gradient-text fst-italic">SEO consultation</span> process!
                 </h2>
                 <p className="text-secondary mb-3" style={{ fontSize: '0.9rem', lineHeight: 1.7 }}>
-                  Our process of Global SEO services is result-driven and designed to deliver seamless services.
+                  Our process for delivering high-quality global SEO services is result-driven and designed to ensure seamless international growth for your business. TechGeekz is a trusted international SEO company with a skilled team offering customized SEO solutions for businesses targeting worldwide markets.
                 </p>
                 <p className="text-secondary" style={{ fontSize: '0.9rem', lineHeight: 1.7 }}>
-                  TechGeekz is an expert international SEO agency with a skilled team that offers diverse and customized global SEO services. From the content your target audience understands to the off-page and technical SEO for the search engine to crawl, we ensure your website is optimized to reach #1 on the search engine result page (SERP).
+                  From multilingual content optimization to technical SEO and international off-page SEO, our experienced international SEO experts ensure your website is fully optimized to achieve higher rankings and visibility across global search engines.
                 </p>
               </div>
             </div>

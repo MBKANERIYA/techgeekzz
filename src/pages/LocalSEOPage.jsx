@@ -5,27 +5,27 @@ const expertise = [
   {
     icon: '🎯',
     title: 'Customized Campaigns Focused on the Audience',
-    desc: <>Every business is unique, which is why our <strong className="text-white">local SEO company</strong> creates customized SEO campaigns based on your business niche, target audience, location, and competitors. Our tailored <strong className="text-white">local SEO services</strong> in Surat focus on local keyword optimization, audience targeting, content optimization, and local search strategies to ensure maximum visibility and better conversions. As a leading <strong className="text-white">local SEO agency</strong> in Surat, we help businesses reach the right audience at the right time through highly personalized SEO campaigns.</>,
+    desc: <>Every business is unique, which is why our local SEO company creates customized SEO campaigns based on your business niche, target audience, location, and competitors. Our tailored local SEO services in Surat focus on local keyword optimization, audience targeting, content optimization, and local search strategies to ensure maximum visibility and better conversions. As a leading local SEO agency in Surat, we help businesses reach the right audience at the right time through highly personalized SEO campaigns.</>,
   },
   {
     icon: '🛡️',
     title: 'White-Hat SEO Practices',
-    desc: <>As a trusted <strong className="text-white">local SEO agency</strong> in Surat, we follow ethical and Google-approved SEO strategies to ensure long-term growth and sustainable rankings. Our white-hat <strong className="text-white">local SEO services</strong> include high-quality backlink building, local citation management, on-page SEO optimization, and local content marketing. We focus on building a strong online presence that improves your local authority and helps your business maintain stable rankings in search results.</>,
+    desc: <>As a trusted local SEO agency in Surat, we follow ethical and Google-approved SEO strategies to ensure long-term growth and sustainable rankings. Our white-hat local SEO services include high-quality backlink building, local citation management, on-page SEO optimization, and local content marketing. We focus on building a strong online presence that improves your local authority and helps your business maintain stable rankings in search results.</>,
   },
   {
     icon: '⭐',
     title: 'Enhance Your Local Image',
-    desc: <>Customer trust and online reputation are important for <strong className="text-white">local SEO</strong> success. Our professional <strong className="text-white">local SEO company</strong> helps businesses improve their online image through review management, business profile optimization, and brand reputation strategies. Positive customer reviews and optimized local profiles help your business gain credibility, improve local rankings, and attract more customers from Google Search and Google Maps. As a reliable <strong className="text-white">local SEO agency</strong> in Surat, we help businesses build a stronger local brand presence online.</>,
+    desc: <>Customer trust and online reputation are important for local SEO success. Our professional local SEO company helps businesses improve their online image through review management, business profile optimization, and brand reputation strategies. Positive customer reviews and optimized local profiles help your business gain credibility, improve local rankings, and attract more customers from Google Search and Google Maps. As a reliable local SEO agency in Surat, we help businesses build a stronger local brand presence online.</>,
   },
   {
     icon: '📊',
     title: 'Personalized Reporting',
-    desc: <>TechGeekz provides transparent and easy-to-understand reporting for all our <strong className="text-white">local SEO services</strong> in Surat. Our detailed SEO reports include keyword rankings, website traffic, Google Maps performance, lead tracking, and overall campaign progress. As a reliable <strong className="text-white">local SEO agency</strong> in Surat, we provide real-time insights and performance tracking to help businesses understand SEO growth and make informed marketing decisions.</>,
+    desc: <>TechGeekz provides transparent and easy-to-understand reporting for all our local SEO services in Surat. Our detailed SEO reports include keyword rankings, website traffic, Google Maps performance, lead tracking, and overall campaign progress. As a reliable local SEO agency in Surat, we provide real-time insights and performance tracking to help businesses understand SEO growth and make informed marketing decisions.</>,
   },
   {
     icon: '🔍',
     title: 'Comprehensive Citation Audit',
-    desc: <>Our expert <strong className="text-white">local SEO company</strong> in Surat performs detailed citation audits to identify and correct incorrect business information across online directories and local listing platforms. We ensure complete NAP consistency (Name, Address, Phone Number) across multiple directories to improve your local search rankings and strengthen your Google Maps presence. Our professional <strong className="text-white">local SEO services</strong> help businesses achieve better local visibility, improved credibility, and stronger <strong className="text-white">local SEO</strong> performance.</>,
+    desc: <>Our expert local SEO company in Surat performs detailed citation audits to identify and correct incorrect business information across online directories and local listing platforms. We ensure complete NAP consistency (Name, Address, Phone Number) across multiple directories to improve your local search rankings and strengthen your Google Maps presence. Our professional local SEO services help businesses achieve better local visibility, improved credibility, and stronger local SEO performance.</>,
   },
 ];
 
@@ -81,7 +81,7 @@ const LocalSEOPage = () => {
               </h1>
 
               <p className="text-secondary mb-4" style={{ maxWidth: 580, lineHeight: 1.8, fontSize: '1rem' }}>
-                TechGeekz is a trusted <strong className="text-white">Local SEO Company</strong> offering professional local SEO services in Surat to help businesses improve local search rankings, increase website traffic, and attract more nearby customers. As an experienced local SEO agency in Surat, we use advanced local search optimization strategies, Google Business Profile optimization, and Google Maps SEO techniques to help your business appear at the top of local search results. Our expert local SEO services are designed for small businesses, startups, restaurants, gyms, clinics, salons, and service providers who want to increase their online visibility and generate more qualified leads from local searches.
+                TechGeekz is a trusted Local SEO Company offering professional local SEO services in Surat to help businesses improve local search rankings, increase website traffic, and attract more nearby customers. As an experienced local SEO agency in Surat, we use advanced local search optimization strategies, Google Business Profile optimization, and Google Maps SEO techniques to help your business appear at the top of local search results. Our expert local SEO services are designed for small businesses, startups, restaurants, gyms, clinics, salons, and service providers who want to increase their online visibility and generate more qualified leads from local searches.
               </p>
 
               <a href="#cta" className="btn btn-cta rounded-pill px-5 py-3 fw-semibold text-white text-decoration-none d-inline-flex align-items-center gap-2" style={{ fontSize: '0.95rem' }}>
@@ -195,7 +195,7 @@ const LocalSEOPage = () => {
                 <span className="hero-gradient-text fst-italic">Local SEO</span> Services?
               </h2>
               <p className="text-secondary" style={{ fontSize: '0.95rem', lineHeight: 1.8 }}>
-                TechGeekz is one of the leading providers of <strong className="text-white">local SEO services</strong> in Surat, helping businesses grow through result-driven SEO strategies and white-hat optimization techniques. As a professional <strong className="text-white">local SEO agency</strong> in Surat, we focus on improving your Google Maps rankings, optimizing local business listings, and increasing your visibility in “near me” searches. Our expert team understands the local market and creates customized SEO strategies that help your business connect with high-intent customers actively searching for your services. With our trusted <strong className="text-white">local SEO company</strong>, you get transparent reporting, long-term SEO growth, and powerful strategies that deliver real business results.
+                TechGeekz is one of the leading providers of local SEO services in Surat, helping businesses grow through result-driven SEO strategies and white-hat optimization techniques. As a professional local SEO agency in Surat, we focus on improving your Google Maps rankings, optimizing local business listings, and increasing your visibility in “near me” searches. Our expert team understands the local market and creates customized SEO strategies that help your business connect with high-intent customers actively searching for your services. With our trusted local SEO company, you get transparent reporting, long-term SEO growth, and powerful strategies that deliver real business results.
               </p>
             </div>
           </div>
@@ -225,7 +225,7 @@ const LocalSEOPage = () => {
                   </svg>
                 ),
                 title: 'Bring More Visitors to Your Website',
-                desc: <>With our professional <strong className="fw-bold">local SEO services</strong> for small businesses, your website can rank higher in Google local search results and attract more targeted visitors from your local area. As an experienced <strong className="fw-bold">local SEO agency</strong> in Surat, we focus on improving your online visibility so potential customers can easily find your business when searching for related products or services. Most users rarely visit the second page of Google, which is why our expert <strong className="fw-bold">local SEO services</strong> in Surat are designed to help your business appear on the first page of search results. Higher rankings mean more website clicks, increased local traffic, better brand visibility, and more opportunities to convert visitors into paying customers.</>,
+                desc: <>With our professional local SEO services for small businesses, your website can rank higher in Google local search results and attract more targeted visitors from your local area. As an experienced local SEO agency in Surat, we focus on improving your online visibility so potential customers can easily find your business when searching for related products or services. Most users rarely visit the second page of Google, which is why our expert local SEO services in Surat are designed to help your business appear on the first page of search results. Higher rankings mean more website clicks, increased local traffic, better brand visibility, and more opportunities to convert visitors into paying customers.</>,
               },
               {
                 icon: (
@@ -238,7 +238,7 @@ const LocalSEOPage = () => {
                   </svg>
                 ),
                 title: 'Aids in Attracting Local Clients for Your Company',
-                desc: <>Our result-driven <strong className="fw-bold">local SEO agency</strong> in Surat helps businesses connect with local customers who are actively searching for products and services in their area. Through Google Business Profile optimization, local citation building, and location-based keyword targeting, our <strong className="fw-bold">local SEO services</strong> in Surat help your business appear in relevant local searches and Google Maps results. As a reliable <strong className="fw-bold">local SEO company</strong>, we focus on attracting high-intent local customers who are more likely to contact your business, visit your store, or make a purchase. This increases customer engagement and helps your business grow faster in the local market.</>,
+                desc: <>Our result-driven local SEO agency in Surat helps businesses connect with local customers who are actively searching for products and services in their area. Through Google Business Profile optimization, local citation building, and location-based keyword targeting, our local SEO services in Surat help your business appear in relevant local searches and Google Maps results. As a reliable local SEO company, we focus on attracting high-intent local customers who are more likely to contact your business, visit your store, or make a purchase. This increases customer engagement and helps your business grow faster in the local market.</>,
               },
               {
                 icon: (
@@ -250,7 +250,7 @@ const LocalSEOPage = () => {
                   </svg>
                 ),
                 title: 'Increase Leads and Conversions',
-                desc: <>TechGeekz provides powerful <strong className="fw-bold">local SEO services</strong> that generate highly targeted traffic and improve conversion rates for local businesses. When your business ranks at the top of local search results, customers trust your brand more and are more likely to take action. Our expert <strong className="fw-bold">local SEO agency</strong> in Surat helps increase phone calls, website inquiries, bookings, store visits, and online purchases through strategic SEO optimization. By improving your local search presence, our <strong className="fw-bold">local SEO company</strong> helps businesses maximize ROI, generate quality leads, and achieve long-term business growth.</>,
+                desc: <>TechGeekz provides powerful local SEO services that generate highly targeted traffic and improve conversion rates for local businesses. When your business ranks at the top of local search results, customers trust your brand more and are more likely to take action. Our expert local SEO agency in Surat helps increase phone calls, website inquiries, bookings, store visits, and online purchases through strategic SEO optimization. By improving your local search presence, our local SEO company helps businesses maximize ROI, generate quality leads, and achieve long-term business growth.</>,
               },
             ].map((card, i) => (
               <div key={i} className="col-lg-4 col-md-6">

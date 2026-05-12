@@ -2,11 +2,11 @@ import { useState } from 'react';
 import ReviewsSection from '../components/ReviewsSection';
 
 const expertise = [
-  { title: 'High-Quality Link Building', desc: 'We build authoritative, relevant backlinks from trusted domains to strengthen your website domain authority and improve your search engine rankings organically.' },
-  { title: 'Guest Posting & Outreach', desc: 'Our team identifies high-authority blogs and publications in your niche for guest posting opportunities that build brand awareness and earn quality backlinks.' },
-  { title: 'Social Media Signals', desc: 'We amplify your content across social platforms to generate engagement signals that search engines consider when evaluating your site authority and relevance.' },
-  { title: 'Brand Mentions & Citations', desc: 'We secure branded mentions and citations across authoritative directories and industry publications to build trust signals and strengthen your online reputation.' },
-  { title: 'Toxic Link Removal', desc: 'We identify and disavow harmful backlinks pointing to your site that could trigger Google penalties and damage your rankings and domain authority.' },
+  { title: 'High-Quality Link Building', desc: 'Our expert team provides advanced Off Page SEO Services in Surat through high-quality and niche-relevant link-building strategies. As a professional off page SEO provider, we acquire authoritative backlinks from trusted domains that strengthen your website authority and improve organic search rankings naturally. Our white-hat link-building techniques ensure long-term SEO success without risking Google penalties.' },
+  { title: 'Guest Posting & Outreach', desc: 'As a trusted off page SEO agency in Surat, we identify high-authority blogs, publications, and websites within your niche to secure guest posting opportunities. Our outreach strategies help increase brand awareness, improve online visibility, and generate high-quality backlinks that positively impact your SEO performance.' },
+  { title: 'Social Media Signals', desc: 'Our professional off page services company in Surat amplifies your website content across social media platforms to generate engagement, shares, and social signals that contribute to your website authority. Strong social engagement helps improve brand visibility and supports your overall off-page SEO strategy.' },
+  { title: 'Brand Mentions & Citations', desc: 'We secure branded mentions and business citations across authoritative directories, blogs, and industry platforms to improve your online reputation and trust signals. As a reliable off page SEO provider, we focus on strengthening your digital footprint and increasing your website credibility through strategic brand-building techniques.' },
+  { title: 'Toxic Link Removal', desc: 'Our expert Off Page SEO Services in Surat also include toxic backlink analysis and removal. We identify harmful and spammy backlinks that may negatively impact your rankings and domain authority. As an experienced off page SEO agency in Surat, we help protect your website from Google penalties by disavowing low-quality links and maintaining a healthy backlink profile.' },
 ];
 
 const faqs = [
@@ -42,15 +42,15 @@ const OffPageSEOPage = () => {
             {/* Left - Content */}
             <div className="col-lg-7">
               <h1 className="display-4 fw-bold text-white mb-4" style={{ lineHeight: 1.1, letterSpacing: '-1px' }}>
-                <span className="hero-gradient-text">Off Page SEO</span> Services
+                <span className="hero-gradient-text">Off Page SEO</span> Services in Surat
               </h1>
 
               <p className="text-secondary mb-4" style={{ maxWidth: 580, lineHeight: 1.8, fontSize: '1rem' }}>
-                Off Page SEO builds your website authority and credibility through strategic link building, brand mentions, and social signals that search engines value highly.
+                TechGeekz is a trusted provider of Off Page SEO Services in Surat, helping businesses improve website authority, search engine rankings, and online credibility through advanced off-page optimization strategies. As a leading off page SEO provider, we focus on strategic link building, brand mentions, social signals, and authority-building techniques that search engines highly value. Our professional off-page SEO strategies help businesses strengthen their digital presence and generate long-term SEO growth.
               </p>
 
               <p className="text-secondary mb-5" style={{ maxWidth: 580, lineHeight: 1.8, fontSize: '1rem' }}>
-                As a leading <strong className="text-white">Off Page SEO Agency</strong>, Our Off Page SEO Experts craft customized link building campaigns that earn high-quality backlinks from authoritative sources, boosting your domain authority and rankings.
+                As an experienced off page SEO agency in Surat, our team of Off Page SEO experts creates customized link-building campaigns that earn high-quality backlinks from authoritative and niche-relevant websites. These powerful backlinks improve your domain authority, increase search visibility, and help your website rank higher on Google and other search engines. As a reliable off page services company in Surat, we ensure every backlink and outreach strategy follows ethical and white-hat SEO practices for sustainable results.
               </p>
 
               <a href="#cta" className="btn btn-cta rounded-pill px-5 py-3 fw-semibold text-white text-decoration-none d-inline-flex align-items-center gap-2" style={{ fontSize: '0.95rem' }}>
@@ -160,11 +160,14 @@ const OffPageSEOPage = () => {
             {/* Right - Content */}
             <div className="col-lg-7">
               <h2 className="display-6 fw-bold text-white mb-4" style={{ letterSpacing: '-1px', lineHeight: 1.15 }}>
-                Why Choose TechGeekz, for{' '}
+                Why Choose TechGeekz for{' '}
                 <span className="hero-gradient-text fst-italic">Off Page SEO</span> Services?
               </h2>
               <p className="text-secondary" style={{ fontSize: '0.95rem', lineHeight: 1.8 }}>
-                TechGeekz specializes in ethical, white-hat off-page SEO strategies that build lasting authority for your website through quality backlinks, brand mentions, and strategic outreach.
+                TechGeekz specializes in ethical and result-driven Off Page SEO Services in Surat designed to build long-lasting authority and trust for your website. As a trusted off page SEO provider, we use advanced white-hat SEO strategies including quality backlink building, guest posting, outreach campaigns, brand mentions, and social media engagement to strengthen your online presence.
+              </p>
+              <p className="text-secondary" style={{ fontSize: '0.95rem', lineHeight: 1.8 }}>
+                Our expert team understands how search engines evaluate website authority and credibility. As a professional off page SEO agency in Surat, we focus on creating high-quality SEO signals that improve rankings, increase organic traffic, and enhance your brand visibility across the internet. Our customized SEO strategies help businesses achieve better online reputation and long-term ranking stability.
               </p>
             </div>
           </div>
@@ -185,18 +188,18 @@ const OffPageSEOPage = () => {
             {[
               {
                 icon: null,
-                title: 'Boost domain authority',
-                desc: 'Quality backlinks from authoritative websites signal trust to search engines, directly increasing your domain authority and helping your pages rank higher.',
+                title: 'Boost Domain Authority',
+                desc: 'Our professional Off Page SEO Services in Surat help increase your domain authority through high-quality backlinks from trusted and authoritative websites. As an experienced off page services company in Surat, we build strong SEO signals that search engines use to determine your website credibility and trustworthiness.',
               },
               {
                 icon: null,
-                title: 'Drive referral traffic',
-                desc: 'Strategic link placements on relevant websites bring qualified visitors directly to your site, generating leads beyond organic search traffic.',
+                title: 'Drive Referral Traffic',
+                desc: 'As a leading off page SEO provider, we focus on strategic link placements across relevant and high-authority websites that drive targeted referral traffic directly to your website. Our effective outreach and backlink strategies help attract qualified visitors who are genuinely interested in your products or services.',
               },
               {
                 icon: null,
-                title: 'Build brand credibility',
-                desc: 'Being featured on reputable industry websites and publications builds trust with both search engines and potential customers, establishing your brand as an authority.',
+                title: 'Build Brand Credibility',
+                desc: 'Being featured on reputable industry websites and trusted online platforms helps build your brand authority and customer trust. As a reliable off page SEO agency in Surat, we secure valuable brand mentions, citations, and backlinks that improve both search engine trust and customer confidence.',
               },
             ].map((card, i) => (
               <div key={i} className="col-lg-4 col-md-6">

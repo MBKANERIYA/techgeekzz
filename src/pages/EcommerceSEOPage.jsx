@@ -5,22 +5,22 @@ const expertise = [
   {
     icon: '🛍️',
     title: 'E-commerce Site Audit',
-    desc: 'We start by conducting a comprehensive technical and content audit of your online store to identify issues hindering your visibility on search engines.',
+    desc: 'We begin with a comprehensive technical and content audit of your online store to identify issues affecting your search engine visibility. As a professional ecommerce SEO agency in Surat, we analyze your website structure, technical performance, content quality, and SEO opportunities to create an effective optimization strategy.',
   },
   {
     icon: '🔑',
     title: 'Keyword Strategy',
-    desc: 'Our experts perform deep keyword research focused on high-intent buyer keywords that will drive qualified traffic and sales to your products and categories.',
+    desc: 'Our experienced SEO experts perform deep keyword research focused on high-intent buyer keywords that drive qualified traffic and sales. As a trusted top SEO agency in Surat, we identify relevant product and category keywords that improve rankings and increase your chances of converting visitors into customers.',
   },
   {
     icon: '🛒',
     title: 'Product & Category Optimization',
-    desc: 'We optimize your product descriptions, category pages, titles, and meta tags to ensure they align with the search engine algorithm and resonate with your target audience.',
+    desc: 'We optimize your product descriptions, category pages, titles, meta tags, and content to align with search engine algorithms and customer search intent. Our expert ecommerce SEO in Surat services help improve product visibility, increase click-through rates, and drive more sales for your online store.',
   },
   {
     icon: '⚙️',
     title: 'Technical SEO for E-commerce',
-    desc: 'We resolve site architecture issues, improve page speed, implement schema markup, and ensure your store has a seamless, mobile-friendly responsive layout.',
+    desc: 'As an experienced SEO agency in Surat, we resolve technical SEO issues such as site architecture problems, slow page speed, indexing errors, and mobile usability issues. We implement schema markup and optimize your website for better crawlability and performance to ensure a seamless shopping experience for users and search engines.',
   },
   {
     icon: '📝',
@@ -30,7 +30,7 @@ const expertise = [
   {
     icon: '📊',
     title: 'Tracking & Iteration',
-    desc: 'We monitor your eCommerce performance, tracking organic traffic, keyword rankings, and conversion rates, refining our strategy to continually improve your revenue.',
+    desc: 'As a trusted top SEO agency in Surat, we continuously monitor your SEO performance, organic traffic, keyword rankings, and conversion rates. We refine our strategies based on data insights and performance analysis to ensure continuous growth and better revenue for your eCommerce business.',
   },
 ];
 
@@ -84,11 +84,11 @@ const EcommerceSEOPage = () => {
               </h1>
 
               <p className="text-secondary mb-4" style={{ maxWidth: 580, lineHeight: 1.8, fontSize: '1rem' }}>
-                Why is your ecommerce store not doing well despite having the best products? Chances are that your target audience isn't even aware your business exists! Worry not; we can help you be where your target audience is on the search engine with ECommerce SEO! Our tailored ECommerce SEO services cater to the unique needs of your digital store.
+                If your online store is not generating enough sales despite offering quality products, the problem may be your visibility on search engines. Your target audience may not even know your business exists. That’s where TechGeekz can help with professional ecommerce SEO in Surat. Our customized eCommerce SEO strategies help your online store rank higher on Google, attract qualified buyers, and increase conversions.
               </p>
 
               <p className="text-secondary mb-5" style={{ maxWidth: 580, lineHeight: 1.8, fontSize: '1rem' }}>
-                Generate qualified leads and boost your conversion rates through eCommerce SEO optimization. TechGeekz utilizes advanced eCommerce SEO techniques to improve the website performance and align the website structure to the search engine algorithm. Let's make your website's SERP ranking and sales skyrocket with ECommerce SEO services with TechGeekz!
+                As a trusted e-commerce SEO agency in Surat, we use advanced SEO techniques to improve your website performance, optimize product pages, and align your store structure with search engine algorithms. Our expert team focuses on driving organic traffic, improving search visibility, and helping your eCommerce business achieve long-term growth. Whether you run a Shopify store, WooCommerce website, Magento store, or any other eCommerce platform, our SEO solutions are designed to maximize your online revenue and improve your search engine rankings.
               </p>
 
               <a href="#cta" className="btn btn-cta rounded-pill px-5 py-3 fw-semibold text-white text-decoration-none d-inline-flex align-items-center gap-2" style={{ fontSize: '0.95rem' }}>
@@ -201,10 +201,13 @@ const EcommerceSEOPage = () => {
                 Why Choose <span className="hero-gradient-text fst-italic">TechGeekz?</span>
               </h2>
               <p className="text-secondary mb-4" style={{ fontSize: '0.95rem', lineHeight: 1.8 }}>
-                TechGeekz is the best eCommerce SEO agency with 4+ years of hands-on experience in the industry. Our SEO consultants have worked with diverse niches like healthcare, fintech, real estate, fashion, education, and more to hone their skills. We offer eCommerce SEO for small businesses, startups, and big-scale businesses to digitize their company, sell their product to the desired target audience, and improve their revenues.
+                TechGeekz is a trusted SEO agency in Surat with 4+ years of hands-on experience delivering result-driven SEO solutions for businesses across various industries. As a leading ecommerce SEO agency in Surat, we have worked with businesses in healthcare, fintech, real estate, fashion, education, and many other niches to help them increase online visibility and generate more sales.
               </p>
               <p className="text-secondary" style={{ fontSize: '0.95rem', lineHeight: 1.8 }}>
-                Our Affordable eCommerce SEO services are tailored to the needs of businesses and help them boost conversion, leading to better ranking and more revenue. Choose TechGeekz so your website structure aligns with the search engine algorithm and the content resonates with the target audience! Whether you have a Shopify store, WordPress site, or another digital store, our ECommerce service can help you grow!
+                Our experienced SEO consultants provide customized SEO strategies for startups, small businesses, and large-scale eCommerce brands. As a top SEO agency in Surat, we focus on optimizing your online store structure, improving user experience, and targeting high-intent keywords that drive conversions and revenue.
+              </p>
+              <p className="text-secondary" style={{ fontSize: '0.95rem', lineHeight: 1.8 }}>
+                Our affordable ecommerce SEO in Surat services are tailored to your business needs and designed to improve search engine rankings, website traffic, and customer engagement. Whether you want to increase organic traffic, optimize product pages, or improve overall store performance, TechGeekz provides complete SEO solutions that help your business grow faster in the competitive eCommerce market.
               </p>
             </div>
           </div>
@@ -220,7 +223,7 @@ const EcommerceSEOPage = () => {
               Advantages of <span className="hero-gradient-text fst-italic">ECommerce SEO</span>
             </h2>
             <p className="text-secondary mt-3 mx-auto" style={{ fontSize: '0.95rem', maxWidth: 800 }}>
-              Having a website to create an online presence isn't enough. You need to make your website visible to the target audience to generate leads and boost conversions to make revenue! So, here are a few benefits of eCommerce SEO.
+              Having an online store is not enough to grow your business. Your website must be visible to customers searching for products online. Our expert ecommerce SEO agency in Surat helps businesses improve rankings, increase traffic, and boost online sales through advanced SEO strategies.
             </p>
           </div>
 
@@ -228,23 +231,23 @@ const EcommerceSEOPage = () => {
             {[
               {
                 icon: '👀',
-                title: 'Improve visibility on search engine',
-                desc: 'Optimize your website with relevant keywords and content for better ranking, leading to improved ranking on the SERP. Increase your chances of selling with better visibility online.',
+                title: 'Improve Visibility on Search Engines',
+                desc: 'Our professional ecommerce SEO in Surat services optimize your website using relevant keywords, SEO-friendly content, technical optimization, and product page enhancements to improve your rankings on search engine result pages (SERPs).',
               },
               {
                 icon: '💻',
-                title: 'Enhance user experience',
-                desc: 'Improve the structure of your website with better navigation, responsive layout, and enhanced speed to ensure a seamless user experience, leading to more conversions.',
+                title: 'Enhance User Experience',
+                desc: 'A seamless shopping experience is essential for better conversions. As a trusted top SEO agency in Surat, we improve your website navigation, mobile responsiveness, page speed, and site structure to ensure a better user experience for your customers.',
               },
               {
                 icon: '🚀',
-                title: 'Boost traffic and conversions',
-                desc: 'Drive organic traffic, generate qualified leads, and boost conversion rates by optimizing your product page for SERP indexing to be where your audience is looking for products.',
+                title: 'Boost Traffic and Conversions',
+                desc: 'Our result-driven ecommerce SEO agency in Surat focuses on generating organic traffic and qualified leads by optimizing product pages, categories, and website content for search engines. By improving your online visibility and targeting high-converting keywords, we help your business attract potential buyers and increase conversion rates.',
               },
               {
                 icon: '🏆',
-                title: 'Gain competitive edge',
-                desc: 'Secure the attention of your target audience by outshining your competitors with ECommerce SEO solutions to identify opportunities and create unique campaigns to boost website ranking.',
+                title: 'Gain Competitive Edge',
+                desc: "In today's competitive online market, standing out from competitors is essential. As a leading SEO agency in Surat, we create customized SEO campaigns that help your business outperform competitors and capture the attention of your target audience.",
               },
             ].map((card, i) => (
               <div key={i} className="col-lg-6 col-md-6">

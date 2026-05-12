@@ -1,5 +1,40 @@
 # Changelog
 
+## 2026-05-12 — Removed Highlighted Text from Local SEO Page
+**What**: Removed the `<strong>` highlight tags from the Local SEO page content.
+**Why**: User requested to remove the emphasized/highlighted text.
+**Files Changed**:
+- `src/pages/LocalSEOPage.jsx` — Removed `<strong className="text-white">` and `<strong className="fw-bold">` tags throughout the page.
+## 2026-05-12 — Updated GEO Page Content
+**What**: Updated the GEO page with new marketing content provided by the user.
+**Why**: User provided new copy to replace the placeholder/old content on the Generative Engine Optimization (GEO) page.
+**Files Changed**:
+- `src/pages/GEOPage.jsx` — Updated the `expertise` array, the Hero section paragraphs, the "Why Choose TechGeekz" section, and the "Advantages" section.
+## 2026-05-12 — Updated Shopify SEO Page Content
+**What**: Updated the Shopify SEO page with new marketing content provided by the user.
+**Why**: User provided new copy to replace the placeholder/old content on the Shopify SEO page.
+**Files Changed**:
+- `src/pages/ShopifySEOPage.jsx` — Updated the `expertise` array, the Hero section paragraphs, the "Why Choose TechGeekz" section, and the "Advantages" section.
+## 2026-05-12 — Updated On Page SEO Page Content
+**What**: Updated the On Page SEO page with new marketing content provided by the user.
+**Why**: User provided new copy to replace the placeholder/old content on the On Page SEO page.
+**Files Changed**:
+- `src/pages/OnPageSEOPage.jsx` — Updated the `expertise` array, the Hero section paragraphs, the "Why Choose TechGeekz" section, and the "Advantages" section.
+## 2026-05-12 — Updated E-commerce SEO Page Content
+**What**: Updated the E-commerce SEO page with new marketing content provided by the user.
+**Why**: User provided new copy to replace the placeholder/old content on the E-commerce SEO page.
+**Files Changed**:
+- `src/pages/EcommerceSEOPage.jsx` — Updated the `expertise` array, the Hero section paragraphs, the "Why Choose TechGeekz" section, and the "Advantages" section.
+## 2026-05-12 — Updated Off Page SEO Page Content
+**What**: Updated the Off Page SEO page with new marketing content provided by the user.
+**Why**: User provided new copy to replace the placeholder/old content on the Off Page SEO page.
+**Files Changed**:
+- `src/pages/OffPageSEOPage.jsx` — Updated the `expertise` array, the Hero section paragraphs, the "Why Choose TechGeekz" section, and the "Advantages" section.
+## 2026-05-12 — Updated International SEO Page Content
+**What**: Updated the International SEO page with new marketing content provided by the user.
+**Why**: User provided new copy to replace the placeholder/old content on the International SEO page.
+**Files Changed**:
+- `src/pages/InternationalSEOPage.jsx` — Updated the `expertise` array, the Hero section paragraphs, the "Why Choose TechGeekz" section, the "Advantages" section, and the Consultation process text.
 ## 2026-05-11 — Updated Local SEO Page Content
 **What**: Updated the Local SEO page with new content for expertise, advantages, and intro text. Highlighted key "local SEO" terms in bold across the new text. Replaced the "Advantages" section text with an updated version focusing on "Bring More Visitors to Your Website".
 **Why**: User provided new copy to replace the placeholder/old content on the Local SEO page, and requested highlighting key terms for better emphasis and readability.

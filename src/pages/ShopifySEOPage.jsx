@@ -2,11 +2,11 @@ import { useState } from 'react';
 import ReviewsSection from '../components/ReviewsSection';
 
 const expertise = [
-  { title: 'Shopify Store Technical Audit', desc: 'We analyze your Shopify store structure, theme code, and technical setup to identify issues like duplicate content from collections, slow loading apps, and poor URL structures.' },
-  { title: 'Product Page Optimization', desc: 'We optimize your product titles, descriptions, images, and meta tags with high-intent buyer keywords to increase visibility and drive conversions from organic search.' },
-  { title: 'Collection & Category SEO', desc: 'We structure and optimize your Shopify collections with keyword-rich descriptions, proper hierarchy, and internal linking to capture category-level search traffic.' },
-  { title: 'Shopify App & Speed Optimization', desc: 'We audit and optimize your installed apps, remove bloated code, implement lazy loading, and optimize images to dramatically improve your store page load speed.' },
-  { title: 'Schema & Rich Snippets', desc: 'We implement product schema markup, review snippets, and breadcrumb data to help your products appear with rich results in Google, increasing click-through rates.' },
+  { title: 'Shopify Store Technical Audit', desc: 'We perform a complete technical audit of your Shopify store to identify SEO issues affecting your rankings and user experience. As experts in Shopify SEO services in Surat, we analyze theme code, site structure, duplicate content issues, slow-loading apps, and URL optimization to improve your store performance. Our technical expertise in Shopify website development in Surat ensures your store follows SEO best practices and delivers a smooth shopping experience.' },
+  { title: 'Product Page Optimization', desc: 'Our team optimizes your product titles, descriptions, images, URLs, and meta tags using high-intent buyer keywords. Through our professional Shopify SEO in Surat services, we help increase product visibility, improve click-through rates, and drive more conversions from organic search traffic.' },
+  { title: 'Collection & Category SEO', desc: 'We optimize Shopify collection pages and category structures using keyword-rich content, proper hierarchy, and internal linking strategies. As a trusted provider of Shopify SEO services in Surat, we help your store capture valuable category-level traffic and improve search engine indexing for your products.' },
+  { title: 'Shopify App & Speed Optimization', desc: 'Slow websites negatively impact both SEO and conversions. Our Shopify experts audit your installed apps, remove unnecessary code, optimize images, and implement advanced speed optimization techniques to improve page load performance. As specialists in Shopify website development in Surat, we ensure your Shopify store is fast, responsive, and optimized for better rankings and user experience.' },
+  { title: 'Schema & Rich Snippets', desc: 'We implement advanced product schema markup, breadcrumb schema, and review snippets to help your Shopify products appear with rich results on Google search pages. Our expert Shopify SEO in Surat services improve search visibility, increase click-through rates, and enhance your store presence in search results. With TechGeekz, your Shopify store gets complete SEO optimization and technical improvements designed to increase organic traffic, improve rankings, and maximize online revenue.' },
 ];
 
 const faqs = [
@@ -46,11 +46,11 @@ const ShopifySEOPage = () => {
               </h1>
 
               <p className="text-secondary mb-4" style={{ maxWidth: 580, lineHeight: 1.8, fontSize: '1rem' }}>
-                Is your Shopify store invisible on Google? Our Shopify SEO services optimize every aspect of your store to drive organic traffic and increase sales without relying solely on paid ads.
+                Is your Shopify store struggling to appear on Google search results? Our professional Shopify SEO services in Surat help optimize every aspect of your online store to increase organic traffic, improve visibility, and boost sales without depending only on paid ads. At TechGeekz, we provide advanced Shopify SEO strategies designed to help your store rank higher for the keywords your customers are actively searching for.
               </p>
 
               <p className="text-secondary mb-5" style={{ maxWidth: 580, lineHeight: 1.8, fontSize: '1rem' }}>
-                As a leading <strong className="text-white">Shopify SEO Agency</strong>, Our Shopify SEO Experts understand the platform inside out, from theme optimization to app performance, ensuring your store ranks for the keywords your customers are searching.
+                As a trusted provider of Shopify SEO in Surat, our expert team understands the Shopify platform inside out, from theme optimization and technical SEO to app performance and product page optimization. Along with SEO, we also specialize in Shopify website development in Surat, helping businesses build fast, responsive, and SEO-friendly Shopify stores that deliver excellent user experience and higher conversions.
               </p>
 
               <a href="#cta" className="btn btn-cta rounded-pill px-5 py-3 fw-semibold text-white text-decoration-none d-inline-flex align-items-center gap-2" style={{ fontSize: '0.95rem' }}>
@@ -160,11 +160,17 @@ const ShopifySEOPage = () => {
             {/* Right - Content */}
             <div className="col-lg-7">
               <h2 className="display-6 fw-bold text-white mb-4" style={{ letterSpacing: '-1px', lineHeight: 1.15 }}>
-                Why Choose TechGeekz, for{' '}
+                Why Choose TechGeekz for{' '}
                 <span className="hero-gradient-text fst-italic">Shopify SEO</span> Services?
               </h2>
               <p className="text-secondary" style={{ fontSize: '0.95rem', lineHeight: 1.8 }}>
-                TechGeekz specializes in Shopify-specific SEO strategies that address the unique challenges of the platform, from duplicate content issues to collection optimization and product schema markup.
+                TechGeekz specializes in platform-specific SEO strategies designed exclusively for Shopify stores. As a trusted provider of Shopify SEO services in Surat, we focus on solving common Shopify SEO challenges such as duplicate content issues, collection page optimization, technical SEO problems, and schema markup implementation.
+              </p>
+              <p className="text-secondary mb-4" style={{ fontSize: '0.95rem', lineHeight: 1.8 }}>
+                Our experienced SEO experts create customized Shopify SEO strategies that improve your website structure, search engine visibility, and overall store performance. Whether you are launching a new Shopify store or scaling an existing eCommerce business, our professional Shopify SEO in Surat services help your store achieve better rankings, increased traffic, and long-term growth.
+              </p>
+              <p className="text-secondary" style={{ fontSize: '0.95rem', lineHeight: 1.8 }}>
+                As experts in Shopify website development in Surat, we ensure your Shopify store is fully optimized for both search engines and customers, helping you maximize your online sales potential.
               </p>
             </div>
           </div>
@@ -177,7 +183,7 @@ const ShopifySEOPage = () => {
           <hr className="premium-divider" />
           <div className="text-center mb-5 pt-4">
             <h2 className="display-6 fw-bold text-white" style={{ letterSpacing: '-1px' }}>
-              Advantages of our <span className="hero-gradient-text fst-italic">Shopify SEO services</span>
+              Advantages of Our <span className="hero-gradient-text fst-italic">Shopify SEO Services</span>
             </h2>
           </div>
 
@@ -185,18 +191,18 @@ const ShopifySEOPage = () => {
             {[
               {
                 icon: null,
-                title: 'Increase organic store traffic',
-                desc: 'Optimized product and collection pages rank higher in search results, bringing a steady stream of shoppers who are actively looking to buy your products.',
+                title: 'Increase Organic Store Traffic',
+                desc: 'Our expert Shopify SEO services in Surat help your product pages and collection pages rank higher in search engine results. By optimizing your Shopify store with targeted keywords, SEO-friendly content, and proper technical structure, we help attract a steady stream of shoppers who are actively searching for products like yours.',
               },
               {
                 icon: null,
-                title: 'Reduce dependency on paid ads',
-                desc: 'Strong organic rankings mean you spend less on paid advertising while maintaining consistent traffic and sales from search engines.',
+                title: 'Reduce Dependency on Paid Ads',
+                desc: 'Strong organic rankings allow your Shopify store to generate consistent traffic without relying heavily on paid advertising campaigns. Our professional Shopify SEO services in Surat help businesses reduce advertising costs while maintaining stable traffic and conversions through organic search results.',
               },
               {
                 icon: null,
-                title: 'Higher conversion rates',
-                desc: 'SEO-optimized product pages with compelling descriptions and proper structure convert visitors into buyers at significantly higher rates than generic pages.',
+                title: 'Higher Conversion Rates',
+                desc: 'SEO-optimized product pages improve both search visibility and user experience, leading to better conversion rates. Our expert Shopify SEO in Surat services focus on creating compelling product descriptions, optimized titles, fast-loading pages, and proper website structure that encourage visitors to become paying customers.',
               },
             ].map((card, i) => (
               <div key={i} className="col-lg-4 col-md-6">
